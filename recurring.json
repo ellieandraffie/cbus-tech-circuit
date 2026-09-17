@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Startup Grind Columbus",
+    "type": "net",
+    "note": "Monthly @ Rev1 (The Peninsula). Fireside chats + founder community.",
+    "url": "https://www.startupgrind.com/columbus/"
+  },
+  {
+    "title": "Women in Product — Columbus",
+    "type": "net",
+    "note": "Community for women in product — talks, mentorship & networking.",
+    "url": "https://womenpm.org/join-our-community/columbus/"
+  },
+  {
+    "title": "IxDA Columbus",
+    "type": "net",
+    "note": "Interaction Design Association chapter — ~1,900 UX practitioners.",
+    "url": "https://www.meetup.com/columbus-ixda-group/"
+  },
+  {
+    "title": "ProductTank Columbus",
+    "type": "net",
+    "note": "Product managers: guest talks + networking over a beer.",
+    "url": "https://www.meetup.com/producttank-columbus/"
+  },
+  {
+    "title": "Columbus AI",
+    "type": "work",
+    "note": "Community AI gatherings — demos, open-mic, no slides required.",
+    "url": "https://www.meetup.com/columbus-ai/"
+  },
+  {
+    "title": "AI Tinkerers Columbus",
+    "type": "work",
+    "note": "Hands-on meetups for AI builders & practitioners.",
+    "url": "https://columbus.aitinkerers.org/"
+  },
+  {
+    "title": "Dublin Chamber — Off the Clock",
+    "type": "net",
+    "note": "Monthly after-hours mixer for the Dublin business community.",
+    "url": "https://www.dublinchamber.org/events"
+  },
+  {
+    "title": "Dublin Chamber — Monthly Meeting",
+    "type": "net",
+    "note": "First Wed, 9am, Historic Dublin.",
+    "url": "https://www.dublinchamber.org/events"
+  },
+  {
+    "title": "CONNECTED Networking Group",
+    "type": "net",
+    "note": "Dublin Entrepreneurial Center, 565 Metro Pl S.",
+    "url": "https://decindublin.com/events/category/connected-networking-group/"
+  },
+  {
+    "title": "TechLife Tech Takeover Tuesday",
+    "type": "social",
+    "note": "Recurring casual tech meetup at rotating venues.",
+    "url": "https://www.meetup.com/techlifecolumbus/"
+  }
+]
