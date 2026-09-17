@@ -15,7 +15,7 @@
 <meta name="twitter:description" content="A curated, weekly-updated calendar of Central Ohio tech, startup and networking events.">
 <style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <!-- CLOUDFLARE ANALYTICS: paste your beacon <script> here after creating the free account -->
-<!-- FORMSPREE: set FB_ENDPOINT in the script below to your form URL to enable the feedback form -->
+<!-- FORMSPREE: set FB_ENDPOINT in the inline script to your form URL to enable the feedback form -->
 <title>CBus Tech Circuit</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -148,6 +148,9 @@
   .rc.net{border-left-color:var(--net)} .rc.conf{border-left-color:var(--conf)} .rc.round{border-left-color:var(--round)} .rc.work{border-left-color:var(--work)} .rc.social{border-left-color:var(--social)}
   .rc .t{font-weight:600;font-size:13.5px}
   .rc .m{font-size:12px;color:var(--ink-soft);margin-top:2px}
+  a.rc{text-decoration:none;color:inherit;display:block;transition:border-color .12s,box-shadow .12s}
+  a.rc:hover{border-color:var(--brand);box-shadow:var(--shadow)}
+  a.rc:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
 
   .legend{margin-top:30px;background:var(--surface);border:1px solid var(--hair);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
   .legend .cols{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
@@ -397,12 +400,16 @@
   ];
 
   var RECURRING=[
-    {title:"Startup Grind Columbus",type:"net",note:"Monthly @ Rev1 (The Peninsula). Fireside chats + founder community."},
-    {title:"Dublin Chamber — Off the Clock",type:"net",note:"Monthly after-hours mixer for the Dublin business community."},
-    {title:"Dublin Chamber — Monthly Meeting",type:"net",note:"First Wed, 9am, Historic Dublin."},
-    {title:"CONNECTED Networking Group",type:"net",note:"Dublin Entrepreneurial Center, 565 Metro Pl S."},
-    {title:"AI Tinkerers Columbus",type:"work",note:"Hands-on meetups for AI builders & practitioners."},
-    {title:"TechLife Tech Takeover Tuesday",type:"social",note:"Recurring casual tech meetup at rotating venues."}
+    {title:"Startup Grind Columbus",type:"net",note:"Monthly @ Rev1 (The Peninsula). Fireside chats + founder community.",url:"https://www.startupgrind.com/columbus/"},
+    {title:"Women in Product — Columbus",type:"net",note:"Community for women in product — talks, mentorship & networking.",url:"https://womenpm.org/join-our-community/columbus/"},
+    {title:"IxDA Columbus",type:"net",note:"Interaction Design Association chapter — ~1,900 UX practitioners.",url:"https://www.meetup.com/columbus-ixda-group/"},
+    {title:"ProductTank Columbus",type:"net",note:"Product managers: guest talks + networking over a beer.",url:"https://www.meetup.com/producttank-columbus/"},
+    {title:"Columbus AI",type:"work",note:"Community AI gatherings — demos, open-mic, no slides required.",url:"https://www.meetup.com/columbus-ai/"},
+    {title:"AI Tinkerers Columbus",type:"work",note:"Hands-on meetups for AI builders & practitioners.",url:"https://columbus.aitinkerers.org/"},
+    {title:"Dublin Chamber — Off the Clock",type:"net",note:"Monthly after-hours mixer for the Dublin business community.",url:"https://www.dublinchamber.org/events"},
+    {title:"Dublin Chamber — Monthly Meeting",type:"net",note:"First Wed, 9am, Historic Dublin.",url:"https://www.dublinchamber.org/events"},
+    {title:"CONNECTED Networking Group",type:"net",note:"Dublin Entrepreneurial Center, 565 Metro Pl S.",url:"https://decindublin.com/events/category/connected-networking-group/"},
+    {title:"TechLife Tech Takeover Tuesday",type:"social",note:"Recurring casual tech meetup at rotating venues.",url:"https://www.meetup.com/techlifecolumbus/"}
   ];
 
   var active={net:true,conf:true,round:true,work:true,social:true};
@@ -437,8 +444,9 @@
   function renderRecur(){
     var rg=document.getElementById("recurGrid");rg.innerHTML="";
     RECURRING.filter(function(r){return active[r.type];}).forEach(function(r){
-      var el=document.createElement("div");el.className="rc "+r.type;
-      el.innerHTML='<div class="t">'+esc(r.title)+' <span style="font-weight:400;color:var(--ink-faint);font-size:11px">'+TYPE_NAME[r.type].split(" ")[0]+'</span></div><div class="m">'+esc(r.note)+'</div>';
+      var el=document.createElement(r.url?"a":"div");el.className="rc "+r.type+(r.url?" link":"");
+      if(r.url){el.href=r.url;el.target="_blank";el.rel="noopener noreferrer";}
+      el.innerHTML='<div class="t">'+esc(r.title)+' <span style="font-weight:400;color:var(--ink-faint);font-size:11px">'+TYPE_NAME[r.type].split(" ")[0]+(r.url?' &#8599;':'')+'</span></div><div class="m">'+esc(r.note)+'</div>';
       rg.appendChild(el);
     });
   }
