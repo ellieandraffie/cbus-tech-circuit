@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A curated, weekly-updated calendar of tech, startup and professional networking events across Columbus, Dublin and Central Ohio. Filter by type; see cost, location and sign-up.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/cbus-tech-circuit/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CBus Tech Circuit — Central Ohio Tech & Startup Events">
+<meta property="og:description" content="A curated, weekly-updated calendar of Central Ohio tech, startup and networking events. Presented by Pink Hippo Strategy.">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/cbus-tech-circuit/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CBus Tech Circuit — Central Ohio Tech & Startup Events">
+<meta name="twitter:description" content="A curated, weekly-updated calendar of Central Ohio tech, startup and networking events.">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<!-- CLOUDFLARE ANALYTICS: paste your beacon <script> here after creating the free account -->
+<!-- FORMSPREE: set FB_ENDPOINT in the script below to your form URL to enable the feedback form -->
+<title>CBus Tech Circuit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --bg:#faf8f6; --surface:#ffffff; --surface-2:#f1ece8;
+    --ink:#2b2b2b; --ink-soft:#5c5a58; --ink-faint:#8b8885;
+    --hair:#eae5e0; --hair-strong:#d8d1ca;
+    /* Pink Hippo brand — main pink + supporting palette */
+    --brand:#ff7282; --brand-ink:#d63b53; --brand-soft:#ffe2e6;
+    --teal:#168f9f; --teal-ink:#0f6f7c; --teal-soft:#d5ecef;
+    /* event types (from brand palette; pink reserved for chrome) */
+    --net:#168f9f; --net-soft:#d5ecef; --net-ink:#0f6f7c;
+    --conf:#35667d; --conf-soft:#dde6ec; --conf-ink:#264a5c;
+    --round:#7d6bb3; --round-soft:#e7e2f2; --round-ink:#5a4a8c;
+    --work:#f28b82; --work-soft:#fce4e1; --work-ink:#c0503f;
+    --social:#f5c842; --social-soft:#fcf1cf; --social-ink:#8a6a12;
+    --cost:#8a6a12; --free:#0f6f7c;
+    --past:#a9a6a2; --past-soft:#efeae6;
+    --shadow:0 1px 2px rgba(43,43,43,.06),0 10px 26px rgba(43,43,43,.08);
+    --font-display:"Libre Baskerville",Georgia,"Times New Roman",serif;
+    --font-body:"Quicksand",system-ui,-apple-system,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#20201f; --surface:#292928; --surface-2:#333230;
+      --ink:#f2efec; --ink-soft:#c3bfbb; --ink-faint:#8f8b87;
+      --hair:#3a3937; --hair-strong:#4d4b48;
+      --brand:#ff8a97; --brand-ink:#ff9aa6; --brand-soft:#3d2226;
+      --teal:#3fb0bf; --teal-ink:#8fd6df; --teal-soft:#123033;
+      --net:#3fb0bf; --net-soft:#123033; --net-ink:#a3dde4;
+      --conf:#7c9bb5; --conf-soft:#1b2833; --conf-ink:#b6cbdc;
+      --round:#a394d4; --round-soft:#241f36; --round-ink:#cbbfec;
+      --work:#f2a59c; --work-soft:#3a221f; --work-ink:#f4b8b0;
+      --social:#f5c842; --social-soft:#332a10; --social-ink:#f2d98a;
+      --cost:#f2d98a; --free:#3fb0bf;
+      --past:#7c7975; --past-soft:#252423;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 26px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#20201f; --surface:#292928; --surface-2:#333230;
+    --ink:#f2efec; --ink-soft:#c3bfbb; --ink-faint:#8f8b87;
+    --hair:#3a3937; --hair-strong:#4d4b48;
+    --brand:#ff8a97; --brand-ink:#ff9aa6; --brand-soft:#3d2226;
+    --teal:#3fb0bf; --teal-ink:#8fd6df; --teal-soft:#123033;
+    --net:#3fb0bf; --net-soft:#123033; --net-ink:#a3dde4;
+    --conf:#7c9bb5; --conf-soft:#1b2833; --conf-ink:#b6cbdc;
+    --round:#a394d4; --round-soft:#241f36; --round-ink:#cbbfec;
+    --work:#f2a59c; --work-soft:#3a221f; --work-ink:#f4b8b0;
+    --social:#f5c842; --social-soft:#332a10; --social-ink:#f2d98a;
+    --cost:#f2d98a; --free:#3fb0bf;
+    --past:#7c7975; --past-soft:#252423;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 26px rgba(0,0,0,.4);
+  }
+
+  *{box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.5;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+  .wrap{max-width:1040px;margin:0 auto;padding-inline:16px;padding-block:28px 40px}
+  .eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-ink)}
+
+  header.masthead{margin-bottom:20px}
+  .brand .eyebrow{margin-bottom:8px}
+  .brand h1{font-family:var(--font-display);font-weight:700;font-size:clamp(32px,5.8vw,50px);line-height:1;margin:0;letter-spacing:-.015em;text-wrap:balance}
+  .brand h1 .dot{color:var(--brand)}
+  .brand .tag{color:var(--ink-soft);font-size:15px;margin-top:11px;max-width:64ch}
+  .brand .tag b{color:var(--ink)}
+  .stamp{font-size:12px;color:var(--ink-faint);margin-top:12px;display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center}
+  .stamp .live{display:inline-flex;align-items:center;gap:6px;color:var(--brand-ink);font-weight:600}
+  .stamp .dot{width:7px;height:7px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 3px var(--brand-soft)}
+
+  .filters{margin:18px 0 14px}
+  .filters .fl{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 9px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--hair-strong);background:var(--surface);border-radius:999px;padding:6px 14px 6px 8px;font-size:13px;font-weight:600;color:var(--ink-soft);cursor:pointer;transition:all .12s;user-select:none}
+  .chip .sw{width:17px;height:17px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:10px;font-weight:800;color:#fff;line-height:1}
+  .chip .sw .ck{opacity:0;transition:opacity .1s}
+  .chip[aria-pressed="true"] .sw .ck{opacity:1}
+  .chip[aria-pressed="true"]{color:#fff;border-color:transparent}
+  .chip:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  .chip.net .sw{background:var(--net)} .chip.net[aria-pressed="true"]{background:var(--net)}
+  .chip.conf .sw{background:var(--conf)} .chip.conf[aria-pressed="true"]{background:var(--conf)}
+  .chip.round .sw{background:var(--round)} .chip.round[aria-pressed="true"]{background:var(--round)}
+  .chip.work .sw{background:var(--work)} .chip.work[aria-pressed="true"]{background:var(--work)}
+  .chip.social .sw{background:var(--social)} .chip.social[aria-pressed="true"]{background:var(--social)}
+  /* light-colored categories need dark text/checkmark when active */
+  .chip.work[aria-pressed="true"],.chip.social[aria-pressed="true"]{color:#2b2b2b}
+  .chip.work[aria-pressed="true"] .sw .ck,.chip.social[aria-pressed="true"] .sw .ck{color:#2b2b2b}
+  .chip.all .sw{background:var(--ink-faint)}
+  .chip.all[aria-pressed="true"]{background:var(--brand)} .chip.all[aria-pressed="true"] .sw{background:rgba(255,255,255,.28)}
+
+  .navbar{display:flex;align-items:center;justify-content:center;gap:16px;margin:8px 0 14px}
+  .navbar button.arrow{width:40px;height:40px;border-radius:50%;border:1px solid var(--hair-strong);background:var(--surface);color:var(--ink);font-size:18px;cursor:pointer;display:grid;place-items:center;transition:background .12s,border-color .12s}
+  .navbar button.arrow:hover{background:var(--surface-2);border-color:var(--brand)}
+  .navbar button:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+  #monthLabel{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,3.6vw,26px);min-width:min(56vw,240px);text-align:center;letter-spacing:-.01em}
+  .today-btn{border:1px solid var(--hair-strong);background:var(--surface);color:var(--ink-soft);border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:600;cursor:pointer}
+  .today-btn:hover{background:var(--surface-2)}
+
+  .cal{background:var(--surface);border:1px solid var(--hair);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+  .dow{display:grid;grid-template-columns:repeat(7,1fr);background:var(--surface-2);border-bottom:1px solid var(--hair)}
+  .dow span{padding:9px 4px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .grid{display:grid;grid-template-columns:repeat(7,1fr)}
+  .cell{min-height:112px;min-width:0;border-right:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:6px 5px 8px;display:flex;flex-direction:column;gap:4px;overflow:hidden}
+  .cell:nth-child(7n){border-right:none}
+  .cell.blank{background:repeating-linear-gradient(135deg,transparent,transparent 7px,var(--surface-2) 7px,var(--surface-2) 8px);opacity:.5}
+  .cell .num{font-size:12.5px;font-weight:600;color:var(--ink-soft);align-self:flex-end;line-height:1}
+  .cell.is-today .num{background:var(--brand);color:#fff;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-weight:700}
+  .ev{border:1px solid transparent;border-left-width:3px;border-radius:6px;padding:4px 6px;font-size:11.5px;font-weight:600;line-height:1.22;cursor:pointer;text-align:left;width:100%;min-width:0;max-width:100%;overflow:hidden;transition:filter .1s}
+  .ev:hover{filter:brightness(.97)}
+  .ev:focus-visible{outline:2px solid var(--ink);outline-offset:1px}
+  .ev .lbl{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere;word-break:break-word;text-overflow:ellipsis}
+  .ev .badges{display:flex;flex-wrap:wrap;gap:3px;margin-top:3px}
+  .ev .badge{font-size:9px;font-weight:800;letter-spacing:.03em;padding:1px 5px;border-radius:4px;background:rgba(0,0,0,.06);max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .ev .badge.free{color:var(--free)} .ev .badge.cost{color:var(--cost)} .ev .badge.mem{color:var(--ink-soft)}
+  .ev.net{background:var(--net-soft);border-left-color:var(--net);color:var(--net-ink)}
+  .ev.conf{background:var(--conf-soft);border-left-color:var(--conf);color:var(--conf-ink)}
+  .ev.round{background:var(--round-soft);border-left-color:var(--round);color:var(--round-ink)}
+  .ev.work{background:var(--work-soft);border-left-color:var(--work);color:var(--work-ink)}
+  .ev.social{background:var(--social-soft);border-left-color:var(--social);color:var(--social-ink)}
+  .ev.past{background:var(--past-soft)!important;border-left-color:var(--past)!important;color:var(--past)!important;opacity:.85}
+  .ev.past .badge{color:var(--past)!important;background:rgba(0,0,0,.04)}
+  .empty-month{padding:30px 16px;text-align:center;color:var(--ink-faint);font-size:13.5px;grid-column:1/-1}
+
+  .recur{margin-top:26px}
+  .recur h3,.legend h3{font-family:var(--font-display);font-weight:700;font-size:18px;margin:0 0 12px;letter-spacing:-.01em}
+  .recur-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+  .rc{background:var(--surface);border:1px solid var(--hair);border-left-width:4px;border-radius:10px;padding:10px 12px}
+  .rc.net{border-left-color:var(--net)} .rc.conf{border-left-color:var(--conf)} .rc.round{border-left-color:var(--round)} .rc.work{border-left-color:var(--work)} .rc.social{border-left-color:var(--social)}
+  .rc .t{font-weight:600;font-size:13.5px}
+  .rc .m{font-size:12px;color:var(--ink-soft);margin-top:2px}
+
+  .legend{margin-top:30px;background:var(--surface);border:1px solid var(--hair);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+  .legend .cols{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+  .typedef{display:flex;gap:11px;margin-bottom:12px}
+  .typedef .swatch{flex:none;width:16px;height:16px;border-radius:5px;margin-top:2px}
+  .typedef.net .swatch{background:var(--net)} .typedef.conf .swatch{background:var(--conf)} .typedef.round .swatch{background:var(--round)} .typedef.work .swatch{background:var(--work)} .typedef.social .swatch{background:var(--social)}
+  .typedef .name{font-weight:700;font-size:13.5px}
+  .typedef .desc{font-size:12.5px;color:var(--ink-soft);margin-top:1px}
+  .keyrow{display:flex;align-items:flex-start;gap:9px;margin-bottom:11px;font-size:12.5px;color:var(--ink-soft)}
+  .keyrow .ic{flex:none;font-weight:800;font-size:9.5px;padding:2px 6px;border-radius:4px;background:var(--surface-2)}
+  .keyrow b{color:var(--ink)}
+  .subhd{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 10px}
+
+  /* presented + feedback CTA */
+  .foot{margin-top:30px;display:grid;grid-template-columns:1.1fr 1fr;gap:22px;align-items:stretch}
+  .presented{background:var(--teal);border-radius:16px;padding:24px;color:#fff;display:flex;flex-direction:column;justify-content:center}
+  .presented .pp{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.82);margin:0 0 6px}
+  .presented .nm{font-family:var(--font-display);font-weight:700;font-size:26px;line-height:1.05}
+  .presented p{font-size:13.5px;color:rgba(255,255,255,.9);margin:10px 0 16px;max-width:40ch}
+  .presented a.site{align-self:flex-start;background:#fff;color:var(--teal-ink);font-weight:700;font-size:13px;text-decoration:none;padding:10px 18px;border-radius:9px}
+  .presented a.site:hover{filter:brightness(.96)}
+  .fbcta{background:var(--surface);border:1px solid var(--hair);border-radius:16px;padding:24px;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:center}
+  .fbcta h3{font-family:var(--font-display);font-weight:700;font-size:20px;margin:0 0 6px}
+  .fbcta p{font-size:13px;color:var(--ink-soft);margin:0 0 16px}
+  .fbcta button{align-self:flex-start;background:var(--brand);color:#fff;font-weight:700;font-size:14px;border:none;border-radius:10px;padding:11px 20px;cursor:pointer}
+  .fbcta button:hover{filter:brightness(1.06)}
+
+  footer.credit{margin-top:24px;font-size:12px;color:var(--ink-faint);text-align:center;line-height:1.7}
+  footer.credit a{color:var(--brand-ink)}
+
+  /* feedback as its own page */
+  .fbpage{position:fixed;inset:0;background:var(--bg);z-index:40;overflow:auto;display:none}
+  .fbpage.open{display:block}
+  .fbpage .inner{max-width:600px;margin:0 auto;padding:32px 16px 48px}
+  .fbpage .back{display:inline-flex;align-items:center;gap:7px;background:none;border:none;color:var(--ink-soft);font:inherit;font-weight:600;font-size:14px;cursor:pointer;padding:6px 0;margin-bottom:18px}
+  .fbpage .back:hover{color:var(--brand-ink)}
+  .fbcard{background:var(--surface);border:1px solid var(--hair);border-radius:18px;padding:clamp(22px,4vw,34px);box-shadow:var(--shadow)}
+  .fbcard .eyebrow{margin-bottom:10px}
+  .fbcard h2{font-family:var(--font-display);font-weight:700;font-size:clamp(24px,4.5vw,32px);line-height:1.08;margin:0 0 8px;letter-spacing:-.015em;text-wrap:balance}
+  .fbcard .lede{font-size:14.5px;color:var(--ink-soft);margin:0 0 22px;max-width:52ch}
+  .fbcard label{display:block;font-size:12px;font-weight:700;color:var(--ink-soft);margin:0 0 5px;letter-spacing:.01em}
+  .fbcard input,.fbcard textarea{width:100%;border:1px solid var(--hair-strong);background:var(--bg);color:var(--ink);border-radius:10px;padding:11px 13px;font:inherit;font-size:14px;margin-bottom:15px;resize:vertical}
+  .fbcard input:focus,.fbcard textarea:focus{outline:2px solid var(--brand);outline-offset:0;border-color:var(--brand)}
+  .fbcard .row{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+  .fbcard button.submit{width:100%;background:var(--brand);color:#fff;font-weight:700;font-size:15px;border:none;border-radius:11px;padding:13px;cursor:pointer;margin-top:2px}
+  .fbcard button.submit:hover{filter:brightness(1.06)}
+  .fbcard .privacy{font-size:11.5px;color:var(--ink-faint);margin-top:12px;text-align:center}
+  .fbmsg{display:none;text-align:center;padding:14px}
+  .fbmsg.show{display:block}
+  .fbmsg .big{font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--brand-ink);margin-bottom:6px}
+  .fbmsg p{color:var(--ink-soft);font-size:14px}
+
+  .scrim{position:fixed;inset:0;background:rgba(30,25,20,.46);backdrop-filter:blur(2px);display:none;align-items:center;justify-content:center;padding:16px;z-index:20}
+  .scrim.open{display:flex}
+  .modal{background:var(--surface);border:1px solid var(--hair-strong);border-radius:16px;max-width:460px;width:100%;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.28);position:relative;max-height:88vh;overflow:auto}
+  .modal .x{position:absolute;top:12px;right:12px;width:30px;height:30px;border:none;background:var(--surface-2);border-radius:50%;font-size:16px;cursor:pointer;color:var(--ink-soft)}
+  .modal .x:hover{background:var(--hair)}
+  .modal .typepill{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:4px 11px;border-radius:999px}
+  .modal .typepill .sw{width:9px;height:9px;border-radius:50%}
+  .modal .typepill.net{background:var(--net-soft);color:var(--net-ink)} .modal .typepill.net .sw{background:var(--net)}
+  .modal .typepill.conf{background:var(--conf-soft);color:var(--conf-ink)} .modal .typepill.conf .sw{background:var(--conf)}
+  .modal .typepill.round{background:var(--round-soft);color:var(--round-ink)} .modal .typepill.round .sw{background:var(--round)}
+  .modal .typepill.work{background:var(--work-soft);color:var(--work-ink)} .modal .typepill.work .sw{background:var(--work)}
+  .modal .typepill.social{background:var(--social-soft);color:var(--social-ink)} .modal .typepill.social .sw{background:var(--social)}
+  .modal .typepill.past{background:var(--past-soft);color:var(--past)} .modal .typepill.past .sw{background:var(--past)}
+  .modal h4{font-family:var(--font-display);font-weight:700;font-size:22px;margin:12px 0 4px;line-height:1.14;text-wrap:balance}
+  .modal .pastnote{font-size:11px;font-weight:700;color:var(--past);text-transform:uppercase;letter-spacing:.04em;margin:2px 0 0}
+  .modal .desc{font-size:13.5px;color:var(--ink-soft);margin:6px 0 12px}
+  .modal .meta{font-size:13px;color:var(--ink-soft);border-top:1px solid var(--hair);padding-top:12px}
+  .modal .meta div{margin:5px 0;display:flex;gap:8px}
+  .modal .meta .k{flex:none;width:74px;color:var(--ink-faint);font-weight:600}
+  .modal .meta .v{color:var(--ink)}
+  .modal .mem{background:var(--work-soft);color:var(--work-ink);font-size:12.5px;padding:9px 12px;border-radius:9px;margin:12px 0}
+  .modal .reg{display:block;text-align:center;margin-top:16px;background:var(--brand);color:#fff;font-weight:700;font-size:14px;text-decoration:none;padding:12px;border-radius:10px}
+  .modal .reg:hover{filter:brightness(1.06)}
+  .modal .reg.disabled{background:var(--surface-2);color:var(--ink-faint);pointer-events:none}
+
+  @media (max-width:720px){
+    .legend .cols{grid-template-columns:1fr;gap:18px}
+    .foot{grid-template-columns:1fr}
+    .fbcard .row{grid-template-columns:1fr}
+    .cell{min-height:84px;padding:5px 4px 7px}
+    .ev{font-size:10.5px;padding:3px 5px}
+    .cell .num{align-self:flex-start}
+    .dow span{font-size:9.5px;letter-spacing:.02em}
+  }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">
+      <div class="eyebrow">Central Ohio Tech &amp; Startup Events</div>
+      <h1>CBus Tech Circuit<span class="dot">.</span></h1>
+      <p class="tag">A curated calendar of <b>tech, startup &amp; professional networking events</b> across Columbus, Dublin &amp; the metro. Filter by type, tap any event for cost, location &amp; sign-up.</p>
+      <div class="stamp">
+        <span class="live"><span class="dot"></span>Updated weekly</span>
+        <span>Last refreshed: <b id="refreshed">Sep 17, 2026</b></span>
+        <span>Showing: Sep&ndash;Nov 2026</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="filters">
+    <p class="fl">Filter by event type &mdash; tap to toggle</p>
+    <div class="chips" id="chips">
+      <button class="chip all" data-type="all" aria-pressed="true"><span class="sw"><span class="ck">&#10003;</span></span>All events</button>
+      <button class="chip net" data-type="net" aria-pressed="true"><span class="sw"><span class="ck">&#10003;</span></span>Networking</button>
+      <button class="chip conf" data-type="conf" aria-pressed="true"><span class="sw"><span class="ck">&#10003;</span></span>Conference</button>
+      <button class="chip round" data-type="round" aria-pressed="true"><span class="sw"><span class="ck">&#10003;</span></span>Roundtable</button>
+      <button class="chip work" data-type="work" aria-pressed="true"><span class="sw"><span class="ck">&#10003;</span></span>Workshop</button>
+      <button class="chip social" data-type="social" aria-pressed="true"><span class="sw"><span class="ck">&#10003;</span></span>Social</button>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <button class="arrow" id="prev" aria-label="Previous month">&#8592;</button>
+    <div id="monthLabel">September 2026</div>
+    <button class="arrow" id="next" aria-label="Next month">&#8594;</button>
+    <button class="today-btn" id="todayBtn">Today</button>
+  </div>
+
+  <div class="cal">
+    <div class="dow"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <section class="recur">
+    <h3>Recurring &amp; ongoing</h3>
+    <div class="recur-grid" id="recurGrid"></div>
+  </section>
+
+  <section class="legend">
+    <h3>Key</h3>
+    <div class="cols">
+      <div>
+        <p class="subhd">Event types</p>
+        <div class="typedef net"><div class="swatch"></div><div><div class="name">Networking / mixer</div><div class="desc">Happy hours, meetups &amp; connection-focused gatherings.</div></div></div>
+        <div class="typedef conf"><div class="swatch"></div><div><div class="name">Conference / summit</div><div class="desc">Multi-session, ticketed events with speakers &amp; tracks.</div></div></div>
+        <div class="typedef round"><div class="swatch"></div><div><div class="name">Roundtable</div><div class="desc">Smaller, discussion-format sessions &mdash; often audience-specific.</div></div></div>
+        <div class="typedef work"><div class="swatch"></div><div><div class="name">Workshop / talk</div><div class="desc">Hands-on or educational sessions on a focused topic.</div></div></div>
+        <div class="typedef social"><div class="swatch"></div><div><div class="name">Social / community</div><div class="desc">Parties, celebrations &amp; casual community get-togethers.</div></div></div>
+      </div>
+      <div>
+        <p class="subhd">Badges &amp; states</p>
+        <div class="keyrow"><span class="ic" style="color:var(--free)">FREE</span><div><b>Free to attend</b> (registration may still be required).</div></div>
+        <div class="keyrow"><span class="ic" style="color:var(--cost)">$</span><div><b>Paid / ticketed</b> &mdash; exact price on the event page.</div></div>
+        <div class="keyrow"><span class="ic">MEMBERS</span><div><b>Membership note</b> &mdash; members-only or member pricing may apply; check first.</div></div>
+        <div class="keyrow"><span class="ic" style="color:var(--past)">PAST</span><div><b>Greyed events</b> have already happened &mdash; kept for reference.</div></div>
+        <p class="subhd" style="margin-top:16px">Using the calendar</p>
+        <div class="keyrow"><span class="ic">TAP</span><div>Tap any event for details &amp; a sign-up link. Use the chips up top to show or hide event types.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="foot">
+    <div class="presented">
+      <p class="pp">Presented by</p>
+      <div class="nm">Pink Hippo Strategy</div>
+      <p>Fractional UX leadership &amp; product strategy — helping teams find clarity. This calendar is a free gift to the Central Ohio tech community.</p>
+      <a class="site" href="https://pinkhippostrategy.com" target="_blank" rel="noopener noreferrer">Visit pinkhippostrategy.com &rarr;</a>
+    </div>
+    <div class="fbcta">
+      <h3>Missing an event?</h3>
+      <p>Know something we should add, or spot something off? Send it our way — it goes straight to Pink Hippo Strategy.</p>
+      <button id="openFb">Suggest an event / feedback</button>
+    </div>
+  </div>
+
+  <footer class="credit">
+    <b>CBus Tech Circuit</b> &middot; a community events calendar for Central Ohio's tech &amp; startup scene.<br>
+    Sourced from OhioX, TechLife Columbus, Dublin Chamber, Startup Grind / Rev1, Eventbrite, Meetup &amp; Luma. Always confirm date, cost &amp; registration on the event's own page.
+  </footer>
+</div>
+
+<!-- Feedback page -->
+<div class="fbpage" id="fbPage" role="dialog" aria-modal="true" aria-labelledby="fbHeading">
+  <div class="inner">
+    <button class="back" id="fbBack">&larr; Back to the calendar</button>
+    <div class="fbcard">
+      <div id="fbFormWrap">
+        <div class="eyebrow">CBus Tech Circuit</div>
+        <h2 id="fbHeading">Suggest an event or share feedback</h2>
+        <p class="lede">Spotted an event we're missing, or have a suggestion to make this calendar better? We'd love to hear it.</p>
+        <form id="fbForm">
+          <div class="row">
+            <div><label for="fbName">Name</label><input id="fbName" name="name" type="text" autocomplete="name"></div>
+            <div><label for="fbEmail">Email</label><input id="fbEmail" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <label for="fbEvent">Event or topic <span style="font-weight:400;color:var(--ink-faint)">(optional)</span></label>
+          <input id="fbEvent" name="event" type="text" placeholder="Event name, date & link if you have it">
+          <label for="fbMsg">Message</label>
+          <textarea id="fbMsg" name="message" rows="4" required placeholder="Tell us about the event or share your feedback…"></textarea>
+          <button class="submit" type="submit">Send to Pink Hippo</button>
+          <p class="privacy">🔒 Your message goes privately to Pink Hippo Strategy. We never share your info.</p>
+        </form>
+      </div>
+      <div class="fbmsg" id="fbMsgOk">
+        <div class="big">Thank you! 🎉</div>
+        <p>Your note is on its way to Pink Hippo Strategy. We appreciate you helping keep the calendar sharp.</p>
+        <button class="back" id="fbBack2" style="margin-top:14px">&larr; Back to the calendar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="scrim" id="scrim">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="x" id="closeModal" aria-label="Close">&times;</button>
+    <span class="typepill" id="mType"><span class="sw"></span><span id="mTypeLbl"></span></span>
+    <h4 id="mTitle"></h4>
+    <p class="pastnote" id="mPast" hidden>Past event — kept for reference</p>
+    <p class="desc" id="mDesc"></p>
+    <div class="mem" id="mMem" hidden></div>
+    <div class="meta" id="mMeta"></div>
+    <a class="reg" id="mReg" target="_blank" rel="noopener noreferrer">Register / event details &rarr;</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var TYPE_NAME={net:"Networking / mixer",conf:"Conference / summit",round:"Roundtable",work:"Workshop / talk",social:"Social / community"};
+  // Feedback posts to this endpoint (Formspree or similar) so the visitor never sees the destination email. Set at deploy.
+  var FB_ENDPOINT="";
+
+  var EVENTS=[
+    {date:"2026-09-21",title:"Tucci's California Wine Tasting",type:"social",time:"Evening",loc:"Tucci's, Historic Dublin",cost:"$85",members:"Dublin Chamber event — member pricing may apply.",
+      desc:"Dublin Chamber social — taste 35+ California wines while connecting with local business owners.",url:"https://www.dublinchamber.org/events"},
+    {date:"2026-09-24",title:"Chamber Lunch Bunch",type:"net",time:"Midday",loc:"Chicken Salad Chick, Dublin",members:"Dublin Chamber program — verify member pricing.",
+      desc:"Casual small-group Chamber lunch — an easy, low-pressure way to meet Dublin-area professionals.",url:"https://www.dublinchamber.org/events/register/12586"},
+    {date:"2026-09-29",title:"Taste of Dublin 2026",type:"net",time:"Tue, evening",loc:"Dublin (Chamber flagship)",members:"Dublin Chamber flagship — member pricing may apply.",
+      desc:"The Chamber's signature networking event of the year — food, drinks, and the widest local business turnout of the season.",url:"https://www.dublinchamber.org/events/register/12630"},
+    {date:"2026-10-06",title:"Startup Columbus Happy Hour",type:"net",time:"4:30–6:30pm",loc:"Columbus (OhioX)",
+      desc:"Relaxed after-work meetup for Columbus technologists, founders and startup folks. One of the easiest doors into the local startup community.",url:"https://www.ohiox.org/events"},
+    {date:"2026-10-07",title:"Dublin Business Roundtable w/ Rep. Mike Carey",type:"round",time:"Morning",loc:"Dublin (Chamber)",members:"Dublin Chamber event — verify member vs. guest access.",
+      desc:"Discussion-format session with U.S. Representative Mike Carey and local business leaders.",url:"https://www.dublinchamber.org/events/register/12785"},
+    {date:"2026-10-08",title:"Marketing Strategy Workshop: Website Audit",type:"work",time:"Morning",loc:"Dublin Chamber (w/ Jely Creative)",members:"Dublin Chamber event — verify member vs. guest access.",
+      desc:"Hands-on website-audit workshop led by Jely Creative — practical marketing and web-presence guidance for local businesses.",url:"https://www.dublinchamber.org/events/register/12770"},
+    {date:"2026-10-13",title:"OhioX AI Roundtable: Columbus",type:"round",time:"8:30–10:30am",loc:"Columbus (OhioX)",members:"Aimed at senior enterprise tech leaders — confirm eligibility.",
+      desc:"Invitation-style morning roundtable for senior enterprise technology leaders on applied AI. Aimed at a senior/leadership audience — confirm eligibility when registering.",url:"https://www.ohiox.org/events"},
+    {date:"2026-10-24",title:"CarniFall + TechLife 2.0 Launch Party",type:"social",time:"3:00pm",loc:"Columbus (TechLife Columbus)",
+      desc:"TechLife Columbus's community launch party — a big, casual celebration of the local tech scene.",url:"https://www.techlifecolumbus.com/events/"},
+    {date:"2026-11-18",title:"Ohio AI Summit (3rd annual)",type:"conf",time:"Full day",loc:"Columbus (OhioX)",cost:"Ticketed",
+      desc:"OhioX's statewide, full-day summit on AI development and deployment across Ohio — speakers, sessions and heavy networking.",url:"https://www.ohiox.org/events"}
+  ];
+
+  var RECURRING=[
+    {title:"Startup Grind Columbus",type:"net",note:"Monthly @ Rev1 (The Peninsula). Fireside chats + founder community."},
+    {title:"Dublin Chamber — Off the Clock",type:"net",note:"Monthly after-hours mixer for the Dublin business community."},
+    {title:"Dublin Chamber — Monthly Meeting",type:"net",note:"First Wed, 9am, Historic Dublin."},
+    {title:"CONNECTED Networking Group",type:"net",note:"Dublin Entrepreneurial Center, 565 Metro Pl S."},
+    {title:"AI Tinkerers Columbus",type:"work",note:"Hands-on meetups for AI builders & practitioners."},
+    {title:"TechLife Tech Takeover Tuesday",type:"social",note:"Recurring casual tech meetup at rotating venues."}
+  ];
+
+  var active={net:true,conf:true,round:true,work:true,social:true};
+  var TODAY=new Date(2026,8,17);TODAY.setHours(0,0,0,0);
+  var view={y:2026,m:8};
+  var MON=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var DOWF=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+
+  var byDate={};
+  EVENTS.forEach(function(e){(byDate[e.date]=byDate[e.date]||[]).push(e);});
+  function parseD(s){var p=s.split("-");return new Date(+p[0],+p[1]-1,+p[2]);}
+  function isPast(e){return parseD(e.date)<TODAY;}
+  function pad(n){return n<10?"0"+n:""+n;}
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+  var chipsWrap=document.getElementById("chips");
+  chipsWrap.addEventListener("click",function(ev){
+    var b=ev.target.closest(".chip");if(!b)return;
+    var t=b.getAttribute("data-type");
+    if(t==="all"){var turnOn=b.getAttribute("aria-pressed")!=="true";Object.keys(active).forEach(function(k){active[k]=turnOn;});}
+    else{active[t]=!active[t];}
+    syncChips();render();
+  });
+  function syncChips(){
+    Array.prototype.forEach.call(chipsWrap.children,function(b){
+      var t=b.getAttribute("data-type");
+      if(t==="all"){var allOn=Object.keys(active).every(function(k){return active[k];});b.setAttribute("aria-pressed",allOn?"true":"false");}
+      else{b.setAttribute("aria-pressed",active[t]?"true":"false");}
+    });
+  }
+
+  function renderRecur(){
+    var rg=document.getElementById("recurGrid");rg.innerHTML="";
+    RECURRING.filter(function(r){return active[r.type];}).forEach(function(r){
+      var el=document.createElement("div");el.className="rc "+r.type;
+      el.innerHTML='<div class="t">'+esc(r.title)+' <span style="font-weight:400;color:var(--ink-faint);font-size:11px">'+TYPE_NAME[r.type].split(" ")[0]+'</span></div><div class="m">'+esc(r.note)+'</div>';
+      rg.appendChild(el);
+    });
+  }
+
+  var grid=document.getElementById("grid");
+  function render(){
+    document.getElementById("monthLabel").textContent=MON[view.m]+" "+view.y;
+    grid.innerHTML="";
+    var startDow=new Date(view.y,view.m,1).getDay();
+    var daysIn=new Date(view.y,view.m+1,0).getDate();
+    var shown=0;
+    for(var b=0;b<startDow;b++){var bl=document.createElement("div");bl.className="cell blank";grid.appendChild(bl);}
+    for(var day=1;day<=daysIn;day++){
+      var cell=document.createElement("div");cell.className="cell";
+      var key=view.y+"-"+pad(view.m+1)+"-"+pad(day);
+      if(view.y===TODAY.getFullYear()&&view.m===TODAY.getMonth()&&day===TODAY.getDate())cell.className+=" is-today";
+      var num=document.createElement("div");num.className="num";num.textContent=day;cell.appendChild(num);
+      if(byDate[key]){
+        byDate[key].filter(function(e){return active[e.type];}).forEach(function(e){
+          shown++;
+          var past=isPast(e);
+          var ev=document.createElement("button");ev.className="ev "+e.type+(past?" past":"");
+          var badges="";
+          if(e.cost){badges+='<span class="badge cost">'+esc(e.cost)+'</span>';}
+          else if(e.free){badges+='<span class="badge free">FREE</span>';}
+          if(e.members){badges+='<span class="badge mem">MEMBERS</span>';}
+          ev.innerHTML='<span class="lbl">'+esc(e.title)+'</span>'+(badges?'<span class="badges">'+badges+'</span>':'');
+          ev.addEventListener("click",(function(x){return function(){openModal(x);};})(e));
+          cell.appendChild(ev);
+        });
+      }
+      grid.appendChild(cell);
+    }
+    var total=startDow+daysIn;var trail=(7-(total%7))%7;
+    for(var t=0;t<trail;t++){var tr=document.createElement("div");tr.className="cell blank";grid.appendChild(tr);}
+    if(shown===0){var note=document.createElement("div");note.className="empty-month";note.textContent="No matching events this month — try turning on more event types above, or use the arrows to browse other months.";grid.appendChild(note);}
+    renderRecur();
+  }
+  document.getElementById("prev").addEventListener("click",function(){view.m--;if(view.m<0){view.m=11;view.y--;}render();});
+  document.getElementById("next").addEventListener("click",function(){view.m++;if(view.m>11){view.m=0;view.y++;}render();});
+  document.getElementById("todayBtn").addEventListener("click",function(){view.y=TODAY.getFullYear();view.m=TODAY.getMonth();render();});
+
+  var scrim=document.getElementById("scrim");
+  function openModal(e){
+    var d=parseD(e.date);var past=isPast(e);
+    document.getElementById("mType").className="typepill "+(past?"past":e.type);
+    document.getElementById("mTypeLbl").textContent=TYPE_NAME[e.type];
+    document.getElementById("mTitle").textContent=e.title;
+    document.getElementById("mPast").hidden=!past;
+    document.getElementById("mDesc").textContent=e.desc;
+    var mem=document.getElementById("mMem");
+    if(e.members){mem.hidden=false;mem.textContent="⚑ "+e.members;}else{mem.hidden=true;}
+    document.getElementById("mMeta").innerHTML=
+      '<div><span class="k">When</span><span class="v">'+DOWF[d.getDay()]+', '+MON[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear()+(e.time?' · '+esc(e.time):'')+'</span></div>'+
+      '<div><span class="k">Where</span><span class="v">'+esc(e.loc)+'</span></div>'+
+      '<div><span class="k">Type</span><span class="v">'+TYPE_NAME[e.type]+'</span></div>'+
+      '<div><span class="k">Cost</span><span class="v">'+(e.cost?esc(e.cost):"See event page")+'</span></div>';
+    var reg=document.getElementById("mReg");
+    if(e.url){reg.href=e.url;reg.classList.remove("disabled");reg.textContent=(past?"View event page →":"Register / event details →");}
+    else{reg.removeAttribute("href");reg.classList.add("disabled");reg.textContent="Registration link coming soon";}
+    scrim.classList.add("open");
+    document.getElementById("closeModal").focus();
+  }
+  function closeModal(){scrim.classList.remove("open");}
+  document.getElementById("closeModal").addEventListener("click",closeModal);
+  scrim.addEventListener("click",function(ev){if(ev.target===scrim)closeModal();});
+  document.addEventListener("keydown",function(ev){if(ev.key==="Escape"){closeModal();closeFb();}});
+
+  // ---- feedback page ----
+  var fbPage=document.getElementById("fbPage");
+  function openFb(){fbPage.classList.add("open");document.getElementById("fbFormWrap").style.display="";document.getElementById("fbMsgOk").classList.remove("show");window.scrollTo(0,0);document.getElementById("fbName").focus();}
+  function closeFb(){fbPage.classList.remove("open");}
+  document.getElementById("openFb").addEventListener("click",openFb);
+  document.getElementById("fbBack").addEventListener("click",closeFb);
+  document.getElementById("fbBack2").addEventListener("click",closeFb);
+  document.getElementById("fbForm").addEventListener("submit",function(ev){
+    ev.preventDefault();
+    var msg=document.getElementById("fbMsg").value.trim();if(!msg)return;
+    var payload={name:document.getElementById("fbName").value.trim(),email:document.getElementById("fbEmail").value.trim(),event:document.getElementById("fbEvent").value.trim(),message:msg,source:"CBus Tech Circuit"};
+    function done(){document.getElementById("fbFormWrap").style.display="none";document.getElementById("fbMsgOk").classList.add("show");document.getElementById("fbForm").reset();}
+    if(FB_ENDPOINT){
+      fetch(FB_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(payload)}).then(done).catch(done);
+    }else{done();}
+  });
+
+  // ---- SEO structured data ----
+  try{
+    var ld=EVENTS.map(function(e){return {"@context":"https://schema.org","@type":"Event",name:e.title,startDate:e.date,eventAttendanceMode:"https://schema.org/OfflineEventAttendanceMode",location:{"@type":"Place",name:e.loc,address:"Columbus, OH"},description:e.desc,url:e.url};});
+    var s=document.createElement("script");s.type="application/ld+json";s.textContent=JSON.stringify(ld);document.head.appendChild(s);
+  }catch(err){}
+
+  syncChips();render();
+})();
+</script>
+
+</body>
+</html>
