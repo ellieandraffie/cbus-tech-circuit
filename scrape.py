@@ -673,6 +673,26 @@ def src_womenpm():
         sess.close()
 
 
+# Nicer, public-facing host names for the calendar UI ("hosted by X"), keyed by
+# SOURCES key. Falls back to the SOURCES label itself when a key isn't listed here.
+HOST_LABELS = {
+    "ohiox": "OhioX",
+    "techlife": "TechLife Columbus",
+    "dublinchamber": "Dublin Chamber of Commerce",
+    "startupgrind": "Startup Grind Columbus",
+    "eventbrite": "Eventbrite",
+    "luma_osn": "Luma",
+    "devevents": "dev.events",
+    "womenpm": "Women in Product — Columbus",
+    "ixda": "IxDA Columbus",
+    "producttank": "ProductTank Columbus",
+    "columbusai": "Columbus AI",
+    "aitinkerers": "AI Tinkerers Columbus",
+    "techlife_mu": "TechLife Columbus",
+    "witit": "Columbus WIT",
+    "worthington": "Worthington Area Chamber of Commerce",
+}
+
 SOURCES = {
     # key: (label, callable)
     "ohiox":        ("OhioX", src_ohiox),
@@ -779,6 +799,12 @@ def main():
         try:
             evs = fn() or []
             evs = [e for e in evs if within_window(e)]
+            for e in evs:
+                # Tag with the hosting org/group for display in the UI (e.g.
+                # "Dublin Chamber of Commerce"). A source function may already
+                # set a more precise host (e.g. from schema.org organizer.name);
+                # only fall back to the source's own label when it hasn't.
+                e.setdefault("host", HOST_LABELS.get(key, label))
             all_scraped.extend(evs)
             report.append("  OK    %-32s %2d upcoming event(s)" % (label, len(evs)))
         except urllib.error.HTTPError as e:

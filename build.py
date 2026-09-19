@@ -28,7 +28,7 @@ MONTHS_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 # Field order used when emitting each object (optional fields skipped if empty)
-EVENT_FIELDS = ["date", "title", "type", "time", "loc", "cost", "members", "free", "desc", "url"]
+EVENT_FIELDS = ["date", "title", "type", "host", "time", "loc", "cost", "members", "free", "desc", "url"]
 RECUR_FIELDS = ["title", "type", "note", "url"]
 
 

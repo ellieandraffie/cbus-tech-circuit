@@ -8,7 +8,8 @@
     "desc": "Created Conference 2026",
     "url": "https://www.eventbrite.com/e/created-conference-2026-tickets-1747064650399?aff=ebdssbdestsearch",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-09-21",
@@ -19,7 +20,8 @@
     "desc": "Join our 2 Days Online Live CSM training to master advanced Scrum practices, strengthen Agile leadership & lead high-performing Scrum teams",
     "url": "https://www.eventbrite.com/e/2-days-certified-scrummaster-csm-training-in-columbus-oh-tickets-2000019098964",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-09-21",
@@ -30,7 +32,8 @@
     "cost": "$85",
     "members": "Dublin Chamber event — member pricing may apply.",
     "desc": "Dublin Chamber social — taste 35+ California wines while connecting with local business owners.",
-    "url": "https://www.dublinchamber.org/events"
+    "url": "https://www.dublinchamber.org/events",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-09-21",
@@ -39,7 +42,8 @@
     "time": "See event page",
     "loc": "Columbus",
     "desc": "Women in Product Columbus — 'Delegate & Elevate: Making Space for Your Best Work.' Talks, mentorship & networking for women in product. (Time & venue on the event page.)",
-    "url": "https://community.womenpm.org/c/all-local-events/delegate-elevate-unwind"
+    "url": "https://community.womenpm.org/c/all-local-events/delegate-elevate-unwind",
+    "host": "Women in Product — Columbus"
   },
   {
     "date": "2026-09-22",
@@ -50,7 +54,8 @@
     "desc": "***\\*\\*GUESTS MUST REGISTER THROUGH PMI CENTRAL OHIO: https://www.pmicoc.org/2026pdd\\*\\**** # About Professional Development Day PMICOC's Professional Development Day (PDD) is the pinnacle event for project management professionals in Central Ohio. It offers a curated agenda of k",
     "url": "https://www.meetup.com/techlifecolumbus/events/315903978/",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "TechLife Columbus"
   },
   {
     "date": "2026-09-22",
@@ -62,7 +67,8 @@
     "desc": "BMI Federal Credit Union Presents Financial Wellness Check-in Webinar Series First Session",
     "url": "https://www.dublinchamber.org/events/details/bmi-federal-credit-union-presents-financial-wellness-check-in-webinar-series-first-session-12754",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-09-22",
@@ -73,7 +79,8 @@
     "desc": "The Economic Development Academy is a one-of-a kind training program for community officials and leaders in Central Ohio.",
     "url": "https://www.eventbrite.com/e/morpc-economic-development-academy-tickets-1993344905271",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-09-23",
@@ -84,7 +91,8 @@
     "desc": "Hands-on AI workshop for business owners. Cut through the buzzwords, see real tools in action, and leave with your own AI action plan.",
     "url": "https://www.eventbrite.com/e/ai-workshop-for-business-owners-the-genie-is-out-of-the-bottle-tickets-1996185891738",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-09-24",
@@ -94,7 +102,8 @@
     "loc": "Chicken Salad Chick, Dublin",
     "members": "Dublin Chamber program — verify member pricing.",
     "desc": "Casual small-group Chamber lunch — an easy, low-pressure way to meet Dublin-area professionals.",
-    "url": "https://www.dublinchamber.org/events/register/12586"
+    "url": "https://www.dublinchamber.org/events/register/12586",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-09-24",
@@ -106,7 +115,8 @@
     "desc": "Skin Spirit Grand Opening with Exclusive Chamber Member Discounts",
     "url": "https://www.dublinchamber.org/events/details/skin-spirit-grand-opening-with-exclusive-chamber-member-discounts-12748",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-09-24",
@@ -117,7 +127,8 @@
     "desc": "Where Innovation Meets Craftsmanship",
     "url": "https://www.eventbrite.com/e/zahn-lab-live-in-columbus-oh-tickets-1992786332565",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-09-29",
@@ -128,7 +139,8 @@
     "desc": "Big Table: Mental Health and Entrepreneurship",
     "url": "https://www.eventbrite.com/e/big-table-mental-health-and-entrepreneurship-tickets-1997779900461?aff=ebdssbdestsearch",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-09-29",
@@ -139,7 +151,8 @@
     "desc": "Raising & Investing Summit 2.0 - Virtual (Columbus, Ohio)",
     "url": "https://www.eventbrite.com/e/raising-investing-summit-20-virtual-columbus-ohio-tickets-1998956872817?aff=ebdssbdestsearch",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-09-29",
@@ -149,7 +162,8 @@
     "loc": "Dublin (Chamber flagship)",
     "members": "Dublin Chamber flagship — member pricing may apply.",
     "desc": "The Chamber's signature networking event of the year — food, drinks, and the widest local business turnout of the season.",
-    "url": "https://www.dublinchamber.org/events/register/12630"
+    "url": "https://www.dublinchamber.org/events/register/12630",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-09-30",
@@ -161,7 +175,8 @@
     "desc": "Cornerstone of Hope presents Grief Matters Free Workshop: Journaling For Grief",
     "url": "https://www.dublinchamber.org/events/details/cornerstone-of-hope-presents-grief-matters-free-workshop-journaling-for-grief-12764",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-01",
@@ -172,7 +187,8 @@
     "desc": "A hands-on website workshop for wellness providers who want a website that builds trust and attracts the right clients.",
     "url": "https://www.eventbrite.com/e/workshop-your-website-tickets-2001236287608",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-10-02",
@@ -183,7 +199,8 @@
     "desc": "Join other experienced and aspiring agile coaches and professionals to: * develop and practice your coaching skills in a peer-to-peer environment * share current successes and challenges in your work environment and get support from each other * learn from each other, build bette",
     "url": "https://www.meetup.com/techlifecolumbus/events/316554777/",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "TechLife Columbus"
   },
   {
     "date": "2026-10-03",
@@ -195,7 +212,8 @@
     "desc": "BMI Federal Credit Union Medicare 101 Workshop",
     "url": "https://www.dublinchamber.org/events/details/bmi-federal-credit-union-medicare-101-12759",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-05",
@@ -207,7 +225,8 @@
     "url": "https://columbus.aitinkerers.org/p/ai-tinkerers-columbus-october-meetup",
     "free": true,
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "AI Tinkerers Columbus"
   },
   {
     "date": "2026-10-05",
@@ -218,7 +237,8 @@
     "url": "https://www.techlifecolumbus.com/events/",
     "type": "work",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "TechLife Columbus"
   },
   {
     "date": "2026-10-06",
@@ -227,7 +247,8 @@
     "time": "4:30–6:30pm",
     "loc": "Columbus (OhioX)",
     "desc": "Relaxed after-work meetup for Columbus technologists, founders and startup folks. One of the easiest doors into the local startup community.",
-    "url": "https://www.ohiox.org/events"
+    "url": "https://www.ohiox.org/events",
+    "host": "OhioX"
   },
   {
     "date": "2026-10-07",
@@ -239,7 +260,8 @@
     "desc": "Ambassador Club Meeting",
     "url": "https://www.dublinchamber.org/events/register/12532",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-07",
@@ -249,7 +271,8 @@
     "loc": "Dublin (Chamber)",
     "members": "Dublin Chamber event — verify member vs. guest access.",
     "desc": "Discussion-format session with U.S. Representative Mike Carey and local business leaders.",
-    "url": "https://www.dublinchamber.org/events/register/12785"
+    "url": "https://www.dublinchamber.org/events/register/12785",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-07",
@@ -260,7 +283,8 @@
     "desc": "This interactive workshop moderated by Planning NEXT will explore challenges and opportunities presented by data centers.",
     "url": "https://www.eventbrite.com/e/navigating-data-center-growth-tools-for-local-decision-making-tickets-1999695695656",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-10-08",
@@ -270,7 +294,8 @@
     "loc": "Dublin Chamber (w/ Jely Creative)",
     "members": "Dublin Chamber event — verify member vs. guest access.",
     "desc": "Hands-on website-audit workshop led by Jely Creative — practical marketing and web-presence guidance for local businesses.",
-    "url": "https://www.dublinchamber.org/events/register/12770"
+    "url": "https://www.dublinchamber.org/events/register/12770",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-08",
@@ -282,7 +307,8 @@
     "desc": "Taste Of Hope: A Premier Culinary Experience Benefiting Cornerstone of Hope",
     "url": "https://www.dublinchamber.org/events/details/taste-of-hope-a-premier-culinary-experience-benefiting-cornerstone-of-hope-12760",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-09",
@@ -294,7 +320,8 @@
     "desc": "Sales Connection Breakfast Series",
     "url": "https://www.dublinchamber.org/events/register/12544",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-11",
@@ -305,7 +332,8 @@
     "desc": "Join local entrepreneurs, creators, and business owners for an evening of networking, collaboration, and business growth.",
     "url": "https://www.eventbrite.com/e/pit-stop-a-business-networking-growth-experience-tickets-1998989409134",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-10-13",
@@ -315,7 +343,8 @@
     "loc": "Columbus (OhioX)",
     "members": "Aimed at senior enterprise tech leaders — confirm eligibility.",
     "desc": "Invitation-style morning roundtable for senior enterprise technology leaders on applied AI. Aimed at a senior/leadership audience — confirm eligibility when registering.",
-    "url": "https://www.ohiox.org/events"
+    "url": "https://www.ohiox.org/events",
+    "host": "OhioX"
   },
   {
     "date": "2026-10-14",
@@ -326,7 +355,8 @@
     "desc": "getWITit Columbus — Columbus WITCON 2026",
     "url": "https://events.humanitix.com/columbus-witcon-2026",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Columbus WIT"
   },
   {
     "date": "2026-10-14",
@@ -338,7 +368,8 @@
     "desc": "Dublin Chamber's Marketing Strategy Workshop:Using Organic Social Media as an Asset for Visibility & Client Attraction with Allure Atelier Studio",
     "url": "https://www.dublinchamber.org/events/register/12771",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-15",
@@ -349,7 +380,8 @@
     "desc": "NFT's are here to stay folks! This is a group for like minded people interested in understanding, leveraging, using, creating for, profiting from, trading too i suppose, NFT's.. everything around them, complexity, fear and exploits, best practices and more. **PLUS** This group wi",
     "url": "https://www.meetup.com/techlifecolumbus/events/mmzstsyjcnbtb/",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "TechLife Columbus"
   },
   {
     "date": "2026-10-15",
@@ -361,7 +393,8 @@
     "desc": "Women In Business Luncheon with Guest Speaker Kristopher Kline, DO",
     "url": "https://www.dublinchamber.org/events/register/12588",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-16",
@@ -373,7 +406,8 @@
     "desc": "NSA Ohio's Communication Mastery Conference\nmaster the art of communication, sharpen presentation skills",
     "url": "https://www.dublinchamber.org/events/details/nsa-ohio-s-communication-mastery-2026-12663",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-19",
@@ -384,7 +418,8 @@
     "desc": "Practical AI strategies, real use cases, and honest lessons from leaders putting AI to work across business, operations, and technology.",
     "url": "https://www.eventbrite.com/e/ai-rising-conference-beyond-the-hype-tickets-1982893760616",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-10-20",
@@ -396,7 +431,8 @@
     "desc": "BMI Federal Credit Union Presents Financial Wellness Check-in Webinar Series Second Session",
     "url": "https://www.dublinchamber.org/events/details/bmi-federal-credit-union-presents-financial-wellness-check-in-webinar-series-second-session-12755",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-20",
@@ -408,7 +444,8 @@
     "desc": "Business After Hours Networking Hosted by Waxing the City and Shawnee Station Taproom & Kitchen",
     "url": "https://www.dublinchamber.org/events/register/12566",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-20",
@@ -419,7 +456,8 @@
     "desc": "Join us to learn how healthcare leaders are helping their organizations thrive in times of uncertainty and change.",
     "url": "https://www.eventbrite.com/e/pushing-through-the-headwinds-building-resilient-intelligent-healthcare-tickets-1999045031502",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-10-21",
@@ -431,7 +469,8 @@
     "desc": "Dublin Chamber's Marketing Strategy Workshop: AI Is the New SEO for Small Business",
     "url": "https://www.dublinchamber.org/events/register/12772",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-21",
@@ -442,7 +481,8 @@
     "desc": "A no-agenda event for new and old Ohioans interested in connecting with other founders, investors, artists, and community folks. ​​",
     "url": "https://www.eventbrite.com/e/ohio-tech-happy-hour-featuring-gagan-timsina-the-columbus-report-tickets-1993965120351",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-10-22",
@@ -454,7 +494,8 @@
     "desc": "Lunch Bunch at Firehouse Subs",
     "url": "https://www.dublinchamber.org/events/register/12589",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-24",
@@ -463,7 +504,8 @@
     "time": "3:00pm",
     "loc": "Columbus (TechLife Columbus)",
     "desc": "TechLife Columbus's community launch party — a big, casual celebration of the local tech scene.",
-    "url": "https://www.techlifecolumbus.com/events/"
+    "url": "https://www.techlifecolumbus.com/events/",
+    "host": "TechLife Columbus"
   },
   {
     "date": "2026-10-27",
@@ -475,7 +517,8 @@
     "desc": "Leadership Dublin - Class of 2027",
     "url": "https://www.dublinchamber.org/events/register/12749",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-27",
@@ -487,7 +530,8 @@
     "desc": "Morning Brew Business Breakfast hosted by The Winchester Institute",
     "url": "https://www.dublinchamber.org/events/register/12556",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-28",
@@ -498,7 +542,8 @@
     "desc": "Where Education Meets Ohio’s Innovation Economy. Join leaders from education, tech, innovation, and government.",
     "url": "https://www.eventbrite.com/e/2026-ohios-future-workforce-summit-powered-by-ohiox-tickets-1996722314192",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-10-28",
@@ -510,7 +555,8 @@
     "desc": "Cornerstone of Hope presents Grief Matters Free Workshop: Grief Coffee House",
     "url": "https://www.dublinchamber.org/events/details/cornerstone-of-hope-presents-grief-matters-free-workshop-grief-coffee-house-12765",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-04",
@@ -522,7 +568,8 @@
     "desc": "Ambassador Club Meeting",
     "url": "https://www.dublinchamber.org/events/register/12533",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-04",
@@ -534,7 +581,8 @@
     "desc": "Dublin Chamber's Marketing Strategy Workshop: Using Organic Social Media as an Asset for Visibility & Client Attraction - Part 2",
     "url": "https://www.dublinchamber.org/events/register/12773",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-04",
@@ -545,7 +593,8 @@
     "desc": "Strive welcomes you to 'Engineering and Business Networking', an event for tenured and newcomers at Mainline! Event is  21+.Limited Tickets.",
     "url": "https://www.eventbrite.com/e/engineering-and-business-networking-elevating-your-potential-columbus-tickets-1996424814362",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Eventbrite"
   },
   {
     "date": "2026-11-05",
@@ -556,7 +605,8 @@
     "url": "https://www.techlifecolumbus.com/events/",
     "type": "net",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "TechLife Columbus"
   },
   {
     "date": "2026-11-05",
@@ -568,7 +618,8 @@
     "desc": "Talent Science Human Resources Workshop with Guest Speaker Jonathan Nguyen",
     "url": "https://www.dublinchamber.org/events/register/12568",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-10",
@@ -580,7 +631,8 @@
     "desc": "Lunch Bunch Rusty Bucket Restaurant & Tavern",
     "url": "https://www.dublinchamber.org/events/register/12590",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-12",
@@ -592,7 +644,8 @@
     "desc": "Dublin Chamber's Marketing Strategy Workshop: Marketing Strategy Fundamentals",
     "url": "https://www.dublinchamber.org/events/register/12774",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-13",
@@ -604,7 +657,8 @@
     "desc": "Sales Connection Breakfast Series - Topic: Relationship First Sales Approach with Guest Speaker John O'Connell",
     "url": "https://www.dublinchamber.org/events/register/12545",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-17",
@@ -616,7 +670,8 @@
     "desc": "BMI Federal Credit Union Presents Financial Wellness Check-in Webinar Series Third Session",
     "url": "https://www.dublinchamber.org/events/details/bmi-federal-credit-union-presents-financial-wellness-check-in-webinar-series-third-sessiom-12756",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-17",
@@ -628,7 +683,8 @@
     "desc": "Business After Hours Networking hosted by Magge's Cleaning",
     "url": "https://www.dublinchamber.org/events/register/12567",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-18",
@@ -640,7 +696,8 @@
     "desc": "Cornerstone of Hope presents Grief Matters Free Workshop: Honoring Holiday Grief",
     "url": "https://www.dublinchamber.org/events/details/cornerstone-of-hope-presents-grief-matters-free-workshop-honoring-holiday-grief-12766",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-18",
@@ -652,7 +709,8 @@
     "desc": "Dublin Chamber's Marketing Strategy Workshop: Your Marketing Game Plan - An Interactive Workshop to Build Your Marketing Plan for the Year Ahead",
     "url": "https://www.dublinchamber.org/events/register/12775",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-18",
@@ -662,7 +720,8 @@
     "loc": "Columbus (OhioX)",
     "cost": "Ticketed",
     "desc": "OhioX's statewide, full-day summit on AI development and deployment across Ohio — speakers, sessions and heavy networking.",
-    "url": "https://www.ohiox.org/events"
+    "url": "https://www.ohiox.org/events",
+    "host": "OhioX"
   },
   {
     "date": "2026-11-19",
@@ -673,7 +732,8 @@
     "desc": "NFT's are here to stay folks! This is a group for like minded people interested in understanding, leveraging, using, creating for, profiting from, trading too i suppose, NFT's.. everything around them, complexity, fear and exploits, best practices and more. **PLUS** This group wi",
     "url": "https://www.meetup.com/techlifecolumbus/events/mmzstsyjcpbzb/",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "TechLife Columbus"
   },
   {
     "date": "2026-11-19",
@@ -685,7 +745,8 @@
     "desc": "Women In Business Luncheon with Guest Speaker Dr. Margaret Gatti-Mays with The Ohio State Wexner Medical Center",
     "url": "https://www.dublinchamber.org/events/register/12577",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-12-02",
@@ -697,7 +758,8 @@
     "desc": "Ambassador Club Meeting",
     "url": "https://www.dublinchamber.org/events/register/12534",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-12-02",
@@ -708,7 +770,8 @@
     "desc": "Join us for the first State of AI - Columbus on Wednesday, December 2nd. Exchange ideas, forge key connections, and discuss how local talent is driving AI innovation right here in Ohio.",
     "url": "https://www.ohiox.org/events/state-of-ai-columbus",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "OhioX"
   },
   {
     "date": "2026-12-09",
@@ -719,7 +782,8 @@
     "url": "https://www.techlifecolumbus.com/events/",
     "type": "social",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "TechLife Columbus"
   },
   {
     "date": "2026-12-11",
@@ -731,7 +795,8 @@
     "desc": "2026 Recognition Luncheon Featuring the Spotlight Dublin Award",
     "url": "https://www.dublinchamber.org/events/register/12593",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-12-11",
@@ -743,7 +808,8 @@
     "desc": "Sales Connection Breakfast Series: Proactively Drive 15%-30% Predictable Revenue Growth with Matt Bowers",
     "url": "https://www.dublinchamber.org/events/register/12546",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-12-16",
@@ -755,7 +821,8 @@
     "desc": "Dublin Chamber of Commerce Government Affairs Committee Meeting",
     "url": "https://www.dublinchamber.org/events/register/12592",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-12-17",
@@ -766,6 +833,7 @@
     "desc": "NFT's are here to stay folks! This is a group for like minded people interested in understanding, leveraging, using, creating for, profiting from, trading too i suppose, NFT's.. everything around them, complexity, fear and exploits, best practices and more. **PLUS** This group wi",
     "url": "https://www.meetup.com/techlifecolumbus/events/mmzstsyjcqbwb/",
     "_source": "scrape",
-    "_added": "2026-09-19"
+    "_added": "2026-09-19",
+    "host": "TechLife Columbus"
   }
 ]
