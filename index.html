@@ -159,8 +159,7 @@
   .recur summary:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
   .legend h3{font-family:var(--font-display);font-weight:700;font-size:18px;margin:0 0 12px;letter-spacing:-.01em}
   .recur-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-top:16px}
-  .rc{background:var(--surface);border:1px solid var(--hair);border-left-width:4px;border-radius:10px;padding:10px 12px}
-  .rc.net{border-left-color:var(--net)} .rc.conf{border-left-color:var(--conf)} .rc.round{border-left-color:var(--round)} .rc.work{border-left-color:var(--work)} .rc.social{border-left-color:var(--social)}
+  .rc{background:var(--surface);border:1px solid var(--hair);border-left-width:4px;border-left-color:var(--teal);border-radius:10px;padding:10px 12px}
   .rc .t{font-weight:600;font-size:13.5px}
   .rc .m{font-size:12px;color:var(--ink-soft);margin-top:2px}
   a.rc{text-decoration:none;color:inherit;display:block;transition:border-color .12s,box-shadow .12s}
@@ -518,7 +517,7 @@
   function renderRecur(){
     var rg=document.getElementById("recurGrid");rg.innerHTML="";
     RECURRING.filter(function(r){return active[r.type];}).forEach(function(r){
-      var el=document.createElement(r.url?"a":"div");el.className="rc "+r.type+(r.url?" link":"");
+      var el=document.createElement(r.url?"a":"div");el.className="rc"+(r.url?" link":"");
       if(r.url){el.href=r.url;el.target="_blank";el.rel="noopener noreferrer";}
       el.innerHTML='<div class="t">'+esc(r.title)+' <span style="font-weight:400;color:var(--ink-faint);font-size:11px">'+TYPE_NAME[r.type].split(" ")[0]+(r.url?' &#8599;':'')+'</span></div><div class="m">'+esc(r.note)+'</div>';
       rg.appendChild(el);
