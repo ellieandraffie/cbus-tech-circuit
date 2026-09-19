@@ -22,7 +22,7 @@
   gtag('js', new Date());
   gtag('config', 'G-3Y16FP5YM5');
 </script>
-<!-- FORMSPREE: set FB_ENDPOINT in the inline script to your form URL to enable the feedback form -->
+<!-- Feedback form powered by Web3Forms (access key set in the inline script below) -->
 <title>CBus Tech Calendar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -382,8 +382,9 @@
 (function(){
   "use strict";
   var TYPE_NAME={net:"Networking / mixer",conf:"Conference / summit",round:"Roundtable",work:"Workshop / talk",social:"Social / community"};
-  // Feedback posts to this endpoint (Formspree or similar) so the visitor never sees the destination email. Set at deploy.
-  var FB_ENDPOINT="";
+  // Feedback posts to Web3Forms so the visitor never sees the destination email.
+  var FB_ENDPOINT="https://api.web3forms.com/submit";
+  var FB_ACCESS_KEY="c96dced7-28d5-4569-a4d2-d6491339d6d9";
 
   var EVENTS=[
     {date:"2026-09-21",title:"Tucci's California Wine Tasting",type:"social",time:"Evening",loc:"Tucci's, Historic Dublin",cost:"$85",members:"Dublin Chamber event — member pricing may apply.",desc:"Dublin Chamber social — taste 35+ California wines while connecting with local business owners.",url:"https://www.dublinchamber.org/events"},
@@ -524,7 +525,7 @@
   document.getElementById("fbForm").addEventListener("submit",function(ev){
     ev.preventDefault();
     var msg=document.getElementById("fbMsg").value.trim();if(!msg)return;
-    var payload={name:document.getElementById("fbName").value.trim(),email:document.getElementById("fbEmail").value.trim(),event:document.getElementById("fbEvent").value.trim(),message:msg,source:"CBus Tech Calendar"};
+    var payload={access_key:FB_ACCESS_KEY,name:document.getElementById("fbName").value.trim(),email:document.getElementById("fbEmail").value.trim(),event:document.getElementById("fbEvent").value.trim(),message:msg,subject:"CBus Tech Calendar — feedback",from_name:"CBus Tech Calendar"};
     function done(){document.getElementById("fbFormWrap").style.display="none";document.getElementById("fbMsgOk").classList.add("show");document.getElementById("fbForm").reset();}
     if(FB_ENDPOINT){
       fetch(FB_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(payload)}).then(done).catch(done);
