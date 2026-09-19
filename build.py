@@ -68,6 +68,7 @@ def emit_obj(obj, fields):
 
 
 def emit_array(var_name, items, fields):
+    """Render a JS array literal: `  var NAME=[\\n    {..},\\n    {..}\\n  ];`"""
     lines = ["  var %s=[" % var_name]
     body = [emit_obj(o, fields) for o in items]
     lines.append(",\n".join(body))
@@ -76,14 +77,19 @@ def emit_array(var_name, items, fields):
 
 
 def replace_region(src, name, new_body):
-    """Replace the text between /* CTC:name:START ... */ and /* CTC:name:END */."""
-    pat = re.compile(
-        r"(/\* CTC:%s:START[^\n]*\*/\n)(.*?)(\n\s*/\* CTC:%s:END \*/)" % (name, name),
-        re.S,
-    )
+    """
+    Replace a `var NAME=[ ... \\n  ];` array assignment in the inline script.
+
+    We anchor on the assignment itself (not on marker comments) so the build
+    survives hand-edits to index.html: the array always closes with a newline +
+    two-space indent + `];`, and no event/recurring object contains that
+    sequence, so the non-greedy match lands on the real array end.
+    """
+    pat = re.compile(r"  var %s=\[.*?\n  \];" % name, re.S)
     if not pat.search(src):
-        raise SystemExit("ERROR: could not find %s markers in index.html" % name)
-    return pat.sub(lambda m: m.group(1) + new_body + m.group(3), src)
+        raise SystemExit("ERROR: could not find `var %s=[...]` in index.html" % name)
+    # re.sub treats backslashes in the replacement specially — pass a function
+    return pat.sub(lambda m: new_body, src, count=1)
 
 
 def build(today=None):
