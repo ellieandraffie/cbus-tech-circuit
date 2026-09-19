@@ -148,9 +148,14 @@
   .ev.past .badge{color:var(--past)!important;background:rgba(0,0,0,.04)}
   .empty-month{padding:30px 16px;text-align:center;color:var(--ink-faint);font-size:13.5px;grid-column:1/-1}
 
-  .recur{margin-top:26px}
-  .recur h3,.legend h3{font-family:var(--font-display);font-weight:700;font-size:18px;margin:0 0 12px;letter-spacing:-.01em}
-  .recur-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+  .recur{margin-top:26px;background:var(--surface);border:1px solid var(--hair);border-radius:16px;padding:16px 18px;box-shadow:var(--shadow)}
+  .recur summary{font-family:var(--font-display);font-weight:700;font-size:16px;letter-spacing:-.01em;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;color:var(--ink)}
+  .recur summary::-webkit-details-marker{display:none}
+  .recur summary::before{content:"›";display:inline-block;font-size:20px;line-height:1;color:var(--brand-ink);transition:transform .15s;transform:rotate(0deg)}
+  .recur[open] summary::before{transform:rotate(90deg)}
+  .recur summary:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
+  .legend h3{font-family:var(--font-display);font-weight:700;font-size:18px;margin:0 0 12px;letter-spacing:-.01em}
+  .recur-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-top:16px}
   .rc{background:var(--surface);border:1px solid var(--hair);border-left-width:4px;border-radius:10px;padding:10px 12px}
   .rc.net{border-left-color:var(--net)} .rc.conf{border-left-color:var(--conf)} .rc.round{border-left-color:var(--round)} .rc.work{border-left-color:var(--work)} .rc.social{border-left-color:var(--social)}
   .rc .t{font-weight:600;font-size:13.5px}
@@ -286,10 +291,10 @@
     <div class="grid" id="grid"></div>
   </div>
 
-  <section class="recur">
-    <h3>Recurring &amp; ongoing</h3>
+  <details class="recur">
+    <summary>Calendar sources — recurring groups &amp; meetups</summary>
     <div class="recur-grid" id="recurGrid"></div>
-  </section>
+  </details>
 
   <section class="legend">
     <h3>Key</h3>
