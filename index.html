@@ -264,7 +264,7 @@
       <p class="tag">A curated calendar of <b>tech, startup &amp; professional networking and social events</b> across Columbus, Dublin &amp; the metro. Filter by type, tap any event for cost, location &amp; sign-up.</p>
       <div class="stamp">
         <span class="live"><span class="dot"></span>Updated weekly</span>
-        <span>Last refreshed: <b id="refreshed">Sep 19, 2026</b></span>
+        <span>Last refreshed: <b id="refreshed">Sep 25, 2026</b></span>
         <span>Showing: Sep&ndash;Nov 2026</span>
       </div>
     </div>
@@ -486,8 +486,8 @@
   ];
 
   var active={net:true,conf:true,round:true,work:true,social:true};
-  var TODAY=new Date(2026,8,19);TODAY.setHours(0,0,0,0);
-  var view={y:2026,m:8};
+  var TODAY=new Date();TODAY.setHours(0,0,0,0);
+  var view={y:TODAY.getFullYear(),m:TODAY.getMonth()};
   var MON=["January","February","March","April","May","June","July","August","September","October","November","December"];
   var DOWF=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 

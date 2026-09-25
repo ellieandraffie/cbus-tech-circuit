@@ -169,14 +169,6 @@ def build(today=None):
     src = re.sub(r'(<b id="refreshed">)[^<]*(</b>)',
                  lambda m: m.group(1) + refreshed + m.group(2), src)
 
-    # TODAY var drives which events are greyed as "past" — keep it current
-    src = re.sub(r'var TODAY=new Date\(\d+,\d+,\d+\)',
-                 'var TODAY=new Date(%d,%d,%d)' % (today.year, today.month - 1, today.day), src)
-
-    # open the calendar on the current month
-    src = re.sub(r'var view=\{y:\d+,m:\d+\}',
-                 'var view={y:%d,m:%d}' % (today.year, today.month - 1), src)
-
     # "Showing: Sep–Nov 2026" — current month through +2 months
     end = today.month - 1 + 2
     end_year = today.year + end // 12
