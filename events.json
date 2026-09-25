@@ -131,6 +131,18 @@
     "host": "Eventbrite"
   },
   {
+    "date": "2026-09-26",
+    "title": "2 Days Certified Scrum Product Owner (CSPO) Training in Columbus, OH",
+    "type": "work",
+    "time": "See event page",
+    "loc": "Regus Columbus",
+    "desc": "Join our 2 Days CSPO training to maximize product value and elevate your Product Ownership skills",
+    "url": "https://www.eventbrite.com/e/2-days-certified-scrum-product-owner-cspo-training-in-columbus-oh-tickets-2000952840811",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-09-25"
+  },
+  {
     "date": "2026-09-29",
     "title": "Big Table: Mental Health and Entrepreneurship",
     "type": "net",
@@ -216,6 +228,18 @@
     "host": "Dublin Chamber of Commerce"
   },
   {
+    "date": "2026-10-03",
+    "title": "Now Foundation Quarterly Symposium 26'",
+    "type": "conf",
+    "time": "See event page",
+    "loc": "4590 E Broad St Columbus",
+    "desc": "Build. Learn. Elevate. — NOW Foundation Quarterly Symposium",
+    "url": "https://www.eventbrite.com/e/now-foundation-quarterly-symposium-26-tickets-1998987286786",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-09-25"
+  },
+  {
     "date": "2026-10-05",
     "title": "AI Tinkerers - Columbus October Meetup",
     "type": "work",
@@ -262,6 +286,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Dublin Chamber of Commerce"
+  },
+  {
+    "date": "2026-10-07",
+    "title": "Data & Analytics Wednesday - Fighting Hunger with Data",
+    "type": "work",
+    "time": "6:30 PM",
+    "loc": "Rev1 Ventures, Columbus",
+    "desc": "**Beyond the Numbers: How Mid-Ohio Food Collective Combines Data, Customer Insights, and Human-Centered Design to Fight Hunger** Data tells us what is happening. Customer stories help us understand why. So, what happens when dashboards and lived experience are brought together? I",
+    "url": "https://www.meetup.com/techlifecolumbus/events/316679028/",
+    "host": "TechLife Columbus",
+    "_source": "scrape",
+    "_added": "2026-09-25"
   },
   {
     "date": "2026-10-07",
@@ -370,6 +406,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Dublin Chamber of Commerce"
+  },
+  {
+    "date": "2026-10-14",
+    "title": "MORPC Economic Development Academy",
+    "type": "work",
+    "time": "See event page",
+    "loc": "Mid-Ohio Regional Planning Commission Columbus",
+    "desc": "The Economic Development Academy is a one-of-a kind training program for community officials and leaders in Central Ohio.",
+    "url": "https://www.eventbrite.com/e/morpc-economic-development-academy-tickets-1993344916304",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-09-25"
   },
   {
     "date": "2026-10-15",
