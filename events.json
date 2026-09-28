@@ -143,6 +143,18 @@
     "_added": "2026-09-25"
   },
   {
+    "date": "2026-09-28",
+    "title": "2 Days Certified ScrumMaster (CSM) Training in Columbus, OH",
+    "type": "work",
+    "time": "See event page",
+    "loc": "Regus Columbus",
+    "desc": "Join our 2 Days CSM training to master advanced Scrum practices, strengthen Agile leadership & lead high-performing Scrum teams",
+    "url": "https://www.eventbrite.com/e/2-days-certified-scrummaster-csm-training-in-columbus-oh-tickets-2000019101973",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-09-28"
+  },
+  {
     "date": "2026-09-29",
     "title": "Big Table: Mental Health and Entrepreneurship",
     "type": "net",
@@ -213,6 +225,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "TechLife Columbus"
+  },
+  {
+    "date": "2026-10-02",
+    "title": "IxDA Chat ‘n Pancakes",
+    "type": "net",
+    "time": "8:00 AM",
+    "loc": "Metsi's, Columbus",
+    "desc": "Join the local UX and Design community for our casual monthly breakfast meetup. The [food menu](https://www.metsisitalian.com/park-service-coffee-breakfast) is a little limited this time, but we're all going to want the [little ricotta donut balls](https://images.squarespace-cdn.",
+    "url": "https://www.meetup.com/columbus-ixda-group/events/316713201/",
+    "host": "IxDA Columbus",
+    "_source": "scrape",
+    "_added": "2026-09-28"
   },
   {
     "date": "2026-10-03",
