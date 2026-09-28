@@ -94,5 +94,11 @@
     "type": "net",
     "note": "Local business events. Currently blocked from auto-scraping (site bot-check) — checked manually.",
     "url": "https://www.worthingtonchamber.org/events"
+  },
+  {
+    "title": "DevOps Columbus",
+    "type": "net",
+    "note": "DevOps professionals & the DevOps-curious — social meetups + talks.",
+    "url": "https://www.meetup.com/devops-columbus/"
   }
 ]

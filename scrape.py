@@ -546,7 +546,10 @@ def src_meetup(slug, local_default=None):
 
 def src_witit_columbus():
     """getWITit's Columbus chapter page is a Webflow CMS collection — server-
-    rendered, no JS needed. One upcoming-event card per event."""
+    rendered, no JS needed. One upcoming-event card per regular event, plus an
+    optional 'event-highlight-strip' promo banner used for one-off flagship
+    events (e.g. an anniversary gala). The banner uses different markup and a
+    year-less date ('Dec 12th') that we infer relative to TODAY."""
     page = fetch("https://getwitit.org/chapters/columbus")
     out = []
     for m in re.finditer(r'<a href="([^"]+)" class="upcoming-event_card[^"]*">(.*?)</a>', page, re.S):
@@ -567,6 +570,33 @@ def src_witit_columbus():
         out.append({
             "date": d.isoformat(), "title": title, "type": classify(title),
             "time": time_str, "loc": city or "Columbus",
+            "desc": "getWITit Columbus — " + title, "url": href,
+        })
+
+    months = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+              "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12}
+    for m in re.finditer(
+        r'event-highlight-strip[^"]*"><div><h3[^>]*>([^<]+)</h3>'
+        r'<h4[^>]*>([^<]+)</h4><a href="([^"]+)"',
+        page, re.S,
+    ):
+        title, subtitle, href = m.groups()
+        title = html.unescape(title.strip())
+        date_txt, _, loc_txt = html.unescape(subtitle).partition("●")
+        date_m = re.search(r'([A-Za-z]+)\s+(\d{1,2})', date_txt)
+        mon = months.get(date_m.group(1)[:3].lower()) if date_m else None
+        if not mon:
+            continue
+        day = int(date_m.group(2))
+        try:
+            d = datetime.date(TODAY.year, mon, day)
+        except ValueError:
+            continue
+        if d < TODAY:
+            d = datetime.date(TODAY.year + 1, mon, day)
+        out.append({
+            "date": d.isoformat(), "title": title, "type": classify(title),
+            "time": "See event page", "loc": loc_txt.strip() or "Columbus",
             "desc": "getWITit Columbus — " + title, "url": href,
         })
     return out
@@ -691,6 +721,7 @@ HOST_LABELS = {
     "techlife_mu": "TechLife Columbus",
     "witit": "Columbus WIT",
     "worthington": "Worthington Area Chamber of Commerce",
+    "devops": "DevOps Columbus",
 }
 
 SOURCES = {
@@ -711,6 +742,7 @@ SOURCES = {
     "techlife_mu":  ("TechLife (Meetup)", lambda: src_meetup("techlifecolumbus", local_default="Columbus")),
     "witit":        ("Columbus WIT (getWITit)", src_witit_columbus),
     "worthington":  ("Worthington Chamber", src_worthington_chamber),
+    "devops":       ("DevOps Columbus (Meetup)", lambda: src_meetup("devops-columbus", local_default="Columbus")),
 }
 
 

@@ -70,8 +70,9 @@ unaffected.
 | Columbus AI (Meetup) | Meetup adapter | ✅ working, 0 in-window — same |
 | AI Tinkerers Columbus | plain fetch → JSON-LD (nested ItemList) | ✅ working (2 in-window) |
 | TechLife (Meetup) | Meetup adapter | ✅ working (8 in-window) |
-| **Columbus WIT (getWITit)** *(new)* | plain fetch, Webflow CMS markup | ✅ working (1 in-window: Columbus WITCON 2026, Oct 14) |
-| **Worthington Chamber** *(new)* | headless render attempted | ❌ **known limitation** — `worthingtonchamber.org` sits behind a Cloudflare Turnstile bot-check that blocks both plain fetch and headless Chromium (confirmed manually). **Fallback: manual quarterly check** of `https://www.worthingtonchamber.org/events`. Do not fight this with stealth/anti-detection tooling — not worth the brittleness for one chamber's calendar. |
+| **Columbus WIT (getWITit)** | plain fetch, Webflow CMS markup | ✅ working (2 in-window: Columbus WITCON 2026, Oct 14; GetWITit's 10-Year Anniversary Gala, Dec 12) — **fixed 2026-09-28:** the Gala is rendered in a separate `event-highlight-strip` promo-banner block (used for one-off flagship events), not the regular `upcoming-event_card` markup, and its date has no year (`"Dec 12th"`). The adapter now also parses that block and infers the year relative to `TODAY`. |
+| **Worthington Chamber** | headless render attempted | ❌ **known limitation** — `worthingtonchamber.org` sits behind a Cloudflare Turnstile bot-check that blocks both plain fetch and headless Chromium (confirmed manually). **Fallback: manual quarterly check** of `https://www.worthingtonchamber.org/events`. Do not fight this with stealth/anti-detection tooling — not worth the brittleness for one chamber's calendar. |
+| **DevOps Columbus (Meetup)** *(new, 2026-09-28)* | Meetup adapter | ✅ working — added after a community tip (983-member active group, previously missing from the calendar). |
 
 **Net result of this run:** `events.json` went from 10 → 68 events. All 4
 previously hand-curated events (Tucci's wine tasting, the WIP Sep 21 event,
@@ -132,3 +133,34 @@ hand-curated ones.
   site is Cloudflare-protected. Manual quarterly check.
 - **Worthington Chamber** — Cloudflare Turnstile blocks both fetch paths.
   Manual quarterly check of `worthingtonchamber.org/events`.
+
+## Community-suggested sources evaluated 2026-09-28 (Keith Instone via Slack)
+
+A community member suggested several additional sources. Outcomes:
+
+- **Added as a scraper:** DevOps Columbus (Meetup) — see table above.
+- **Fixed an existing scraper:** getWITit Gala was already on the page this
+  scraper hits, just in markup the old regex didn't cover — see table above.
+- **Added as one-off curated entries** (not scraped — either genuinely
+  one-time or the domain is currently blocked, see below): Central Ohio
+  Digital Inclusion Summit (Oct 7), DataConnect Conference 2026 (Oct 29–30,
+  Women in Analytics), TEDxColumbus 2026 "MAKE ROOM" (Nov 20).
+- **Blocked by this environment's outbound network policy** (proxy returns
+  403 on the CONNECT tunnel — same failure mode as the existing Luma/Ohio
+  Startup Network source above) as of 2026-09-28, so these could not be
+  scraped or even fetched once to inspect: `lu.ma` (would cover the
+  suggested Toledo Codes calendar, `travel: columbus` tag — reportedly
+  catches cybersecurity conferences we're missing), `innovatenewalbany.org`
+  (Innovate New Albany — looks like a genuinely good fit: a 16k sq ft
+  city-run tech-startup incubator running recurring "TIGER" business/tech
+  events since 2015 — **worth adding once network access allows it**),
+  `techcc.org` (a links directory, not itself scrapable — DevOps Columbus
+  was the one actionable lead pulled from it), `tedxcolumbus.com`,
+  `dataconnectconf.com`. To unblock: widen this environment's allowed
+  outbound domains (environment settings → Network access) to include these
+  hosts, then re-run scrape.py's per-source checks.
+- **Skipped, out of scope for this calendar:** IDSA Columbus (industrial
+  design, LinkedIn-only presence, no scrapable page), CSCA (graphic design
+  community — organizer's own words: "sometimes talk tech"), Fisher College
+  of Business "AI in Business" page (per Lauren's call), an unresolved
+  `luma.com/n9xqi4u5` short link (per Lauren's call).

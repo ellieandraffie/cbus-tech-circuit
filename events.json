@@ -168,6 +168,18 @@
   },
   {
     "date": "2026-09-29",
+    "title": "DevOps Social & Networking",
+    "type": "social",
+    "time": "6:00 PM",
+    "loc": "Improving (new office), Columbus",
+    "desc": "DevOps Columbus is hosting an event for DevOps industry professionals as well as those interested in DevOps. Come to talk, meet new people with like-interests, have food, and enjoy the time together. Join us for pizza, drinks, and networking @ Improving's office. Doors open at 5:",
+    "url": "https://www.meetup.com/devops-columbus/events/316482988/",
+    "host": "DevOps Columbus",
+    "_source": "scrape",
+    "_added": "2026-09-28"
+  },
+  {
+    "date": "2026-09-29",
     "title": "Raising & Investing Summit 2.0 - Virtual (Columbus, Ohio)",
     "type": "conf",
     "time": "See event page",
@@ -188,6 +200,18 @@
     "desc": "The Chamber's signature networking event of the year — food, drinks, and the widest local business turnout of the season.",
     "url": "https://www.dublinchamber.org/events/register/12630",
     "host": "Dublin Chamber of Commerce"
+  },
+  {
+    "date": "2026-09-30",
+    "title": "2 Days Certified ScrumMaster (CSM) Training in Columbus, OH",
+    "type": "work",
+    "time": "See event page",
+    "loc": "Regus Columbus",
+    "desc": "Join our 2 Days CSM training to master advanced Scrum practices, strengthen Agile leadership & lead high-performing Scrum teams",
+    "url": "https://www.eventbrite.com/e/2-days-certified-scrummaster-csm-training-in-columbus-oh-tickets-2000019102976",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-09-28"
   },
   {
     "date": "2026-09-30",
@@ -313,6 +337,16 @@
   },
   {
     "date": "2026-10-07",
+    "title": "Central Ohio Digital Inclusion Summit",
+    "type": "conf",
+    "time": "8:30 AM – 1:00 PM",
+    "loc": "Columbus State Community College, Columbus",
+    "desc": "Part of National Digital Inclusion Week 2026 — keynotes and breakout sessions on how Central Ohio can prepare for AI-driven change across education, workforce, and healthcare.",
+    "url": "https://www.eventbrite.com/e/central-ohio-digital-inclusion-summit-tickets-1998791439000",
+    "host": "Eventbrite"
+  },
+  {
+    "date": "2026-10-07",
     "title": "Data & Analytics Wednesday - Fighting Hunger with Data",
     "type": "work",
     "time": "6:30 PM",
@@ -394,6 +428,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Eventbrite"
+  },
+  {
+    "date": "2026-10-13",
+    "title": "MongoDB Columbus AI Builder Day, Co-hosted with AWS",
+    "time": "9:00 AM",
+    "loc": "The Conference Center at OCLC, 6600 Kilgour Pl, Dublin, OH 43017",
+    "desc": "Move beyond AI experimentation and start building for production.  Join MongoDB and AWS for a full day of hands-on learning, expert guidance, and practical application designed for developers, architects, and engineering leaders.  You’ll explore RAG, vector search, AI agents, and",
+    "url": "https://www.techlifecolumbus.com/events/",
+    "type": "work",
+    "host": "TechLife Columbus",
+    "_source": "scrape",
+    "_added": "2026-09-28"
   },
   {
     "date": "2026-10-13",
@@ -631,6 +677,16 @@
     "host": "Dublin Chamber of Commerce"
   },
   {
+    "date": "2026-10-29",
+    "title": "DataConnect Conference 2026",
+    "type": "conf",
+    "time": "Doors 7:00 AM (Oct 29–30; workshops Oct 28)",
+    "loc": "The Ohioan Hotel & Event Center, Lewis Center",
+    "desc": "Hosted by Women in Analytics — two days of talks on analytics, data science, machine learning and AI from women at the forefront of the field. Open to all genders and skill levels.",
+    "url": "https://www.dataconnectconf.com/dataconnect/conference",
+    "host": "Women in Analytics"
+  },
+  {
     "date": "2026-11-04",
     "title": "Ambassador Club Meeting",
     "type": "net",
@@ -821,6 +877,16 @@
     "host": "Dublin Chamber of Commerce"
   },
   {
+    "date": "2026-11-20",
+    "title": "TEDxColumbus 2026: MAKE ROOM",
+    "type": "conf",
+    "time": "See event page",
+    "loc": "Vitria on the Square, Columbus",
+    "desc": "TEDxColumbus's annual independently-organized TEDx event — this year's theme is \"MAKE ROOM.\" A day of talks from local speakers on ideas worth spreading.",
+    "url": "https://tedxcolumbus.com/",
+    "host": "TEDxColumbus"
+  },
+  {
     "date": "2026-12-02",
     "title": "Ambassador Club Meeting",
     "type": "net",
@@ -882,6 +948,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Dublin Chamber of Commerce"
+  },
+  {
+    "date": "2026-12-12",
+    "title": "GetWITit's 10-Year Anniversary Gala",
+    "type": "net",
+    "time": "See event page",
+    "loc": "Columbus, OH",
+    "desc": "getWITit Columbus — GetWITit's 10-Year Anniversary Gala",
+    "url": "https://events.humanitix.com/getwitit-gala",
+    "host": "Columbus WIT",
+    "_source": "scrape",
+    "_added": "2026-09-28"
   },
   {
     "date": "2026-12-16",
