@@ -147,18 +147,29 @@ A community member suggested several additional sources. Outcomes:
   Women in Analytics), TEDxColumbus 2026 "MAKE ROOM" (Nov 20).
 - **Blocked by this environment's outbound network policy** (proxy returns
   403 on the CONNECT tunnel — same failure mode as the existing Luma/Ohio
-  Startup Network source above) as of 2026-09-28, so these could not be
-  scraped or even fetched once to inspect: `lu.ma` (would cover the
+  Startup Network source above) as of 2026-09-28: `lu.ma` (would cover the
   suggested Toledo Codes calendar, `travel: columbus` tag — reportedly
-  catches cybersecurity conferences we're missing), `innovatenewalbany.org`
-  (Innovate New Albany — looks like a genuinely good fit: a 16k sq ft
-  city-run tech-startup incubator running recurring "TIGER" business/tech
-  events since 2015 — **worth adding once network access allows it**),
-  `techcc.org` (a links directory, not itself scrapable — DevOps Columbus
-  was the one actionable lead pulled from it), `tedxcolumbus.com`,
-  `dataconnectconf.com`. To unblock: widen this environment's allowed
-  outbound domains (environment settings → Network access) to include these
-  hosts, then re-run scrape.py's per-source checks.
+  catches cybersecurity conferences we're missing), `techcc.org` (a links
+  directory, not itself scrapable — DevOps Columbus was the one actionable
+  lead pulled from it), `tedxcolumbus.com`, `dataconnectconf.com`. Lauren
+  widened Network access on 2026-09-29 for `lu.ma` and
+  `innovatenewalbany.org` specifically, but **`lu.ma` is still hitting the
+  same proxy-level 403** after that change (tried `lu.ma`, `www.luma.com`,
+  `luma.com`) — worth double-checking the allowed-domains entry / whether the
+  environment needs a restart to pick it up, then re-test.
+- **`innovatenewalbany.org`** — the network-access change *did* take effect
+  (no more proxy 403), but the site itself sits behind a Cloudflare bot-check
+  that returns its own 403 to a plain request — the identical situation
+  already documented for Worthington Chamber below. A quick headless-render
+  attempt hit an unrelated Chromium/TLS-trust issue in this container
+  (separate from the site itself) before we could even find out whether
+  headless gets past Cloudflare. Given the project's existing call on
+  Worthington ("not worth the brittleness for one chamber's calendar"), the
+  same likely applies here — **recommend treating it as a manual quarterly
+  check** (`https://innovatenewalbany.org/new-events/`) rather than sinking
+  more time into a live scraper, even though it looked like a genuinely good
+  fit (16k sq ft city-run tech-startup incubator, recurring "TIGER"
+  business/tech events since 2015).
 - **Skipped, out of scope for this calendar:** IDSA Columbus (industrial
   design, LinkedIn-only presence, no scrapable page), CSCA (graphic design
   community — organizer's own words: "sometimes talk tech"), Fisher College
