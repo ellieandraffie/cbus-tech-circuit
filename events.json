@@ -289,6 +289,18 @@
   },
   {
     "date": "2026-10-05",
+    "title": "2 Days Certified Scrum Product Owner (CSPO) Training in Columbus, OH",
+    "type": "work",
+    "time": "See event page",
+    "loc": "Regus Columbus",
+    "desc": "Join our 2 Days CSPO training to maximize product value and elevate your Product Ownership skills",
+    "url": "https://www.eventbrite.com/e/2-days-certified-scrum-product-owner-cspo-training-in-columbus-oh-tickets-2000952844823",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-10-05"
+  },
+  {
+    "date": "2026-10-05",
     "title": "AI Tinkerers - Columbus October Meetup",
     "type": "work",
     "time": "See event page",
@@ -616,6 +628,18 @@
     "host": "Dublin Chamber of Commerce"
   },
   {
+    "date": "2026-10-22",
+    "title": "VOLUME UP SUMMIT 2026",
+    "type": "conf",
+    "time": "See event page",
+    "loc": "The Maroon Culture Lab Columbus",
+    "desc": "VOLUME UP brings artists, creators, executives and entrepreneurs together for two days of conversations, workshops, networking and culture.",
+    "url": "https://www.eventbrite.com/e/volume-up-summit-2026-tickets-2002496280280",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-10-05"
+  },
+  {
     "date": "2026-10-24",
     "title": "CarniFall + TechLife 2.0 Launch Party",
     "type": "social",
@@ -675,6 +699,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Dublin Chamber of Commerce"
+  },
+  {
+    "date": "2026-10-29",
+    "title": "2026 Conference on the Mathematical Theory of Deep Neural Networks",
+    "type": "conf",
+    "time": "See event page",
+    "loc": "The Ohio State University Columbus",
+    "desc": "This conference is focused on new developments in the mathematical theory of deep learning.",
+    "url": "https://www.eventbrite.com/e/2026-conference-on-the-mathematical-theory-of-deep-neural-networks-tickets-2002093457426",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-10-05"
   },
   {
     "date": "2026-10-29",
@@ -985,5 +1021,31 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "TechLife Columbus"
+  },
+  {
+    "date": "2027-01-06",
+    "title": "Ambassador Club Meeting",
+    "type": "net",
+    "time": "See event page",
+    "loc": "Dublin",
+    "members": "Dublin Chamber event — member pricing may apply.",
+    "desc": "Ambassador Club Meeting",
+    "url": "https://www.dublinchamber.org/events/register/12792",
+    "host": "Dublin Chamber of Commerce",
+    "_source": "scrape",
+    "_added": "2026-10-05"
+  },
+  {
+    "date": "2027-01-08",
+    "title": "Sales Connection Breakfast",
+    "type": "net",
+    "time": "See event page",
+    "loc": "Dublin",
+    "members": "Dublin Chamber event — member pricing may apply.",
+    "desc": "Sales Connection Breakfast",
+    "url": "https://www.dublinchamber.org/events/register/12804",
+    "host": "Dublin Chamber of Commerce",
+    "_source": "scrape",
+    "_added": "2026-10-05"
   }
 ]
