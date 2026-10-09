@@ -170,8 +170,14 @@ A community member suggested several additional sources. Outcomes:
   more time into a live scraper, even though it looked like a genuinely good
   fit (16k sq ft city-run tech-startup incubator, recurring "TIGER"
   business/tech events since 2015).
-- **Skipped, out of scope for this calendar:** IDSA Columbus (industrial
-  design, LinkedIn-only presence, no scrapable page), CSCA (graphic design
+- **Skipped, out of scope for this calendar:** CSCA (graphic design
   community — organizer's own words: "sometimes talk tech"), Fisher College
   of Business "AI in Business" page (per Lauren's call), an unresolved
   `luma.com/n9xqi4u5` short link (per Lauren's call).
+- **IDSA Columbus — reversed 2026-10-09 (per Lauren's call):** originally
+  marked out of scope above (LinkedIn-only presence, no scrapable page). A
+  visitor suggested a specific one-off event — "Creative Control at Elevator
+  Studios" (Oct 22, Eventbrite) — and Lauren decided the UX/UI, product
+  strategy & AI tie-in is solid enough to include. Added as a hand-curated
+  entry in `events.json` (not a live scraper — IDSA still has no scrapable
+  calendar page, so future IDSA events need the same manual treatment).
