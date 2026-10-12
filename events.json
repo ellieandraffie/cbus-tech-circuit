@@ -443,6 +443,19 @@
   },
   {
     "date": "2026-10-13",
+    "title": "Asset Protection for Your Life & Legacy Now",
+    "type": "work",
+    "time": "See event page",
+    "loc": "Dublin",
+    "members": "Dublin Chamber event — member pricing may apply.",
+    "desc": "estate planning, asset protection, Medicaid qualification workshop",
+    "url": "https://www.dublinchamber.org/events/details/asset-protection-for-your-life-legacy-now-12885",
+    "host": "Dublin Chamber of Commerce",
+    "_source": "scrape",
+    "_added": "2026-10-12"
+  },
+  {
+    "date": "2026-10-13",
     "title": "MongoDB Columbus AI Builder Day, Co-hosted with AWS",
     "time": "9:00 AM",
     "loc": "The Conference Center at OCLC, 6600 Kilgour Pl, Dublin, OH 43017",
@@ -463,6 +476,18 @@
     "desc": "Invitation-style morning roundtable for senior enterprise technology leaders on applied AI. Aimed at a senior/leadership audience — confirm eligibility when registering.",
     "url": "https://www.ohiox.org/events",
     "host": "OhioX"
+  },
+  {
+    "date": "2026-10-13",
+    "title": "SRECon EMEA",
+    "type": "conf",
+    "time": "See event page",
+    "loc": "Dublin, Ireland Dublin",
+    "desc": "SRE conference in Dublin, Ireland",
+    "url": "https://dev.events/conferences/sre-con-emea-pxh024l7",
+    "host": "dev.events",
+    "_source": "scrape",
+    "_added": "2026-10-12"
   },
   {
     "date": "2026-10-14",
@@ -500,6 +525,31 @@
     "host": "Eventbrite",
     "_source": "scrape",
     "_added": "2026-09-25"
+  },
+  {
+    "date": "2026-10-15",
+    "title": "Ability Matters Fall Open House",
+    "type": "net",
+    "time": "See event page",
+    "loc": "Dublin",
+    "members": "Dublin Chamber event — member pricing may apply.",
+    "desc": "Ability Matters invites families, staff and friends to connect, meet and learn more about the programs and services we offer.",
+    "url": "https://www.dublinchamber.org/events/details/ability-matters-fall-open-house-12881",
+    "host": "Dublin Chamber of Commerce",
+    "_source": "scrape",
+    "_added": "2026-10-12"
+  },
+  {
+    "date": "2026-10-15",
+    "title": "DevOps Columbus: Text to 3D Printing",
+    "type": "work",
+    "time": "6:00 PM",
+    "loc": "Improving (new office), Columbus",
+    "desc": "Presentation Title: TT3DP (Text To 3d Print) Summary: A walkthrough of building and demonstrating a cloud-free image-to-3D printing pipeline on high-end consumer hardware. Speaker: K. Alan Bates Software Developer Principal - American Electric Power My name is K. Alan Bates and I",
+    "url": "https://www.meetup.com/devops-columbus/events/316910228/",
+    "host": "DevOps Columbus",
+    "_source": "scrape",
+    "_added": "2026-10-12"
   },
   {
     "date": "2026-10-15",
@@ -591,6 +641,19 @@
   },
   {
     "date": "2026-10-21",
+    "title": "Asking For A Friend: A Live Women's Health Podcast Recording in Dublin, Ohio",
+    "type": "net",
+    "time": "See event page",
+    "loc": "Dublin",
+    "members": "Dublin Chamber event — member pricing may apply.",
+    "desc": "Dublin's own women's health podcast, Asking For A Friend, records its Season 2 launch live on October 21. This event is free & open to the community!",
+    "url": "https://www.dublinchamber.org/events/details/asking-for-a-friend-a-live-women-s-health-podcast-recording-in-dublin-ohio-12880",
+    "host": "Dublin Chamber of Commerce",
+    "_source": "scrape",
+    "_added": "2026-10-12"
+  },
+  {
+    "date": "2026-10-21",
     "title": "Dublin Chamber's Marketing Strategy Workshop: AI Is the New SEO for Small Business",
     "type": "work",
     "time": "See event page",
@@ -613,6 +676,16 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Eventbrite"
+  },
+  {
+    "date": "2026-10-22",
+    "title": "Creative Control at Elevator Studios",
+    "type": "net",
+    "time": "5:30 PM",
+    "loc": "Elevator Studios, 1398 Goodale Blvd, Columbus",
+    "desc": "IDSA Columbus open house at Elevator Studios, a multidisciplinary design & innovation firm — a conversation on the decisions that shape creative work, with ties into UX/UI, product strategy & AI. Free admission, food & drinks; speaker TBA.",
+    "url": "https://www.eventbrite.com/e/creative-control-at-elevator-studios-tickets-2002831356502",
+    "host": "IDSA Columbus"
   },
   {
     "date": "2026-10-22",
@@ -640,14 +713,17 @@
     "_added": "2026-10-05"
   },
   {
-    "date": "2026-10-22",
-    "title": "Creative Control at Elevator Studios",
+    "date": "2026-10-23",
+    "title": "Asset Protection for Your Life & Legacy Now",
     "type": "net",
-    "time": "5:30 PM",
-    "loc": "Elevator Studios, 1398 Goodale Blvd, Columbus",
-    "desc": "IDSA Columbus open house at Elevator Studios, a multidisciplinary design & innovation firm — a conversation on the decisions that shape creative work, with ties into UX/UI, product strategy & AI. Free admission, food & drinks; speaker TBA.",
-    "url": "https://www.eventbrite.com/e/creative-control-at-elevator-studios-tickets-2002831356502",
-    "host": "IDSA Columbus"
+    "time": "See event page",
+    "loc": "Dublin",
+    "members": "Dublin Chamber event — member pricing may apply.",
+    "desc": "Asset Protection for Your Life & Legacy Now",
+    "url": "https://www.dublinchamber.org/events/details/asset-protection-for-your-life-legacy-now-10-23-2026-12887",
+    "host": "Dublin Chamber of Commerce",
+    "_source": "scrape",
+    "_added": "2026-10-12"
   },
   {
     "date": "2026-10-24",
@@ -658,6 +734,18 @@
     "desc": "TechLife Columbus's community launch party — a big, casual celebration of the local tech scene.",
     "url": "https://www.techlifecolumbus.com/events/",
     "host": "TechLife Columbus"
+  },
+  {
+    "date": "2026-10-27",
+    "title": "Beyond the Screen: Designing Products for the Spatial Computing Era",
+    "type": "conf",
+    "time": "5:30 PM",
+    "loc": "Switchbox, Columbus",
+    "desc": "For decades, product teams have translated a three-dimensional world into two-dimensional interfaces. We’ve gotten incredibly good at taps, clicks, menus, and scrolls—but what if the screen was never the destination? **ProductTank Columbus welcomes Omari Hitson, VP Lead Product D",
+    "url": "https://www.meetup.com/producttank-columbus/events/316905846/",
+    "host": "ProductTank Columbus",
+    "_source": "scrape",
+    "_added": "2026-10-12"
   },
   {
     "date": "2026-10-27",
@@ -733,6 +821,44 @@
     "host": "Women in Analytics"
   },
   {
+    "date": "2026-10-29",
+    "title": "Full S.T.A.C.K. Networking - Monthly Happy Hour",
+    "type": "social",
+    "time": "See event page",
+    "loc": "Crooked Can Brewing Co. Hilliard",
+    "desc": "A happy hour FOR professionals in the tech world BY professionals in the tech world",
+    "url": "https://www.eventbrite.com/e/full-stack-networking-monthly-happy-hour-tickets-2002637279011",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-10-12"
+  },
+  {
+    "date": "2026-11-01",
+    "title": "Wedding Resale Market®",
+    "type": "net",
+    "time": "See event page",
+    "loc": "Dublin",
+    "members": "Dublin Chamber event — member pricing may apply.",
+    "desc": "Wedding Resale Market®",
+    "url": "https://www.dublinchamber.org/events/details/wedding-resale-market-12858",
+    "host": "Dublin Chamber of Commerce",
+    "_source": "scrape",
+    "_added": "2026-10-12"
+  },
+  {
+    "date": "2026-11-02",
+    "title": "AI Tinkerers Columbus x HackOHI/O x OSU Software Dev Club",
+    "type": "round",
+    "time": "See event page",
+    "loc": "Private venue Columbus",
+    "desc": "Join AI Tinkerers Columbus for a Hack OHI/O winners showcase on Monday, Nov 2, 2026 (5:30–9:00 PM ET) at Pomerene Hall, Ideation Zone (OSU). Hear short technical walkthroughs from winning teams (6:15–6:50), join an agent/evals/workflows discussion (6:50–7:15), then network. RSVP ",
+    "url": "https://columbus.aitinkerers.org/p/ai-tinkerers-columbus-x-hackohi-o-x-osu-software-dev-club",
+    "free": true,
+    "host": "AI Tinkerers Columbus",
+    "_source": "scrape",
+    "_added": "2026-10-12"
+  },
+  {
     "date": "2026-11-04",
     "title": "Ambassador Club Meeting",
     "type": "net",
@@ -797,6 +923,30 @@
   },
   {
     "date": "2026-11-10",
+    "title": "AI Engineering Summit | Columbus | 2026",
+    "type": "conf",
+    "time": "See event page",
+    "loc": "The Blackwell Inn & Pfahl Conference Center Columbus",
+    "desc": "Explore how engineering teams are building, deploying, and scaling intelligent AI systems from code to production",
+    "url": "https://www.eventbrite.com/e/ai-engineering-summit-columbus-2026-tickets-1995175971038",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-10-12"
+  },
+  {
+    "date": "2026-11-10",
+    "title": "AWS Columbus: Topic to be announced",
+    "type": "net",
+    "time": "5:30 PM",
+    "loc": "Franklin University, Columbus",
+    "desc": "Topic to be announced. This is a mirror posting from our main meetup group located here: https://www.meetup.com/columbus-aws-amazon-web-services-meetup/events/316272009/ **THANK YOU** *Franklin University* for hosting our meetup! To learn more about *Franklin University*, please ",
+    "url": "https://www.meetup.com/techlifecolumbus/events/316881259/",
+    "host": "TechLife Columbus",
+    "_source": "scrape",
+    "_added": "2026-10-12"
+  },
+  {
+    "date": "2026-11-10",
     "title": "Lunch Bunch Rusty Bucket Restaurant & Tavern",
     "type": "net",
     "time": "See event page",
@@ -807,6 +957,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Dublin Chamber of Commerce"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "McFadden AV Showcase",
+    "type": "work",
+    "time": "See event page",
+    "loc": "BrewDog DogHouse Columbus Hotel and Brewery Canal Winchester",
+    "desc": "Join McFadden Sales for our A/V Showcase, bringing together industry-leading AV brands, hands-on technology, and educational sessions.",
+    "url": "https://www.eventbrite.com/e/mcfadden-av-showcase-tickets-1998431362000",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-10-12"
   },
   {
     "date": "2026-11-12",
@@ -958,6 +1120,18 @@
     "host": "OhioX"
   },
   {
+    "date": "2026-12-07",
+    "title": "Jingle all the Clouds 3.0! We're using AI for this one!",
+    "type": "social",
+    "time": "5:00 PM",
+    "loc": "Olentangy River Brewing Company, Lewis Center",
+    "desc": "Happy Holidays! This year we are uniting the [AWS](https://www.meetup.com/columbus-aws-amazon-web-services-meetup/events/316881329/)[,](https://www.meetup.com/columbus-aws-amazon-web-services-meetup/) Azure, Terraform , DevOps, and MS Teams Columbus User Group colleagues for anot",
+    "url": "https://www.meetup.com/techlifecolumbus/events/316881338/",
+    "host": "TechLife Columbus",
+    "_source": "scrape",
+    "_added": "2026-10-12"
+  },
+  {
     "date": "2026-12-09",
     "title": "Entrepreneur's Christmas Party",
     "time": "5:00 PM",
@@ -968,6 +1142,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "TechLife Columbus"
+  },
+  {
+    "date": "2026-12-10",
+    "title": "Columbus Tech Community Holiday Party",
+    "type": "social",
+    "time": "See event page",
+    "loc": "Rev1 at The Peninsula Columbus",
+    "desc": "We're celebrating our amazing Columbus tech community!",
+    "url": "https://www.eventbrite.com/e/columbus-tech-community-holiday-party-tickets-2002969973108",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-10-12"
   },
   {
     "date": "2026-12-11",
