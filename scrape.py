@@ -36,7 +36,6 @@ Usage:
     python3 scrape.py --dry-run       # fetch + report, write nothing
     python3 scrape.py --only ohiox    # run a single source (dev/testing)
 """
-import base64
 import datetime
 import html
 import json
@@ -378,89 +377,6 @@ def src_ohiox():
     return out
 
 
-def _decode_gcal_id(embed_src):
-    # HTML entities (e.g. "&#038;") must be decoded BEFORE splitting on "&" —
-    # otherwise the "src=" param boundary is invisible (it's still ";src=" pre-decode).
-    embed_src = html.unescape(embed_src)
-    m = re.search(r"[?&]src=([^&\"']+)", embed_src)
-    if not m:
-        return None
-    raw = urllib.request.unquote(m.group(1))
-    raw += "=" * (-len(raw) % 4)
-    try:
-        return base64.b64decode(raw).decode("utf-8")
-    except Exception:
-        return raw if "@" in raw else None
-
-
-def _unfold_ics(text):
-    return re.sub(r"\r?\n[ \t]", "", text)
-
-
-def _unescape_ics(text):
-    return (text or "").replace("\\n", " ").replace("\\,", ",").replace("\\;", ";").replace("\\\\", "\\")
-
-
-def _parse_ics(ics_text):
-    """Minimal RFC5545 VEVENT parser — just the fields we need."""
-    text = _unfold_ics(ics_text)
-    for block in re.findall(r"BEGIN:VEVENT(.*?)END:VEVENT", text, re.S):
-        fields = {}
-        for line in block.strip().splitlines():
-            if ":" not in line:
-                continue
-            key, _, val = line.partition(":")
-            key = key.split(";")[0].strip().upper()
-            fields[key] = val.strip()
-        dtstart = fields.get("DTSTART", "")
-        m = re.match(r"(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z?", dtstart)
-        if not m:
-            continue
-        y, mo, d, hh, mm, ss = (int(x) for x in m.groups())
-        dt_utc = datetime.datetime(y, mo, d, hh, mm, ss)
-        # rough US Eastern offset (DST Mar-Nov) — good enough for a display time
-        offset = 4 if 3 <= mo <= 11 else 5
-        dt_local = dt_utc - datetime.timedelta(hours=offset)
-        yield {
-            "date": dt_local.date().isoformat(),
-            "title": _unescape_ics(fields.get("SUMMARY", "")).strip(),
-            "time": fmt_time(dt_local),
-            "loc": _unescape_ics(fields.get("LOCATION", "")).strip(),
-            "desc": _unescape_ics(fields.get("DESCRIPTION", "")).strip()[:280],
-            "url": fields.get("URL", ""),
-        }
-
-
-def src_google_calendar_ics(events_page_url, local_default=None):
-    """Sites (e.g. TechLife Columbus) that just embed a public Google Calendar
-    iframe rather than rendering their own event markup. We pull the calendar ID
-    out of the iframe's `src` (it's base64 in the query string) and read the
-    calendar's public ICS feed directly — no headless browser needed, and it's
-    the actual underlying data source rather than scraped markup."""
-    page = fetch(events_page_url)
-    m = re.search(r'<iframe[^>]+src="([^"]*calendar\.google\.com/calendar/embed[^"]*)"', page, re.I)
-    if not m:
-        raise RuntimeError("no Google Calendar embed found on page")
-    cal_id = _decode_gcal_id(m.group(1))
-    if not cal_id:
-        raise RuntimeError("could not decode Google Calendar ID from embed")
-    ics_url = ("https://calendar.google.com/calendar/ical/"
-               + urllib.request.quote(cal_id, safe="") + "/public/basic.ics")
-    ics = fetch(ics_url, accept="text/calendar,*/*")
-    out = []
-    for ev in _parse_ics(ics):
-        title = ev["title"]
-        if not ev.get("url"):
-            ev["url"] = events_page_url
-        if local_default and not ev.get("loc"):
-            ev["loc"] = local_default
-        ev["type"] = classify(title, ev.get("desc", ""))
-        if not ev.get("desc"):
-            ev["desc"] = title
-        out.append(ev)
-    return out
-
-
 def src_dublin_chamber():
     """Dublin Chamber (GrowthZone/ChamberMaster) loads its event list via an
     infinite-scroll partial (`/events/searchscroll`) — plain HTML, no JS needed,
@@ -707,7 +623,6 @@ def src_womenpm():
 # SOURCES key. Falls back to the SOURCES label itself when a key isn't listed here.
 HOST_LABELS = {
     "ohiox": "OhioX",
-    "techlife": "TechLife Columbus",
     "dublinchamber": "Dublin Chamber of Commerce",
     "startupgrind": "Startup Grind Columbus",
     "eventbrite": "Eventbrite",
@@ -722,13 +637,12 @@ HOST_LABELS = {
     "witit": "Columbus WIT",
     "worthington": "Worthington Area Chamber of Commerce",
     "devops": "DevOps Columbus",
+    "sparkworks": "SparkWorks Innovation",
 }
 
 SOURCES = {
     # key: (label, callable)
     "ohiox":        ("OhioX", src_ohiox),
-    "techlife":     ("TechLife Columbus", lambda: src_google_calendar_ics(
-                        "https://www.techlifecolumbus.com/events/", local_default="Columbus")),
     "dublinchamber":("Dublin Chamber", src_dublin_chamber),
     "startupgrind": ("Startup Grind / Rev1", lambda: src_meetup("startup-grind-columbus", local_default="Columbus")),
     "eventbrite":   ("Eventbrite Columbus", lambda: src_generic("https://www.eventbrite.com/d/oh--columbus/technology--events/")),
@@ -743,6 +657,7 @@ SOURCES = {
     "witit":        ("Columbus WIT (getWITit)", src_witit_columbus),
     "worthington":  ("Worthington Chamber", src_worthington_chamber),
     "devops":       ("DevOps Columbus (Meetup)", lambda: src_meetup("devops-columbus", local_default="Columbus")),
+    "sparkworks":   ("SparkWorks Innovation", lambda: src_generic("https://sparkworksinnovation.com/event", local_default="Columbus")),
 }
 
 

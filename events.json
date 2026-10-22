@@ -964,11 +964,11 @@
     "time": "6:00 PM",
     "loc": "CoHatch Polaris",
     "desc": "A showcase of innovation from across Central Ohio.  Come view 60+ startups from a variety industries and network with other Entrepreneurs.  Registration/Sign-up Link: StartupColumbus.com  Cost: Free Organizer/Host Name: SparkWorks Innovation Organization Name: SparkWorks Innovati",
-    "url": "https://www.techlifecolumbus.com/events/",
+    "url": "https://sparkworksinnovation.com/event",
     "type": "net",
-    "_source": "scrape",
+    "_source": "curated",
     "_added": "2026-09-19",
-    "host": "TechLife Columbus"
+    "host": "SparkWorks Innovation"
   },
   {
     "date": "2026-11-05",

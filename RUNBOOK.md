@@ -181,3 +181,53 @@ A community member suggested several additional sources. Outcomes:
   strategy & AI tie-in is solid enough to include. Added as a hand-curated
   entry in `events.json` (not a live scraper — IDSA still has no scrapable
   calendar page, so future IDSA events need the same manual treatment).
+
+## TechLife Google Calendar source removed; SparkWorks Innovation added (2026-10-22, per Lauren's report)
+
+Lauren flagged that the "Columbus Innovation Showcase" (Nov 5) event's
+register link took visitors to TechLife Columbus's generic events calendar
+instead of real event info. Root cause: the `techlife` source
+(`src_google_calendar_ics`) pulled TechLife's public Google Calendar ICS
+feed, but **none** of the entries in that feed carry a per-event `URL`
+field — every event it produced (LogicON 2026, MongoDB Columbus AI Builder
+Day, CarniFall + TechLife 2.0 Launch Party, Columbus Innovation Showcase,
+Entrepreneur's Christmas Party) silently fell back to linking at
+`techlifecolumbus.com/events/` itself. That's a dead end for third-party
+events TechLife merely lists on its community calendar — only looked fine
+for events TechLife itself hosts.
+
+**Removed:** the `techlife` source and its only caller,
+`src_google_calendar_ics` (plus its `_parse_ics`/`_decode_gcal_id` ICS
+helpers — nothing else used them). Note `techlife_mu` (the TechLife
+**Meetup** adapter) is a separate, unrelated source and is unaffected — it
+links straight to the real meetup.com event pages and stays.
+
+Removing the source doesn't delete the 5 events it already added to
+`events.json` (`merge()` is additive-only), so they remain as effectively
+hand-curated entries going forward — a future one found to have a dead
+`techlifecolumbus.com/events/` link needs the same manual fix applied below,
+or a dedicated scraper if a real source turns up.
+
+**Fixed immediately:** updated the existing "Columbus Innovation Showcase"
+entry's `url` to `https://sparkworksinnovation.com/event` (SparkWorks
+Innovation is the actual organizer per the event's own description text) and
+its `host` to "SparkWorks Innovation"; marked `_source: "curated"`.
+
+**Added as a live source (currently blocked — see below):** `sparkworks`,
+using the existing `src_generic()` JSON-LD extractor against
+`https://sparkworksinnovation.com/event` — the same pattern as Eventbrite/
+Luma/AI Tinkerers. Untested against real markup yet because:
+
+- **Blocked by this environment's outbound network policy** (proxy returns
+  403 on the CONNECT tunnel, same failure mode as `lu.ma` above) as of
+  2026-10-22: `sparkworksinnovation.com` (also tried `www.` and the bare
+  domain — all 403). **Lauren needs to widen Network access** (environment
+  menu → Edit → Allowed domains) to add `sparkworksinnovation.com`, the same
+  way she did for `lu.ma` / `innovatenewalbany.org` on 2026-09-29. Until
+  then `scrape.py` logs a clean SKIP for this source every run — it will not
+  block or break anything else.
+- Once access is granted, re-run `python3 scrape.py --only sparkworks
+  --dry-run` to confirm it actually finds JSON-LD event markup on the page
+  (it may not — the page could need the headless-render fallback `src_generic`
+  already tries, or need a bespoke scraper like OhioX/Dublin Chamber if it
+  doesn't expose JSON-LD at all). Flag back here if it needs more work.
