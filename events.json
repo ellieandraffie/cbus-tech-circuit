@@ -849,6 +849,19 @@
     "host": "Dublin Chamber of Commerce"
   },
   {
+    "date": "2026-10-28",
+    "title": "Golf Club of Dublin Fall Cornhole League",
+    "type": "net",
+    "time": "See event page",
+    "loc": "Dublin",
+    "members": "Dublin Chamber event — member pricing may apply.",
+    "desc": "Register your two-person team for Golf Club of Dublin’s Fall Indoor Cornhole League. Only three team spots remain!",
+    "url": "https://www.dublinchamber.org/events/details/golf-club-of-dublin-fall-cornhole-league-10-28-2026-12865",
+    "host": "Dublin Chamber of Commerce",
+    "_source": "scrape",
+    "_added": "2026-10-26"
+  },
+  {
     "date": "2026-10-29",
     "title": "2026 Conference on the Mathematical Theory of Deep Neural Networks",
     "type": "conf",
@@ -893,6 +906,18 @@
     "host": "Eventbrite",
     "_source": "scrape",
     "_added": "2026-10-19"
+  },
+  {
+    "date": "2026-10-30",
+    "title": "Agile Coaching Circle -- IN-PERSON",
+    "type": "work",
+    "time": "7:30 AM",
+    "loc": "Sweetwaters Coffee & Tea, Dublin",
+    "desc": "Join other experienced and aspiring agile coaches and professionals to: * develop and practice your coaching skills in a peer-to-peer environment * share current successes and challenges in your work environment and get support from each other * learn from each other, build bette",
+    "url": "https://www.meetup.com/techlifecolumbus/events/317075621/",
+    "host": "TechLife Columbus",
+    "_source": "scrape",
+    "_added": "2026-10-26"
   },
   {
     "date": "2026-11-01",
@@ -959,6 +984,18 @@
     "host": "Eventbrite"
   },
   {
+    "date": "2026-11-04",
+    "title": "Sleigh The Workload: Build Your AI Holiday Co-Pilot",
+    "type": "work",
+    "time": "See event page",
+    "loc": "Blanco Event Center Columbus",
+    "desc": "Build AI-assisted out-of-office and year-end reporting workflows at a festive, hands-on workshop for Columbus professionals.",
+    "url": "https://www.eventbrite.com/e/sleigh-the-workload-build-your-ai-holiday-co-pilot-tickets-2003695298576",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-10-26"
+  },
+  {
     "date": "2026-11-05",
     "title": "Columbus Innovation Showcase",
     "time": "6:00 PM",
@@ -1009,6 +1046,18 @@
   },
   {
     "date": "2026-11-10",
+    "title": "Judgment in the Fog: Making Better Product Decisions in the Age of AI",
+    "type": "work",
+    "time": "5:30 PM",
+    "loc": "ZoCo Design, Columbus",
+    "desc": "**The Product Skills AI Can't Replace** AI can synthesize research, analyze data, and prioritize work. But when everything feels important and there’s no clear right answer, how do you decide what matters most? Join **ProductTank Columbus** and **Mike Belsito, Head of Product Eva",
+    "url": "https://www.meetup.com/producttank-columbus/events/317104952/",
+    "host": "ProductTank Columbus",
+    "_source": "scrape",
+    "_added": "2026-10-26"
+  },
+  {
+    "date": "2026-11-10",
     "title": "Lunch Bunch Rusty Bucket Restaurant & Tavern",
     "type": "net",
     "time": "See event page",
@@ -1056,6 +1105,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Dublin Chamber of Commerce"
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Agile Coaching Circle -- IN-PERSON",
+    "type": "work",
+    "time": "7:30 AM",
+    "loc": "Sweetwaters Coffee & Tea, Dublin",
+    "desc": "Join other experienced and aspiring agile coaches and professionals to: * develop and practice your coaching skills in a peer-to-peer environment * share current successes and challenges in your work environment and get support from each other * learn from each other, build bette",
+    "url": "https://www.meetup.com/techlifecolumbus/events/317075693/",
+    "host": "TechLife Columbus",
+    "_source": "scrape",
+    "_added": "2026-10-26"
   },
   {
     "date": "2026-11-13",
@@ -1132,6 +1193,18 @@
     "desc": "OhioX's statewide, full-day summit on AI development and deployment across Ohio — speakers, sessions and heavy networking.",
     "url": "https://www.ohiox.org/events",
     "host": "OhioX"
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Fall ’26 Customer to Capital Accelerator: Tech Showcase & Celebration",
+    "type": "social",
+    "time": "See event page",
+    "loc": "330 Rush Alley suite 100 Columbus",
+    "desc": "Join Rev1 Ventures as we celebrate the Fall 2026 graduates of our Customer to Capital Accelerator.",
+    "url": "https://www.eventbrite.com/e/fall-26-customer-to-capital-accelerator-tech-showcase-celebration-tickets-2002574011777",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-10-26"
   },
   {
     "date": "2026-11-19",
@@ -1355,5 +1428,18 @@
     "host": "TechLife Columbus",
     "_source": "scrape",
     "_added": "2026-10-19"
+  },
+  {
+    "date": "2027-01-27",
+    "title": "Leadership Academy Class of 2027 Registration",
+    "type": "work",
+    "time": "See event page",
+    "loc": "Dublin",
+    "members": "Dublin Chamber event — member pricing may apply.",
+    "desc": "Leadership Academy Class of 2027 Registration",
+    "url": "https://www.dublinchamber.org/events/register/12752",
+    "host": "Dublin Chamber of Commerce",
+    "_source": "scrape",
+    "_added": "2026-10-26"
   }
 ]
