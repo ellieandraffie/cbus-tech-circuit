@@ -25,18 +25,6 @@
   },
   {
     "date": "2026-09-21",
-    "title": "Tucci's California Wine Tasting",
-    "type": "social",
-    "time": "Evening",
-    "loc": "Tucci's, Historic Dublin",
-    "cost": "$85",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Dublin Chamber social — taste 35+ California wines while connecting with local business owners.",
-    "url": "https://www.dublinchamber.org/events",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-09-21",
     "title": "Women in Product: Delegate & Elevate",
     "type": "net",
     "time": "See event page",
@@ -56,19 +44,6 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "TechLife Columbus"
-  },
-  {
-    "date": "2026-09-22",
-    "title": "BMI Federal Credit Union Presents Financial Wellness Check-in Webinar Series First Session",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "BMI Federal Credit Union Presents Financial Wellness Check-in Webinar Series First Session",
-    "url": "https://www.dublinchamber.org/events/details/bmi-federal-credit-union-presents-financial-wellness-check-in-webinar-series-first-session-12754",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-09-22",
@@ -93,30 +68,6 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Eventbrite"
-  },
-  {
-    "date": "2026-09-24",
-    "title": "Chamber Lunch Bunch",
-    "type": "net",
-    "time": "Midday",
-    "loc": "Chicken Salad Chick, Dublin",
-    "members": "Dublin Chamber program — verify member pricing.",
-    "desc": "Casual small-group Chamber lunch — an easy, low-pressure way to meet Dublin-area professionals.",
-    "url": "https://www.dublinchamber.org/events/register/12586",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-09-24",
-    "title": "Skin Spirit Grand Opening with Exclusive Chamber Member Discounts",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Skin Spirit Grand Opening with Exclusive Chamber Member Discounts",
-    "url": "https://www.dublinchamber.org/events/details/skin-spirit-grand-opening-with-exclusive-chamber-member-discounts-12748",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-09-24",
@@ -191,17 +142,6 @@
     "host": "Eventbrite"
   },
   {
-    "date": "2026-09-29",
-    "title": "Taste of Dublin 2026",
-    "type": "net",
-    "time": "Tue, evening",
-    "loc": "Dublin (Chamber flagship)",
-    "members": "Dublin Chamber flagship — member pricing may apply.",
-    "desc": "The Chamber's signature networking event of the year — food, drinks, and the widest local business turnout of the season.",
-    "url": "https://www.dublinchamber.org/events/register/12630",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
     "date": "2026-09-30",
     "title": "2 Days Certified ScrumMaster (CSM) Training in Columbus, OH",
     "type": "work",
@@ -212,19 +152,6 @@
     "host": "Eventbrite",
     "_source": "scrape",
     "_added": "2026-09-28"
-  },
-  {
-    "date": "2026-09-30",
-    "title": "Cornerstone of Hope presents Grief Matters Free Workshop: Journaling For Grief",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Cornerstone of Hope presents Grief Matters Free Workshop: Journaling For Grief",
-    "url": "https://www.dublinchamber.org/events/details/cornerstone-of-hope-presents-grief-matters-free-workshop-journaling-for-grief-12764",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-01",
@@ -261,19 +188,6 @@
     "host": "IxDA Columbus",
     "_source": "scrape",
     "_added": "2026-09-28"
-  },
-  {
-    "date": "2026-10-03",
-    "title": "BMI Federal Credit Union Medicare 101 Workshop",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "BMI Federal Credit Union Medicare 101 Workshop",
-    "url": "https://www.dublinchamber.org/events/details/bmi-federal-credit-union-medicare-101-12759",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-03",
@@ -336,19 +250,6 @@
   },
   {
     "date": "2026-10-07",
-    "title": "Ambassador Club Meeting",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Ambassador Club Meeting",
-    "url": "https://www.dublinchamber.org/events/register/12532",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-10-07",
     "title": "Central Ohio Digital Inclusion Summit",
     "type": "conf",
     "time": "8:30 AM – 1:00 PM",
@@ -371,17 +272,6 @@
   },
   {
     "date": "2026-10-07",
-    "title": "Dublin Business Roundtable w/ Rep. Mike Carey",
-    "type": "round",
-    "time": "Morning",
-    "loc": "Dublin (Chamber)",
-    "members": "Dublin Chamber event — verify member vs. guest access.",
-    "desc": "Discussion-format session with U.S. Representative Mike Carey and local business leaders.",
-    "url": "https://www.dublinchamber.org/events/register/12785",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-10-07",
     "title": "Navigating Data Center Growth: Tools for Local Decision Making",
     "type": "work",
     "time": "See event page",
@@ -391,43 +281,6 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Eventbrite"
-  },
-  {
-    "date": "2026-10-08",
-    "title": "Marketing Strategy Workshop: Website Audit",
-    "type": "work",
-    "time": "Morning",
-    "loc": "Dublin Chamber (w/ Jely Creative)",
-    "members": "Dublin Chamber event — verify member vs. guest access.",
-    "desc": "Hands-on website-audit workshop led by Jely Creative — practical marketing and web-presence guidance for local businesses.",
-    "url": "https://www.dublinchamber.org/events/register/12770",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-10-08",
-    "title": "Taste Of Hope: A Premier Culinary Experience Benefiting Cornerstone of Hope",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Taste Of Hope: A Premier Culinary Experience Benefiting Cornerstone of Hope",
-    "url": "https://www.dublinchamber.org/events/details/taste-of-hope-a-premier-culinary-experience-benefiting-cornerstone-of-hope-12760",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-10-09",
-    "title": "Sales Connection Breakfast Series",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Sales Connection Breakfast Series",
-    "url": "https://www.dublinchamber.org/events/register/12544",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-11",
@@ -440,19 +293,6 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Eventbrite"
-  },
-  {
-    "date": "2026-10-13",
-    "title": "Asset Protection for Your Life & Legacy Now",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "estate planning, asset protection, Medicaid qualification workshop",
-    "url": "https://www.dublinchamber.org/events/details/asset-protection-for-your-life-legacy-now-12885",
-    "host": "Dublin Chamber of Commerce",
-    "_source": "scrape",
-    "_added": "2026-10-12"
   },
   {
     "date": "2026-10-13",
@@ -503,19 +343,6 @@
   },
   {
     "date": "2026-10-14",
-    "title": "Dublin Chamber's Marketing Strategy Workshop:Using Organic Social Media as an Asset for Visibility & Client Attraction with Allure Atelier Studio",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Dublin Chamber's Marketing Strategy Workshop:Using Organic Social Media as an Asset for Visibility & Client Attraction with Allure Atelier Studio",
-    "url": "https://www.dublinchamber.org/events/register/12771",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-10-14",
     "title": "MORPC Economic Development Academy",
     "type": "work",
     "time": "See event page",
@@ -525,19 +352,6 @@
     "host": "Eventbrite",
     "_source": "scrape",
     "_added": "2026-09-25"
-  },
-  {
-    "date": "2026-10-15",
-    "title": "Ability Matters Fall Open House",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Ability Matters invites families, staff and friends to connect, meet and learn more about the programs and services we offer.",
-    "url": "https://www.dublinchamber.org/events/details/ability-matters-fall-open-house-12881",
-    "host": "Dublin Chamber of Commerce",
-    "_source": "scrape",
-    "_added": "2026-10-12"
   },
   {
     "date": "2026-10-15",
@@ -562,32 +376,6 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "TechLife Columbus"
-  },
-  {
-    "date": "2026-10-15",
-    "title": "Women In Business Luncheon with Guest Speaker Kristopher Kline, DO",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Women In Business Luncheon with Guest Speaker Kristopher Kline, DO",
-    "url": "https://www.dublinchamber.org/events/register/12588",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-10-16",
-    "title": "NSA Ohio's Communication Mastery 2026",
-    "type": "conf",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "NSA Ohio's Communication Mastery Conference\nmaster the art of communication, sharpen presentation skills",
-    "url": "https://www.dublinchamber.org/events/details/nsa-ohio-s-communication-mastery-2026-12663",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-10-19",
@@ -615,32 +403,6 @@
   },
   {
     "date": "2026-10-20",
-    "title": "BMI Federal Credit Union Presents Financial Wellness Check-in Webinar Series Second Session",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "BMI Federal Credit Union Presents Financial Wellness Check-in Webinar Series Second Session",
-    "url": "https://www.dublinchamber.org/events/details/bmi-federal-credit-union-presents-financial-wellness-check-in-webinar-series-second-session-12755",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-10-20",
-    "title": "Business After Hours Networking Hosted by Waxing the City and Shawnee Station Taproom & Kitchen",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Business After Hours Networking Hosted by Waxing the City and Shawnee Station Taproom & Kitchen",
-    "url": "https://www.dublinchamber.org/events/register/12566",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-10-20",
     "title": "Pushing Through the Headwinds: Building Resilient, Intelligent Healthcare",
     "type": "work",
     "time": "See event page",
@@ -650,19 +412,6 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Eventbrite"
-  },
-  {
-    "date": "2026-10-21",
-    "title": "Asking For A Friend: A Live Women's Health Podcast Recording in Dublin, Ohio",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Dublin's own women's health podcast, Asking For A Friend, records its Season 2 launch live on October 21. This event is free & open to the community!",
-    "url": "https://www.dublinchamber.org/events/details/asking-for-a-friend-a-live-women-s-health-podcast-recording-in-dublin-ohio-12880",
-    "host": "Dublin Chamber of Commerce",
-    "_source": "scrape",
-    "_added": "2026-10-12"
   },
   {
     "date": "2026-10-21",
@@ -713,19 +462,6 @@
   },
   {
     "date": "2026-10-22",
-    "title": "Lunch Bunch at Firehouse Subs",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Lunch Bunch at Firehouse Subs",
-    "url": "https://www.dublinchamber.org/events/register/12589",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-10-22",
     "title": "VOLUME UP SUMMIT 2026",
     "type": "conf",
     "time": "See event page",
@@ -737,19 +473,6 @@
     "_added": "2026-10-05"
   },
   {
-    "date": "2026-10-23",
-    "title": "Asset Protection for Your Life & Legacy Now",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Asset Protection for Your Life & Legacy Now",
-    "url": "https://www.dublinchamber.org/events/details/asset-protection-for-your-life-legacy-now-10-23-2026-12887",
-    "host": "Dublin Chamber of Commerce",
-    "_source": "scrape",
-    "_added": "2026-10-12"
-  },
-  {
     "date": "2026-10-24",
     "title": "CarniFall + TechLife 2.0 Launch Party",
     "type": "social",
@@ -758,19 +481,6 @@
     "desc": "TechLife Columbus's community launch party — a big, casual celebration of the local tech scene.",
     "url": "https://www.techlifecolumbus.com/events/",
     "host": "TechLife Columbus"
-  },
-  {
-    "date": "2026-10-24",
-    "title": "Hometown Hero Event",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "T-MOBILE, Hometown Hero Event",
-    "url": "https://www.dublinchamber.org/events/details/hometown-hero-event-12890",
-    "host": "Dublin Chamber of Commerce",
-    "_source": "scrape",
-    "_added": "2026-10-19"
   },
   {
     "date": "2026-10-27",
@@ -785,45 +495,6 @@
     "_added": "2026-10-12"
   },
   {
-    "date": "2026-10-27",
-    "title": "Leadership Dublin - Class of 2027",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Leadership Dublin - Class of 2027",
-    "url": "https://www.dublinchamber.org/events/register/12749",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-10-27",
-    "title": "Morning Brew Business Breakfast hosted by The Winchester Institute",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Morning Brew Business Breakfast hosted by The Winchester Institute",
-    "url": "https://www.dublinchamber.org/events/register/12556",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-10-27",
-    "title": "Trunk or Treat",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Trunk or Treat",
-    "url": "https://www.dublinchamber.org/events/details/trunk-or-treat-10-27-2026-12889",
-    "host": "Dublin Chamber of Commerce",
-    "_source": "scrape",
-    "_added": "2026-10-19"
-  },
-  {
     "date": "2026-10-28",
     "title": "2026 Ohio's Future Workforce Summit (powered by OhioX)",
     "type": "conf",
@@ -834,32 +505,6 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Eventbrite"
-  },
-  {
-    "date": "2026-10-28",
-    "title": "Cornerstone of Hope presents Grief Matters Free Workshop: Grief Coffee House",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Cornerstone of Hope presents Grief Matters Free Workshop: Grief Coffee House",
-    "url": "https://www.dublinchamber.org/events/details/cornerstone-of-hope-presents-grief-matters-free-workshop-grief-coffee-house-12765",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-10-28",
-    "title": "Golf Club of Dublin Fall Cornhole League",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Register your two-person team for Golf Club of Dublin’s Fall Indoor Cornhole League. Only three team spots remain!",
-    "url": "https://www.dublinchamber.org/events/details/golf-club-of-dublin-fall-cornhole-league-10-28-2026-12865",
-    "host": "Dublin Chamber of Commerce",
-    "_source": "scrape",
-    "_added": "2026-10-26"
   },
   {
     "date": "2026-10-29",
@@ -920,19 +565,6 @@
     "_added": "2026-10-26"
   },
   {
-    "date": "2026-11-01",
-    "title": "Wedding Resale Market®",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Wedding Resale Market®",
-    "url": "https://www.dublinchamber.org/events/details/wedding-resale-market-12858",
-    "host": "Dublin Chamber of Commerce",
-    "_source": "scrape",
-    "_added": "2026-10-12"
-  },
-  {
     "date": "2026-11-02",
     "title": "AI Tinkerers Columbus x HackOHI/O x OSU Software Dev Club",
     "type": "round",
@@ -944,32 +576,6 @@
     "host": "AI Tinkerers Columbus",
     "_source": "scrape",
     "_added": "2026-10-12"
-  },
-  {
-    "date": "2026-11-04",
-    "title": "Ambassador Club Meeting",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Ambassador Club Meeting",
-    "url": "https://www.dublinchamber.org/events/register/12533",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-11-04",
-    "title": "Dublin Chamber's Marketing Strategy Workshop: Using Organic Social Media as an Asset for Visibility & Client Attraction - Part 2",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Dublin Chamber's Marketing Strategy Workshop: Using Organic Social Media as an Asset for Visibility & Client Attraction - Part 2",
-    "url": "https://www.dublinchamber.org/events/register/12773",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-04",
@@ -1020,19 +626,6 @@
     "host": "SparkWorks Innovation"
   },
   {
-    "date": "2026-11-05",
-    "title": "Talent Science Human Resources Workshop with Guest Speaker Jonathan Nguyen",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Talent Science Human Resources Workshop with Guest Speaker Jonathan Nguyen",
-    "url": "https://www.dublinchamber.org/events/register/12568",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
     "date": "2026-11-10",
     "title": "AI Engineering Summit | Columbus | 2026",
     "type": "conf",
@@ -1067,19 +660,6 @@
     "host": "ProductTank Columbus",
     "_source": "scrape",
     "_added": "2026-10-26"
-  },
-  {
-    "date": "2026-11-10",
-    "title": "Lunch Bunch Rusty Bucket Restaurant & Tavern",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Lunch Bunch Rusty Bucket Restaurant & Tavern",
-    "url": "https://www.dublinchamber.org/events/register/12590",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-10",
@@ -1118,19 +698,6 @@
     "_added": "2026-10-12"
   },
   {
-    "date": "2026-11-12",
-    "title": "Dublin Chamber's Marketing Strategy Workshop: Marketing Strategy Fundamentals",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Dublin Chamber's Marketing Strategy Workshop: Marketing Strategy Fundamentals",
-    "url": "https://www.dublinchamber.org/events/register/12774",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
     "date": "2026-11-13",
     "title": "Agile Coaching Circle -- IN-PERSON",
     "type": "work",
@@ -1141,71 +708,6 @@
     "host": "TechLife Columbus",
     "_source": "scrape",
     "_added": "2026-10-26"
-  },
-  {
-    "date": "2026-11-13",
-    "title": "Sales Connection Breakfast Series - Topic: Relationship First Sales Approach with Guest Speaker John O'Connell",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Sales Connection Breakfast Series - Topic: Relationship First Sales Approach with Guest Speaker John O'Connell",
-    "url": "https://www.dublinchamber.org/events/register/12545",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-11-17",
-    "title": "BMI Federal Credit Union Presents Financial Wellness Check-in Webinar Series Third Session",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "BMI Federal Credit Union Presents Financial Wellness Check-in Webinar Series Third Session",
-    "url": "https://www.dublinchamber.org/events/details/bmi-federal-credit-union-presents-financial-wellness-check-in-webinar-series-third-sessiom-12756",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-11-17",
-    "title": "Business After Hours Networking hosted by Magge's Cleaning",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Business After Hours Networking hosted by Magge's Cleaning",
-    "url": "https://www.dublinchamber.org/events/register/12567",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Cornerstone of Hope presents Grief Matters Free Workshop: Honoring Holiday Grief",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Cornerstone of Hope presents Grief Matters Free Workshop: Honoring Holiday Grief",
-    "url": "https://www.dublinchamber.org/events/details/cornerstone-of-hope-presents-grief-matters-free-workshop-honoring-holiday-grief-12766",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Dublin Chamber's Marketing Strategy Workshop: Your Marketing Game Plan - An Interactive Workshop to Build Your Marketing Plan for the Year Ahead",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Dublin Chamber's Marketing Strategy Workshop: Your Marketing Game Plan - An Interactive Workshop to Build Your Marketing Plan for the Year Ahead",
-    "url": "https://www.dublinchamber.org/events/register/12775",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-11-18",
@@ -1243,19 +745,6 @@
     "host": "TechLife Columbus"
   },
   {
-    "date": "2026-11-19",
-    "title": "Women In Business Luncheon with Guest Speaker Dr. Margaret Gatti-Mays with The Ohio State Wexner Medical Center",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Women In Business Luncheon with Guest Speaker Dr. Margaret Gatti-Mays with The Ohio State Wexner Medical Center",
-    "url": "https://www.dublinchamber.org/events/register/12577",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
     "date": "2026-11-20",
     "title": "TEDxColumbus 2026: MAKE ROOM",
     "type": "conf",
@@ -1264,19 +753,6 @@
     "desc": "TEDxColumbus's annual independently-organized TEDx event — this year's theme is \"MAKE ROOM.\" A day of talks from local speakers on ideas worth spreading.",
     "url": "https://tedxcolumbus.com/",
     "host": "TEDxColumbus"
-  },
-  {
-    "date": "2026-12-02",
-    "title": "Ambassador Club Meeting",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Ambassador Club Meeting",
-    "url": "https://www.dublinchamber.org/events/register/12534",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-12-02",
@@ -1327,32 +803,6 @@
     "_added": "2026-10-12"
   },
   {
-    "date": "2026-12-11",
-    "title": "2026 Recognition Luncheon Featuring the Spotlight Dublin Award",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "2026 Recognition Luncheon Featuring the Spotlight Dublin Award",
-    "url": "https://www.dublinchamber.org/events/register/12593",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
-    "date": "2026-12-11",
-    "title": "Sales Connection Breakfast Series: Proactively Drive 15%-30% Predictable Revenue Growth with Matt Bowers",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Sales Connection Breakfast Series: Proactively Drive 15%-30% Predictable Revenue Growth with Matt Bowers",
-    "url": "https://www.dublinchamber.org/events/register/12546",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
-  },
-  {
     "date": "2026-12-12",
     "title": "GetWITit's 10-Year Anniversary Gala",
     "type": "net",
@@ -1363,19 +813,6 @@
     "host": "Columbus WIT",
     "_source": "scrape",
     "_added": "2026-09-28"
-  },
-  {
-    "date": "2026-12-16",
-    "title": "Dublin Chamber of Commerce Government Affairs Committee Meeting",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Dublin Chamber of Commerce Government Affairs Committee Meeting",
-    "url": "https://www.dublinchamber.org/events/register/12592",
-    "_source": "scrape",
-    "_added": "2026-09-19",
-    "host": "Dublin Chamber of Commerce"
   },
   {
     "date": "2026-12-16",
@@ -1402,58 +839,6 @@
     "host": "TechLife Columbus"
   },
   {
-    "date": "2027-01-06",
-    "title": "Ambassador Club Meeting",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Ambassador Club Meeting",
-    "url": "https://www.dublinchamber.org/events/register/12792",
-    "host": "Dublin Chamber of Commerce",
-    "_source": "scrape",
-    "_added": "2026-10-05"
-  },
-  {
-    "date": "2027-01-08",
-    "title": "Sales Connection Breakfast",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Sales Connection Breakfast",
-    "url": "https://www.dublinchamber.org/events/register/12804",
-    "host": "Dublin Chamber of Commerce",
-    "_source": "scrape",
-    "_added": "2026-10-05"
-  },
-  {
-    "date": "2027-01-19",
-    "title": "Business After Hours",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Business After Hours",
-    "url": "https://www.dublinchamber.org/events/register/12829",
-    "host": "Dublin Chamber of Commerce",
-    "_source": "scrape",
-    "_added": "2026-10-19"
-  },
-  {
-    "date": "2027-01-21",
-    "title": "Lunch Bunch",
-    "type": "net",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Lunch Bunch",
-    "url": "https://www.dublinchamber.org/events/register/12817",
-    "host": "Dublin Chamber of Commerce",
-    "_source": "scrape",
-    "_added": "2026-10-19"
-  },
-  {
     "date": "2027-01-21",
     "title": "NFT AI ART Columbus",
     "type": "net",
@@ -1464,18 +849,5 @@
     "host": "TechLife Columbus",
     "_source": "scrape",
     "_added": "2026-10-19"
-  },
-  {
-    "date": "2027-01-27",
-    "title": "Leadership Academy Class of 2027 Registration",
-    "type": "work",
-    "time": "See event page",
-    "loc": "Dublin",
-    "members": "Dublin Chamber event — member pricing may apply.",
-    "desc": "Leadership Academy Class of 2027 Registration",
-    "url": "https://www.dublinchamber.org/events/register/12752",
-    "host": "Dublin Chamber of Commerce",
-    "_source": "scrape",
-    "_added": "2026-10-26"
   }
 ]
