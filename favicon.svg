@@ -1,7 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="body-clip">
+      <rect x="6" y="10" width="52" height="48" rx="11"/>
+    </clipPath>
+  </defs>
   <rect x="16" y="2" width="7" height="15" rx="3.5" fill="#d63b53"/>
   <rect x="41" y="2" width="7" height="15" rx="3.5" fill="#d63b53"/>
-  <rect x="6" y="10" width="52" height="48" rx="11" fill="#faf8f6" stroke="#d63b53" stroke-width="3"/>
-  <path d="M6 21a11 11 0 0 1 11-11h30a11 11 0 0 1 11 11v5H6z" fill="#d63b53"/>
+  <g clip-path="url(#body-clip)">
+    <rect x="6" y="10" width="52" height="48" fill="#faf8f6"/>
+    <rect x="6" y="10" width="52" height="6.6" fill="#d63b53"/>
+  </g>
+  <rect x="6" y="10" width="52" height="48" rx="11" fill="none" stroke="#d63b53" stroke-width="3"/>
   <text x="32" y="47" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="32" fill="#ff7282" text-anchor="middle">C</text>
 </svg>
