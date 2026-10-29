@@ -91,6 +91,27 @@ def classify(title, desc=""):
     return "net"
 
 
+# Dublin Chamber's own calendar is a general small-business chamber calendar
+# (wine tastings, grief-support workshops, ribbon cuttings, golf outings...) —
+# only a handful of its events are actually tech/startup-relevant. Rather than
+# pull in everything, src_dublin_chamber() keeps only events that match one of
+# these (word-boundary so "ai" doesn't match "fair"/"said", etc).
+TECH_KEYWORDS = [
+    r"\btech\b", r"\btechnology\b", r"\bstartup", r"\bsoftware\b", r"\bsaas\b",
+    r"\bcyber\b", r"\bcybersecurity\b", r"\bartificial intelligence\b", r"\bai\b",
+    r"\bgenai\b", r"\bgen ai\b", r"\bllm\b", r"\bmachine learning\b",
+    r"\bdata science\b", r"\bbig data\b", r"\bautomation\b", r"\brobotic",
+    r"\bcoding\b", r"\bdeveloper", r"\bprogramming\b", r"\bcloud computing\b",
+    r"\bblockchain\b", r"\bfintech\b", r"\biot\b", r"\bapi\b",
+    r"\bdigital transformation\b", r"\bweb development\b", r"\bapp development\b",
+]
+
+
+def is_tech_relevant(title, desc=""):
+    text = (title + " " + (desc or "")).lower()
+    return any(re.search(kw, text) for kw in TECH_KEYWORDS)
+
+
 def in_metro(loc):
     # Require a positive match against a metro city/area name. Empty/unknown is
     # rejected — aggregators (dev.events, Eventbrite, Luma) list global events, so
@@ -166,6 +187,18 @@ try:
 except ImportError:
     _HAVE_PLAYWRIGHT = False
 
+# Some environments (e.g. Claude's cloud sessions) ship a pre-installed Chromium
+# at a fixed path but can't download the exact revision a freshly-pip-installed
+# Playwright expects (network policy blocks cdn.playwright.dev) — launch()
+# with no args then fails with "Executable doesn't exist at ...". If that path
+# exists, point launch() at it explicitly instead of Playwright's own managed
+# browser; otherwise fall back to default (normal `playwright install chromium`
+# setups, e.g. Lauren's own machine per RUNBOOK.md).
+_LOCAL_CHROMIUM = "/opt/pw-browsers/chromium"
+_CHROMIUM_LAUNCH_KWARGS = (
+    {"executable_path": _LOCAL_CHROMIUM} if os.path.exists(_LOCAL_CHROMIUM) else {}
+)
+
 
 def render_html(url, wait_ms=4000, wait_until="domcontentloaded", timeout=30000):
     """Load `url` in headless Chromium and return the fully-rendered HTML.
@@ -177,7 +210,7 @@ def render_html(url, wait_ms=4000, wait_until="domcontentloaded", timeout=30000)
             "python3 -m playwright install chromium (see RUNBOOK.md)"
         )
     with sync_playwright() as p:
-        browser = p.chromium.launch()
+        browser = p.chromium.launch(**_CHROMIUM_LAUNCH_KWARGS)
         try:
             page = browser.new_page(user_agent=UA_BROWSER)
             page.goto(url, timeout=timeout, wait_until=wait_until)
@@ -198,7 +231,7 @@ class RenderSession:
                 "python3 -m playwright install chromium (see RUNBOOK.md)"
             )
         self._pw = sync_playwright().start()
-        self.browser = self._pw.chromium.launch()
+        self.browser = self._pw.chromium.launch(**_CHROMIUM_LAUNCH_KWARGS)
         self.page = self.browser.new_page(user_agent=UA_BROWSER)
 
     def get(self, url, wait_ms=3500, wait_until="domcontentloaded", timeout=30000):
@@ -381,7 +414,11 @@ def src_dublin_chamber():
     """Dublin Chamber (GrowthZone/ChamberMaster) loads its event list via an
     infinite-scroll partial (`/events/searchscroll`) — plain HTML, no JS needed,
     once you hit the right endpoint+params directly. We page through it until an
-    empty page comes back."""
+    empty page comes back.
+
+    This is a general chamber-of-commerce calendar, not a tech one — we only
+    keep events that look tech/startup-relevant (see TECH_KEYWORDS /
+    is_tech_relevant), rather than pulling in the whole thing."""
     base = "https://www.dublinchamber.org"
     frm = TODAY.strftime("%-m/%-d/%Y") if os.name != "nt" else TODAY.strftime("%#m/%#d/%Y")
     to = HORIZON.strftime("%-m/%-d/%Y") if os.name != "nt" else HORIZON.strftime("%#m/%#d/%Y")
@@ -406,6 +443,8 @@ def src_dublin_chamber():
             title = html.unescape(title_m.group(2).strip())
             date = date_m.group(1)
             desc = html.unescape(desc_m.group(1).strip()) if desc_m else title
+            if not is_tech_relevant(title, desc):
+                continue
             events.append({
                 "date": date, "title": title, "type": classify(title, desc),
                 "time": "See event page", "loc": "Dublin",
@@ -537,86 +576,58 @@ def src_worthington_chamber():
 
 
 def src_womenpm():
-    """Women in Product's community site (Circle-based) is fully client-rendered
-    and lists ALL chapters' events on one national feed
-    (/c/all-local-events) — there's no per-chapter filter on the list page itself.
-    Each event's own detail page, once rendered, does show the actual venue
-    street address though (e.g. '2808 N High St, Columbus, OH 43202'), which is a
-    far more reliable signal than the list page's generic 'In person' text or the
-    event title (chapter name isn't always in the title — see the Sep 21
-    'Delegate & Elevate' event, which is Columbus but doesn't say so in the
-    title). So: render the list once, then render each in-window candidate's
-    detail page once to pull the real address and metro-filter on that."""
-    sess = RenderSession()
-    try:
-        list_html = sess.get("https://community.womenpm.org/c/all-local-events", wait_ms=5000)
-        months = re.split(r'<h5[^>]*>([A-Za-z]+ \d{4})</h5>', list_html)
-        MONTHS = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
-                  "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12}
-        candidates = []
-        for i in range(1, len(months), 2):
-            mname, year = months[i].split()
-            year = int(year)
-            content = months[i + 1] if i + 1 < len(months) else ""
-            for m in re.finditer(
-                r'text-lg font-bold leading-6">(\d+)</div>.*?leading-4"[^>]*>([A-Za-z]{3})</div>'
-                r'.*?href="(/c/[^"]+)"[^>]*>([^<]+)</a>.*?text-dark">'
-                r'([^<]*?\d[^<]*?(?:AM|PM)[^<]*?)</span>',
-                content, re.S,
-            ):
-                day, mon, href, title, timetxt = m.groups()
-                month = MONTHS.get(mon, MONTHS.get(mname[:3], 1))
-                try:
-                    date = datetime.date(year, month, int(day))
-                except ValueError:
-                    continue
-                candidates.append({
-                    "date": date.isoformat(),
-                    "title": html.unescape(title.strip()),
-                    "url": "https://community.womenpm.org" + href,
-                    "time": timetxt.strip(),
-                })
-        # de-dupe candidates (same event can appear more than once in the feed)
-        seen_urls = set()
-        uniq = []
-        for c in candidates:
-            if c["url"] in seen_urls:
-                continue
-            seen_urls.add(c["url"])
-            uniq.append(c)
+    """Women in Product's community site (Circle-based) lists ALL chapters'
+    events on one national feed. The rendered page used to be our only option
+    (hence the old per-event detail-page-render approach), but the site also
+    exposes the exact same data as a plain, unauthenticated JSON API —
+    `internal_api/spaces/<id>/posts` — which includes a already-geocoded
+    `in_person_location.formatted_address` per event. That's both a more
+    reliable metro signal than the rendered page's generic 'In person' text
+    AND means this source needs no headless browser at all anymore.
 
-        out = []
-        checked = 0
-        for c in uniq:
+    Space id 1322668 is 'All Local Events' — found via the page's own network
+    requests (community.womenpm.org/c/all-local-events); it'll need updating
+    if WiP ever migrates/re-IDs that space."""
+    SPACE_ID = 1322668
+    out = []
+    page = 1
+    while page <= 10:   # sane cap — current feed is ~1 page; leaves headroom
+        url = ("https://community.womenpm.org/internal_api/spaces/%d/posts"
+               "?past_events=false&used_on=posts&include_top_pinned_post=true&page=%d"
+               % (SPACE_ID, page))
+        data = json.loads(fetch(url, accept="application/json"))
+        for r in data.get("records", []):
+            esa = r.get("event_setting_attributes") or {}
+            loc_raw = esa.get("in_person_location")
+            loc = ""
+            if loc_raw:
+                try:
+                    loc = json.loads(loc_raw).get("formatted_address", "") or ""
+                except (TypeError, ValueError):
+                    loc = ""
+            elif esa.get("virtual_location_url"):
+                loc = "Online"
+            if not in_metro(loc):
+                continue
+            starts = esa.get("calendar_starts_at") or esa.get("starts_at")
             try:
-                d = datetime.date.fromisoformat(c["date"])
-            except ValueError:
+                d = datetime.datetime.fromisoformat(starts)
+            except (TypeError, ValueError):
                 continue
-            if not (TODAY <= d <= HORIZON):
+            title = html.unescape((r.get("name") or "").strip())
+            if not title:
                 continue
-            if checked >= 25:   # sane cap on detail-page renders per run
-                break
-            checked += 1
-            try:
-                detail = sess.get(c["url"], wait_ms=3000)
-            except Exception:
-                continue
-            addr_m = re.search(
-                r'text-xs font-normal leading-normal tracking-tight normal-case  text-dark">([^<]+)</p>',
-                detail,
-            )
-            addr = html.unescape(addr_m.group(1).strip()) if addr_m else ""
-            if not in_metro(addr):
-                continue
+            slug = r.get("slug", "")
             out.append({
-                "date": c["date"], "title": c["title"],
-                "type": classify(c["title"]), "time": c["time"],
-                "loc": addr, "desc": "Women in Product Columbus — " + c["title"],
-                "url": c["url"],
+                "date": d.date().isoformat(), "title": title,
+                "type": classify(title), "time": fmt_time(d),
+                "loc": loc, "desc": "Women in Product Columbus — " + title,
+                "url": "https://community.womenpm.org/c/all-local-events/%s" % slug,
             })
-        return out
-    finally:
-        sess.close()
+        if not data.get("has_next_page"):
+            break
+        page += 1
+    return out
 
 
 # Nicer, public-facing host names for the calendar UI ("hosted by X"), keyed by
@@ -655,7 +666,9 @@ SOURCES = {
     "aitinkerers":  ("AI Tinkerers Columbus", lambda: src_generic("https://columbus.aitinkerers.org/", local_default="Columbus")),
     "techlife_mu":  ("TechLife (Meetup)", lambda: src_meetup("techlifecolumbus", local_default="Columbus")),
     "witit":        ("Columbus WIT (getWITit)", src_witit_columbus),
-    "worthington":  ("Worthington Chamber", src_worthington_chamber),
+    # "worthington" disabled 2026-10-29 at Lauren's request — still blocked by a
+    # Cloudflare Turnstile bot-check (src_worthington_chamber() is unchanged and
+    # ready to re-enable once a workaround is found; see RUNBOOK.md).
     "devops":       ("DevOps Columbus (Meetup)", lambda: src_meetup("devops-columbus", local_default="Columbus")),
     "sparkworks":   ("SparkWorks Innovation", lambda: src_generic("https://sparkworksinnovation.com/event", local_default="Columbus")),
 }

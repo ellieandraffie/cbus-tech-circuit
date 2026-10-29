@@ -231,3 +231,44 @@ Luma/AI Tinkerers. Untested against real markup yet because:
   (it may not — the page could need the headless-render fallback `src_generic`
   already tries, or need a bespoke scraper like OhioX/Dublin Chamber if it
   doesn't expose JSON-LD at all). Flag back here if it needs more work.
+
+## Dublin Chamber tech-filtered; Women in Product rewritten; Worthington disabled (2026-10-29, per Lauren's report)
+
+Lauren flagged that pulling in Dublin Chamber's *entire* calendar didn't make
+sense for a tech-events page — of the 50 Dublin Chamber events already in
+`events.json`, only 1 ("AI Is the New SEO for Small Business") was actually
+tech-relevant; the rest were wine tastings, grief-support workshops, a golf
+cornhole league, etc. **Added `TECH_KEYWORDS`/`is_tech_relevant()`** (a
+word-boundary keyword check — tech, startup, AI, cybersecurity, SaaS, etc.)
+and `src_dublin_chamber()` now drops any event that doesn't match before
+returning it. The 49 already-stored non-tech entries are a separate cleanup
+decision (pending) — this only changes what future scrapes pull in.
+
+**Women in Product** was failing outright in this session (`BrowserType.launch:
+Executable doesn't exist...` — a freshly-`pip install`ed Playwright expecting a
+newer Chromium revision than this cloud environment's pre-installed one, which
+network policy blocks downloading a replacement for). Rather than just patch
+around the version mismatch, found something better while debugging: the
+community site's "all local events" page now calls a plain, unauthenticated
+JSON API — `internal_api/spaces/1322668/posts` — that returns each event's
+already-geocoded `in_person_location.formatted_address` directly. Rewrote
+`src_womenpm()` to hit that instead of rendering+scraping the page (the old
+CSS-class selectors were stale anyway — the site had been redesigned since).
+This source now needs **no Playwright/Chromium at all**. (Also added a
+general fallback to `render_html()`/`RenderSession()`: if a pre-installed
+Chromium is found at `/opt/pw-browsers/chromium`, launch uses that via
+`executable_path` instead of Playwright's managed download — helps any other
+source that ends up needing the headless-render fallback in an environment
+like this one.)
+
+**Worthington Chamber** temporarily disabled (commented out of `SOURCES`) at
+Lauren's request — still blocked by the same Cloudflare Turnstile bot-check
+documented above; revisit later rather than keep paying the wasted
+render_html() call/timeout every run.
+
+**Still pending Lauren's input:**
+- Whether to retroactively prune the 49 non-tech Dublin Chamber entries
+  already on the calendar, or just let the new filter apply going forward.
+- Two more Columbus-area AI groups she heard about but hasn't named yet —
+  add as new `SOURCES` entries once identified (Meetup/website pattern
+  should follow `src_meetup()` or `src_generic()` depending on the site).

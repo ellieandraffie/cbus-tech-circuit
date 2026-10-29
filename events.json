@@ -985,6 +985,18 @@
   },
   {
     "date": "2026-11-04",
+    "title": "Hands-On Lab: Master Ransomware Resilience with Object First + xFact",
+    "type": "work",
+    "time": "See event page",
+    "loc": "Veeam Software Columbus",
+    "desc": "Hands-on lab to master ransomware resilience with immutable backup, hosted at the Veeam headquarters by Object First and xFact",
+    "url": "https://www.eventbrite.com/e/hands-on-lab-master-ransomware-resilience-with-object-first-xfact-tickets-2003177244061",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-10-29"
+  },
+  {
+    "date": "2026-11-04",
     "title": "Sleigh The Workload: Build Your AI Holiday Co-Pilot",
     "type": "work",
     "time": "See event page",
@@ -1080,6 +1092,18 @@
     "host": "Eventbrite",
     "_source": "scrape",
     "_added": "2026-10-19"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Data & Analytics Wednesday - Analytics in Publishing",
+    "type": "social",
+    "time": "6:30 PM",
+    "loc": "Rev1 Ventures, Columbus",
+    "desc": "**Seven Portals, No North Star: Running Analytics for a Newsroom That Has to Pay the Rent** Every morning I open seven affiliate portals, Google Analytics, our beehiiv dashboard, and whatever social media is saying about us today. Then I try to answer one question: what do we do ",
+    "url": "https://www.meetup.com/techlifecolumbus/events/317159353/",
+    "host": "TechLife Columbus",
+    "_source": "scrape",
+    "_added": "2026-10-29"
   },
   {
     "date": "2026-11-11",
@@ -1352,6 +1376,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "Dublin Chamber of Commerce"
+  },
+  {
+    "date": "2026-12-16",
+    "title": "Engineering and Business Networking | Elevating Your Potential - Columbus",
+    "type": "net",
+    "time": "See event page",
+    "loc": "Mainline Bar + Courtyard Columbus",
+    "desc": "Strive welcomes you to 'Engineering and Business Networking', an event for tenured and newcomers at Mainline! Event is  21+.Limited Tickets.",
+    "url": "https://www.eventbrite.com/e/engineering-and-business-networking-elevating-your-potential-columbus-tickets-1996424814362",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-10-29"
   },
   {
     "date": "2026-12-17",
