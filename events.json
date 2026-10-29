@@ -626,6 +626,18 @@
     "host": "SparkWorks Innovation"
   },
   {
+    "date": "2026-11-05",
+    "title": "Founders Hop",
+    "type": "net",
+    "time": "6:00 PM",
+    "loc": "Columbus, OH",
+    "desc": "SparkWorks Innovation — Founders Hop",
+    "url": "https://sparkworksinnovation.com/event/founders-hop-29/",
+    "host": "SparkWorks Innovation",
+    "_source": "scrape",
+    "_added": "2026-10-29"
+  },
+  {
     "date": "2026-11-10",
     "title": "AI Engineering Summit | Columbus | 2026",
     "type": "conf",
@@ -743,6 +755,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "TechLife Columbus"
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Wake up startup November",
+    "type": "net",
+    "time": "7:30 AM",
+    "loc": "Columbus, OH",
+    "desc": "SparkWorks Innovation — Wake up startup November",
+    "url": "https://sparkworksinnovation.com/event/wake-up-startup-november-37/",
+    "host": "SparkWorks Innovation",
+    "_source": "scrape",
+    "_added": "2026-10-29"
   },
   {
     "date": "2026-11-20",

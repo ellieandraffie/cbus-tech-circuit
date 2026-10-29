@@ -266,9 +266,26 @@ Lauren's request — still blocked by the same Cloudflare Turnstile bot-check
 documented above; revisit later rather than keep paying the wasted
 render_html() call/timeout every run.
 
-**Still pending Lauren's input:**
-- Whether to retroactively prune the 49 non-tech Dublin Chamber entries
-  already on the calendar, or just let the new filter apply going forward.
-- Two more Columbus-area AI groups she heard about but hasn't named yet —
-  add as new `SOURCES` entries once identified (Meetup/website pattern
-  should follow `src_meetup()` or `src_generic()` depending on the site).
+**Resolved same-day:** Lauren said yes, prune — the 49 non-tech Dublin
+Chamber entries were removed from `events.json` (only the AI-relevant
+marketing workshop survived). She also widened this environment's network
+Allowed domains to include `sparkworksinnovation.com`, which unblocked the
+`sparkworks` source network-wise — but it then turned out `src_generic()`
+still found nothing: the site runs on **Odoo's website_event app**, which
+marks up events with schema.org *microdata* (`itemprop` attributes), not
+JSON-LD, so the generic extractor never saw them regardless of network
+access. Gave it its own parser, `src_sparkworks()` — confirmed finding
+all 4 real upcoming events (Founders Hop, Wake up startup November,
+Entrepreneur's Christmas Party, Columbus Startup Week 2027). One wrinkle:
+the card's CTA link is `/event/<slug>/` for some events and
+`/event/<slug>/register` for others (depends on RSVP state) — normalized
+away the `/register` suffix so both forms dedupe to one canonical URL.
+`startDate` meta has no UTC offset but is in UTC; converted to
+`America/New_York` via `zoneinfo` since every event is in Columbus.
+
+**Named the two AI groups:** "AI Engineers" and "AI Tinkerers". AI Tinkerers
+Columbus was already a source (`aitinkerers`, since the original 13-source
+build) — no action needed. Searched for a Columbus-area group literally
+named "AI Engineers" and found nothing — only AI-engineer job/salary
+aggregator pages, no meetup/community by that name. Flagged back to Lauren
+rather than guessing at a substitute; still open.

@@ -45,6 +45,7 @@ import ssl
 import sys
 import urllib.error
 import urllib.request
+from zoneinfo import ZoneInfo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 EVENTS_JSON = os.path.join(HERE, "events.json")
@@ -630,6 +631,60 @@ def src_womenpm():
     return out
 
 
+def src_sparkworks():
+    """SparkWorks Innovation's site runs on Odoo's website_event app, which
+    marks up each event card with schema.org *microdata* (itemprop attributes
+    on the HTML elements, e.g. <meta itemprop="startDate" content="...">)
+    rather than JSON-LD — src_generic()'s JSON-LD extractor never finds
+    anything here (confirmed: the page's only JSON-LD block is an
+    Organization, not an Event), so this gets its own small parser.
+
+    The startDate meta has no UTC offset but is in UTC (standard for Odoo's
+    rendered Event microdata, and the detail pages don't expose a clearer
+    local time anywhere in the plain HTML — Odoo renders that bit client-side
+    via JS) — convert to US/Eastern since every SparkWorks event is in
+    Columbus."""
+    page = fetch("https://sparkworksinnovation.com/event")
+    # The card's CTA link is sometimes the plain event page (/event/<slug>/)
+    # and sometimes the registration flow (/event/<slug>/register) depending
+    # on RSVP state — normalize away the /register suffix so both forms
+    # dedupe to the same canonical event URL.
+    hrefs = [(m.start(), re.sub(r'/register/?$', '/', m.group(1)))
+             for m in re.finditer(r'href="(/event/[^"#?]+)"', page)]
+    out = []
+    seen = set()
+    for i, (start, href) in enumerate(hrefs):
+        if href in seen or not re.match(r'^/event/[^/]+/$', href):
+            continue
+        seen.add(href)
+        end = hrefs[i + 1][0] if i + 1 < len(hrefs) else len(page)
+        block = page[start:end]
+        date_m = re.search(r'itemprop="startDate" content="([^"]+)"', block)
+        name_m = re.search(r'itemprop="name">([^<]+)</span>', block)
+        if not (date_m and name_m):
+            continue
+        try:
+            utc_dt = datetime.datetime.fromisoformat(date_m.group(1)).replace(
+                tzinfo=datetime.timezone.utc)
+        except ValueError:
+            continue
+        d = utc_dt.astimezone(ZoneInfo("America/New_York"))
+        locality_m = re.search(r'itemprop="addressLocality">([^<]+)</span>', block)
+        region_m = re.search(r'itemprop="addressRegion">([^<]+)</span>', block)
+        loc = ", ".join(x for x in [
+            html.unescape(locality_m.group(1).strip()) if locality_m else "",
+            html.unescape(region_m.group(1).strip()) if region_m else "",
+        ] if x) or "Columbus"
+        title = html.unescape(name_m.group(1).strip())
+        out.append({
+            "date": d.date().isoformat(), "title": title,
+            "type": classify(title), "time": fmt_time(d),
+            "loc": loc, "desc": "SparkWorks Innovation — " + title,
+            "url": "https://sparkworksinnovation.com" + href,
+        })
+    return out
+
+
 # Nicer, public-facing host names for the calendar UI ("hosted by X"), keyed by
 # SOURCES key. Falls back to the SOURCES label itself when a key isn't listed here.
 HOST_LABELS = {
@@ -670,7 +725,7 @@ SOURCES = {
     # Cloudflare Turnstile bot-check (src_worthington_chamber() is unchanged and
     # ready to re-enable once a workaround is found; see RUNBOOK.md).
     "devops":       ("DevOps Columbus (Meetup)", lambda: src_meetup("devops-columbus", local_default="Columbus")),
-    "sparkworks":   ("SparkWorks Innovation", lambda: src_generic("https://sparkworksinnovation.com/event", local_default="Columbus")),
+    "sparkworks":   ("SparkWorks Innovation", src_sparkworks),
 }
 
 
