@@ -638,6 +638,18 @@
     "_added": "2026-10-29"
   },
   {
+    "date": "2026-11-06",
+    "title": "IxDA Chat ‘n Pancakes",
+    "type": "net",
+    "time": "8:00 AM",
+    "loc": "Mozart's Bakery and Event Space, Columbus",
+    "desc": "Join the local UX and Design community for our casual monthly breakfast meetup. Ahead of Mozart's goodbye at the end of December, we're making a long-awaited return visit. Thanks to the team at Nationwide for supporting the community.",
+    "url": "https://www.meetup.com/columbus-ixda-group/events/317214901/",
+    "host": "IxDA Columbus",
+    "_source": "scrape",
+    "_added": "2026-11-02"
+  },
+  {
     "date": "2026-11-10",
     "title": "AI Engineering Summit | Columbus | 2026",
     "type": "conf",
@@ -755,6 +767,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "TechLife Columbus"
+  },
+  {
+    "date": "2026-11-19",
+    "title": "The Fore Ohio Tour - Columbus",
+    "type": "round",
+    "time": "See event page",
+    "loc": "The Fairway Columbus Columbus",
+    "desc": "Join some of the top channel organizations for golf and discussions about cutting-edge technologies for your customers.",
+    "url": "https://www.eventbrite.com/e/the-fore-ohio-tour-columbus-tickets-2003221432229",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-11-02"
   },
   {
     "date": "2026-11-19",
