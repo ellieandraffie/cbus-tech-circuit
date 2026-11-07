@@ -698,6 +698,18 @@
     "_added": "2026-10-19"
   },
   {
+    "date": "2026-11-10",
+    "title": "Readers’ Club: Think INSIDE the Box",
+    "type": "net",
+    "time": "6:00 PM",
+    "loc": "7775 Walton Pkwy, Suite 100, New Albany",
+    "desc": "Innovate New Albany Readers' Club — Readers’ Club: Think INSIDE the Box",
+    "url": "https://innovatenewalbany.org/new-event/readers-club-think-inside-the-box/",
+    "host": "Innovate New Albany",
+    "_source": "scrape",
+    "_added": "2026-11-07"
+  },
+  {
     "date": "2026-11-11",
     "title": "Data & Analytics Wednesday - Analytics in Publishing",
     "type": "social",
@@ -803,6 +815,18 @@
     "host": "TEDxColumbus"
   },
   {
+    "date": "2026-11-20",
+    "title": "The Reinvention Advantage: 3 Science-Based Ways to Turn Disruption Into Profit",
+    "type": "net",
+    "time": "11:00 AM",
+    "loc": "7775 Walton Pkwy, Suite 100, New Albany",
+    "desc": "Innovate New Albany TIGER Talk — The Reinvention Advantage: 3 Science-Based Ways to Turn Disruption Into Profit",
+    "url": "https://innovatenewalbany.org/new-event/the-reinvention-advantage-3-science-based-ways-to-turn-disruption-into-profit/",
+    "host": "Innovate New Albany",
+    "_source": "scrape",
+    "_added": "2026-11-07"
+  },
+  {
     "date": "2026-12-02",
     "title": "State of AI - Columbus",
     "type": "net",
@@ -813,6 +837,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "OhioX"
+  },
+  {
+    "date": "2026-12-04",
+    "title": "Meet the Ohio Small Business Development Center (SBDC)",
+    "type": "net",
+    "time": "11:00 AM",
+    "loc": "7775 Walton Pkwy, Suite 100, New Albany",
+    "desc": "Innovate New Albany TIGER Talk — Meet the Ohio Small Business Development Center (SBDC)",
+    "url": "https://innovatenewalbany.org/new-event/meet-the-ohio-small-business-development-center-sbdc/",
+    "host": "Innovate New Albany",
+    "_source": "scrape",
+    "_added": "2026-11-07"
   },
   {
     "date": "2026-12-07",
@@ -885,6 +921,18 @@
     "_source": "scrape",
     "_added": "2026-09-19",
     "host": "TechLife Columbus"
+  },
+  {
+    "date": "2027-01-08",
+    "title": "The R Factor: The One Thing that Impacts Everything",
+    "type": "net",
+    "time": "11:00 AM",
+    "loc": "7775 Walton Pkwy, Suite 100, New Albany",
+    "desc": "Innovate New Albany TIGER Talk — The R Factor: The One Thing that Impacts Everything",
+    "url": "https://innovatenewalbany.org/new-event/the-r-factor-the-one-thing-that-impacts-everything/",
+    "host": "Innovate New Albany",
+    "_source": "scrape",
+    "_added": "2026-11-07"
   },
   {
     "date": "2027-01-21",

@@ -100,5 +100,17 @@
     "type": "net",
     "note": "DevOps professionals & the DevOps-curious — social meetups + talks.",
     "url": "https://www.meetup.com/devops-columbus/"
+  },
+  {
+    "title": "Innovate New Albany",
+    "type": "work",
+    "note": "City-run tech-startup incubator — TIGER Talks, Readers' Club & founder programming.",
+    "url": "https://innovatenewalbany.org/new-events/"
+  },
+  {
+    "title": "SparkWorks Innovation",
+    "type": "net",
+    "note": "Columbus startup community — Founders Hop, Wake Up Startup & showcases.",
+    "url": "https://sparkworksinnovation.com/event"
   }
 ]

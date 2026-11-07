@@ -289,3 +289,18 @@ build) — no action needed. Searched for a Columbus-area group literally
 named "AI Engineers" and found nothing — only AI-engineer job/salary
 aggregator pages, no meetup/community by that name. Flagged back to Lauren
 rather than guessing at a substitute; still open.
+
+## Innovate New Albany added as a live source (2026-11-07, per Lauren)
+
+Reversed the 2026-09-28 "manual quarterly check" call: the site runs WordPress +
+The Events Calendar, whose public REST API
+(`/wp-json/tribe/events/v1/events`) returns clean JSON. The HTML page is behind
+Cloudflare, but the API answers our normal `CBusTechCircuitBot` User-Agent
+(tested from Lauren's Mac; generic `Python-urllib` and stale browser UAs get
+403 — no spoofing needed or used). New `src_innovate_new_albany()` uses
+`fetch()`, follows `next_rest_url` paging, and drops the "Healthy Habits for
+High Achievers" wellness series (`INA_SKIP_CATEGORIES`). First run added 4
+events (Readers' Club, 3 TIGER Talks). **Unverified in the cloud routine:** if
+its network/IP is blocked, the source logs a clean SKIP and the 4 stored events
+stay. Also added the missing SparkWorks and Innovate New Albany source cards to
+`recurring.json`.

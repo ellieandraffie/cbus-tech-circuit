@@ -685,6 +685,48 @@ def src_sparkworks():
     return out
 
 
+# Innovate New Albany categories that aren't tech/startup/professional — skipped.
+INA_SKIP_CATEGORIES = {"healthy habits for high achievers"}
+
+
+def src_innovate_new_albany():
+    """Innovate New Albany (city-run tech-startup incubator) runs WordPress +
+    The Events Calendar, which exposes a public JSON REST API — far sturdier
+    than scraping the /new-events/ page markup. (The HTML page sits behind a
+    Cloudflare check, but this API answers our normal, honest bot UA — tested
+    2026-11-07; generic Python-urllib and stale browser UAs get 403.) Note the
+    cloud routine may still be blocked by IP/network policy — it then SKIPs.
+    Health/wellness series are dropped (INA_SKIP_CATEGORIES) — this is a
+    tech/startup calendar."""
+    url = ("https://innovatenewalbany.org/wp-json/tribe/events/v1/events"
+           "?per_page=50&start_date=%s&end_date=%s" % (TODAY.isoformat(), HORIZON.isoformat()))
+    out = []
+    while url:
+        data = json.loads(fetch(url, accept="application/json"))
+        for e in data.get("events", []):
+            cats = [html.unescape(c.get("name", "")) for c in e.get("categories", [])]
+            if any(c.lower() in INA_SKIP_CATEGORIES for c in cats):
+                continue
+            try:
+                d = datetime.datetime.fromisoformat(e["start_date"])
+            except (KeyError, ValueError):
+                continue
+            title = html.unescape(e.get("title", "")).strip()
+            v = e.get("venue") if isinstance(e.get("venue"), dict) else {}
+            loc = ", ".join(x for x in [v.get("address", ""), v.get("city", "")] if x) or "New Albany"
+            excerpt = re.sub(r"<[^>]+>", " ", html.unescape(e.get("excerpt") or ""))
+            excerpt = re.sub(r"\s+", " ", excerpt).strip()
+            label = cats[0] if cats else "Innovate New Albany"
+            desc = ("Innovate New Albany %s — %s" % (label, excerpt or title))[:280]
+            out.append({
+                "date": d.date().isoformat(), "title": title,
+                "type": classify(title, label), "time": "" if e.get("all_day") else fmt_time(d),
+                "loc": loc, "desc": desc, "url": e.get("url"),
+            })
+        url = data.get("next_rest_url")
+    return out
+
+
 # Nicer, public-facing host names for the calendar UI ("hosted by X"), keyed by
 # SOURCES key. Falls back to the SOURCES label itself when a key isn't listed here.
 HOST_LABELS = {
@@ -704,6 +746,7 @@ HOST_LABELS = {
     "worthington": "Worthington Area Chamber of Commerce",
     "devops": "DevOps Columbus",
     "sparkworks": "SparkWorks Innovation",
+    "innovatenewalbany": "Innovate New Albany",
 }
 
 SOURCES = {
@@ -726,6 +769,7 @@ SOURCES = {
     # ready to re-enable once a workaround is found; see RUNBOOK.md).
     "devops":       ("DevOps Columbus (Meetup)", lambda: src_meetup("devops-columbus", local_default="Columbus")),
     "sparkworks":   ("SparkWorks Innovation", src_sparkworks),
+    "innovatenewalbany": ("Innovate New Albany", src_innovate_new_albany),
 }
 
 
