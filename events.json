@@ -318,18 +318,6 @@
     "host": "OhioX"
   },
   {
-    "date": "2026-10-13",
-    "title": "SRECon EMEA",
-    "type": "conf",
-    "time": "See event page",
-    "loc": "Dublin, Ireland Dublin",
-    "desc": "SRE conference in Dublin, Ireland",
-    "url": "https://dev.events/conferences/sre-con-emea-pxh024l7",
-    "host": "dev.events",
-    "_source": "scrape",
-    "_added": "2026-10-12"
-  },
-  {
     "date": "2026-10-14",
     "title": "Columbus WITCON 2026",
     "type": "net",
