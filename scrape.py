@@ -121,6 +121,10 @@ def in_metro(loc):
     if not loc:
         return False
     l = loc.lower()
+    # Same-named cities elsewhere (dev.events listed "Dublin, Ireland" as a
+    # match for Dublin OH on 2026-10-12).
+    if re.search(r"\b(ireland|georgia|california|united kingdom|uk)\b|, (ga|ca)\b", l):
+        return False
     return any(city in l for city in METRO)
 
 

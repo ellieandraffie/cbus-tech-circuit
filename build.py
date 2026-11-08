@@ -17,6 +17,7 @@ Usage:
     python3 build.py --check    # verify index.html is already up to date (exit 1 if not)
 """
 import json, re, sys, datetime, os
+from zoneinfo import ZoneInfo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 HTML = os.path.join(HERE, "index.html")
@@ -92,6 +93,67 @@ def replace_region(src, name, new_body):
     return pat.sub(lambda m: new_body, src, count=1)
 
 
+ET = ZoneInfo("America/New_York")
+
+# Suburbs checked BEFORE the "Columbus" default, so "7775 Walton Pkwy, New Albany"
+# is labeled New Albany, not Columbus. Polaris/Easton/Short North are Columbus.
+METRO_CITIES = [
+    "New Albany", "Dublin", "Westerville", "Lewis Center", "Hilliard", "Delaware",
+    "Upper Arlington", "Canal Winchester", "Worthington", "Powell", "Gahanna",
+    "Grove City", "Reynoldsburg", "Bexley", "Grandview Heights", "Marysville",
+    "Pickerington", "Plain City",
+]
+
+_TIME_RE = re.compile(r"(\d{1,2})(?::(\d{2}))?\s*([ap])\.?m\.?\b|(\d{1,2})(?::(\d{2}))?(?=\s*[–—-])", re.I)
+
+
+def _parse_times(text):
+    """Pull start (and end, if a range) wall-clock times out of free text like
+    '7:30 AM', '4:30–6:30pm', '8:30 AM – 1:00 PM', '8am - 5pm', 'Doors 7:00 AM'.
+    Returns [(hour24, minute), ...] (0–2 items); [] when there's no clear time
+    ('See event page', 'Full day'). A start with no am/pm borrows the end's."""
+    out = []
+    for m in _TIME_RE.finditer(text or ""):
+        if m.group(1):
+            out.append([int(m.group(1)), int(m.group(2) or 0), m.group(3).lower()])
+        else:
+            out.append([int(m.group(4)), int(m.group(5) or 0), None])
+        if len(out) == 2:
+            break
+    if not out or all(t[2] is None for t in out):
+        return []
+    if out[0][2] is None:
+        out[0][2] = out[1][2]
+    res = []
+    for h, mi, ap in out:
+        if ap is None or not (1 <= h <= 12) or mi > 59:
+            return res[:1]
+        res.append(((h % 12) + (12 if ap == "p" else 0), mi))
+    return res
+
+
+def _iso(date_str, hm):
+    d = datetime.date.fromisoformat(date_str)
+    return datetime.datetime(d.year, d.month, d.day, hm[0], hm[1], tzinfo=ET).isoformat()
+
+
+def _address(loc):
+    """Best-effort PostalAddress from the free-text location: real suburb when
+    named (else Columbus), plus ZIP when present."""
+    text = loc or ""
+    # City usually comes after the street, so the LAST suburb named wins
+    # ("9200 Worthington Rd, Westerville" -> Westerville).
+    hits = [(m.start(), c) for c in METRO_CITIES
+            for m in re.finditer(r"\b%s\b" % re.escape(c), text, re.I)]
+    city = max(hits)[1] if hits else "Columbus"
+    addr = {"@type": "PostalAddress", "addressLocality": city, "addressRegion": "OH",
+            "addressCountry": "US"}
+    z = re.search(r"\b(43\d{3})\b", text)
+    if z:
+        addr["postalCode"] = z.group(1)
+    return addr
+
+
 def jsonld_events(events):
     """Build a schema.org Event list from events.json for SEO/AEO purposes.
 
@@ -112,10 +174,17 @@ def jsonld_events(events):
             "location": {
                 "@type": "Place",
                 "name": e.get("loc") or "Columbus, OH",
-                "address": {"@type": "PostalAddress", "addressLocality": "Columbus", "addressRegion": "OH"},
+                "address": _address(e.get("loc")),
             },
             "description": e.get("desc") or e.get("title"),
         }
+        # Full date-time with Eastern offset when the time is parseable (Google
+        # prefers it); date-only otherwise — never invent a time.
+        times = _parse_times(e.get("time"))
+        if times and e.get("date"):
+            item["startDate"] = _iso(e["date"], times[0])
+            if len(times) == 2 and times[1] > times[0]:
+                item["endDate"] = _iso(e["date"], times[1])
         if e.get("url"):
             item["url"] = e["url"]
         if e.get("host"):
