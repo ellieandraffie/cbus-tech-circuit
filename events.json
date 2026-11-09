@@ -735,6 +735,18 @@
   },
   {
     "date": "2026-11-18",
+    "title": "(CS)²AI November Chapter Meeting",
+    "type": "net",
+    "time": "See event page",
+    "loc": "COhatch Westerville Westerville",
+    "desc": "The Columbus Chapter, Control System Cybersecurity Association Int’l, welcomes IT / OT fellow industry professionals to join us!",
+    "url": "https://www.eventbrite.com/e/cs2ai-november-chapter-meeting-tickets-2003771223670",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-11-09"
+  },
+  {
+    "date": "2026-11-18",
     "title": "Ohio AI Summit (3rd annual)",
     "type": "conf",
     "time": "Full day",
@@ -887,6 +899,19 @@
     "_added": "2026-09-28"
   },
   {
+    "date": "2026-12-14",
+    "title": "AI Tinkerers Columbus: Release v0.12.0 — December 14 at Improving",
+    "type": "work",
+    "time": "See event page",
+    "loc": "Private venue Columbus",
+    "desc": "AI Tinkerers Columbus: Release v0.12.0 on Monday, Dec 14, 2026 (5:30–8:00 PM ET) at Improving; capacity 150. Expect live terminals/config demos, peer debugging, and deep-dive networking. Practitioners building agentic workflows, RAG/evals, fine-tuning, and inference reliability—a",
+    "url": "https://columbus.aitinkerers.org/p/ai-tinkerers-columbus-release-v0-12-0-december-14-at-improving",
+    "free": true,
+    "host": "AI Tinkerers Columbus",
+    "_source": "scrape",
+    "_added": "2026-11-09"
+  },
+  {
     "date": "2026-12-16",
     "title": "Engineering and Business Networking | Elevating Your Potential - Columbus",
     "type": "net",
@@ -933,5 +958,17 @@
     "host": "TechLife Columbus",
     "_source": "scrape",
     "_added": "2026-10-19"
+  },
+  {
+    "date": "2027-02-11",
+    "title": "2027 HTMA-OH Expo - Vendor Booth Sponsorship",
+    "type": "conf",
+    "time": "See event page",
+    "loc": "Renaissance Columbus Westerville Hotel Westerville",
+    "desc": "This is a 1.5 day event for Healthcare Technology Managers and Technicians.",
+    "url": "https://www.eventbrite.com/e/2027-htma-oh-expo-vendor-booth-sponsorship-tickets-2001239889381",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-11-09"
   }
 ]
