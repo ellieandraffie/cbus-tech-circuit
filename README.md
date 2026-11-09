@@ -11,9 +11,12 @@ events across Columbus, Dublin & Central Ohio. Presented by Pink Hippo Strategy.
 5. Replace `YOUR-USERNAME.github.io/cbus-tech-circuit` in `index.html`, `robots.txt`,
    and `sitemap.xml` with the real Pages URL (or a custom domain).
 
-## To finish wiring
-- **Analytics:** paste the Cloudflare Web Analytics beacon `<script>` into `index.html` (marked spot).
-- **Feedback form:** set `FB_ENDPOINT` in the inline script to your Formspree form URL — hides the destination email.
+## Wiring
+- **Analytics:** Google Analytics 4, its own property "CBus Tech Calendar" (`G-0NMC1PYXFP`),
+  set in the `<head>` of `index.html`. Before 2026-11-07 it shared the Pink Hippo Strategy
+  property (`G-3Y16FP5YM5`).
+- **Feedback form:** Web3Forms. The access key is in the inline script in `index.html`
+  (public by design); the recipient email is set on the Web3Forms account, not in code.
 
 ## Weekly refresh
 A scheduled agent re-scrapes the source calendars each Monday, regenerates the event
