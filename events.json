@@ -734,6 +734,42 @@
     "_added": "2026-10-26"
   },
   {
+    "date": "2026-11-16",
+    "title": "COSQAM Presents: Quality in the Age of AI",
+    "type": "round",
+    "time": "5:30 PM",
+    "loc": "Improving, Columbus",
+    "desc": "Join us in the beautiful **Improving Columbus** office space for a Panel Discussion around this topic... **Quality in the Age of AI: The Good, the Bad, and the Lessons Learned** What AI tools are we using? What do we think should be better? How can we make it work in our lives an",
+    "url": "https://www.meetup.com/techlifecolumbus/events/304441946/",
+    "host": "TechLife Columbus",
+    "_source": "scrape",
+    "_added": "2026-11-16"
+  },
+  {
+    "date": "2026-11-17",
+    "title": "Quarterly Community Gathering",
+    "type": "work",
+    "time": "6:00 PM",
+    "loc": "Rev1, Columbus",
+    "desc": "Join the Columbus AI community for our quarterly gathering — a casual, community-focused evening where everyone has a chance to share, learn, and connect. These open mic–style events give anyone in the community up to **5 minutes** to present a project, share a tool, pose a quest",
+    "url": "https://www.meetup.com/columbus-ai/events/317357483/",
+    "host": "Columbus AI",
+    "_source": "scrape",
+    "_added": "2026-11-16"
+  },
+  {
+    "date": "2026-11-17",
+    "title": "Wait... AI Can Do That!?",
+    "type": "net",
+    "time": "See event page",
+    "loc": "1349 W Lane Ave suite 1125 Columbus",
+    "desc": "Your day. Your database. Your next move.",
+    "url": "https://www.eventbrite.com/e/wait-ai-can-do-that-tickets-2004244311689",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-11-16"
+  },
+  {
     "date": "2026-11-18",
     "title": "(CS)²AI November Chapter Meeting",
     "type": "net",
@@ -755,6 +791,18 @@
     "desc": "OhioX's statewide, full-day summit on AI development and deployment across Ohio — speakers, sessions and heavy networking.",
     "url": "https://www.ohiox.org/events",
     "host": "OhioX"
+  },
+  {
+    "date": "2026-11-19",
+    "title": "EXPERT OFFICE HOURS | Thursday November 19, 2026",
+    "type": "round",
+    "time": "9:00 AM",
+    "loc": "New Albany",
+    "desc": "Innovate New Albany Expert Office Hours — EXPERT OFFICE HOURS | Thursday November 19, 2026",
+    "url": "https://innovatenewalbany.org/new-event/expert-office-hours-thursday-november-19-2026/",
+    "host": "Innovate New Albany",
+    "_source": "scrape",
+    "_added": "2026-11-16"
   },
   {
     "date": "2026-11-19",
@@ -803,6 +851,42 @@
     "host": "SparkWorks Innovation",
     "_source": "scrape",
     "_added": "2026-10-29"
+  },
+  {
+    "date": "2026-11-20",
+    "title": "BBQ Networking Event",
+    "type": "social",
+    "time": "See event page",
+    "loc": "Olentangy River Brewing Company Lewis Center",
+    "desc": "Great food & drinks!  Plus a chance to connect & learn with local business/IT leaders. Hosted by UberData Networks, Nextivity, & Lucidia IT.",
+    "url": "https://www.eventbrite.com/e/bbq-networking-event-tickets-2003369478038",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-11-16"
+  },
+  {
+    "date": "2026-11-20",
+    "title": "Coworking w/ IxDA at Junto",
+    "type": "work",
+    "time": "10:00 AM",
+    "loc": "The Junto, Columbus",
+    "desc": "Join us and work remotely together with like-minded UX folks. Kicking off the fall/winter with the classic [Junto](https://thejuntohotel.com/)! Plenty of seating is available. We will be sitting near the book wall out front of the coffee shop Maudine's on the right side of the lo",
+    "url": "https://www.meetup.com/columbus-ixda-group/events/317384386/",
+    "host": "IxDA Columbus",
+    "_source": "scrape",
+    "_added": "2026-11-16"
+  },
+  {
+    "date": "2026-11-20",
+    "title": "Ohio LinuxFest -at OSU",
+    "type": "conf",
+    "time": "5:00 PM",
+    "loc": "Dreese Laboratories, Columbus",
+    "desc": "We are back at OSU, where it all began in 2003! Dreese Lab building. Hallway displays and demos start at 9am on Friday, however first talk is not until Friday at 5:15pm. On Saturday, same place, 9am to 7pm, but after party until 9pm. We are In-Person with live stream and recordin",
+    "url": "https://www.meetup.com/techlifecolumbus/events/317406390/",
+    "host": "TechLife Columbus",
+    "_source": "scrape",
+    "_added": "2026-11-16"
   },
   {
     "date": "2026-11-20",
@@ -875,6 +959,18 @@
     "host": "TechLife Columbus"
   },
   {
+    "date": "2026-12-09",
+    "title": "Entrepreneurs' Holiday Party",
+    "type": "social",
+    "time": "4:30 PM",
+    "loc": "Columbus, OH",
+    "desc": "SparkWorks Innovation — Entrepreneurs' Holiday Party",
+    "url": "https://sparkworksinnovation.com/event/entrepreneurs-holiday-party-36/",
+    "host": "SparkWorks Innovation",
+    "_source": "scrape",
+    "_added": "2026-11-16"
+  },
+  {
     "date": "2026-12-10",
     "title": "Columbus Tech Community Holiday Party",
     "type": "social",
@@ -885,6 +981,18 @@
     "host": "Eventbrite",
     "_source": "scrape",
     "_added": "2026-10-12"
+  },
+  {
+    "date": "2026-12-11",
+    "title": "Everything else gets you chosen: Building a brand beyond a logo",
+    "type": "work",
+    "time": "11:00 AM",
+    "loc": "7775 Walton Pkwy, Suite 100, New Albany",
+    "desc": "Innovate New Albany TIGER Talk — Everything else gets you chosen: Building a brand beyond a logo",
+    "url": "https://innovatenewalbany.org/new-event/everything-else-gets-you-chosen-building-a-brand-beyond-a-logo/",
+    "host": "Innovate New Albany",
+    "_source": "scrape",
+    "_added": "2026-11-16"
   },
   {
     "date": "2026-12-12",
@@ -910,6 +1018,18 @@
     "host": "AI Tinkerers Columbus",
     "_source": "scrape",
     "_added": "2026-11-09"
+  },
+  {
+    "date": "2026-12-15",
+    "title": "Lets close out 2026 with a Holiday Gathering!",
+    "type": "work",
+    "time": "6:00 PM",
+    "loc": "Rev1 at The Peninsula, Columbus",
+    "desc": "Join the Columbus AI community for a relaxed holiday get together. This one is all about enjoying good company. No agenda, no talks, just conversations about AI, the year ahead, and whatever else comes up. Holiday food and beverage will be served complements of our sponsor Transf",
+    "url": "https://www.meetup.com/columbus-ai/events/317357667/",
+    "host": "Columbus AI",
+    "_source": "scrape",
+    "_added": "2026-11-16"
   },
   {
     "date": "2026-12-16",
@@ -970,5 +1090,29 @@
     "host": "Eventbrite",
     "_source": "scrape",
     "_added": "2026-11-09"
+  },
+  {
+    "date": "2027-02-18",
+    "title": "2027 Data Day: Plotting What's Next",
+    "type": "net",
+    "time": "See event page",
+    "loc": "Center for Workforce Development (WD) Columbus",
+    "desc": "Data Day is an opportunity to learn more about what our region is doing to promote data-driven decision-making.",
+    "url": "https://www.eventbrite.com/e/2027-data-day-plotting-whats-next-tickets-2004389389621",
+    "host": "Eventbrite",
+    "_source": "scrape",
+    "_added": "2026-11-16"
+  },
+  {
+    "date": "2027-02-18",
+    "title": "NFT AI ART Columbus",
+    "type": "net",
+    "time": "9:30 AM",
+    "loc": "The Point at Otterbein, Westerville",
+    "desc": "NFT's are here to stay folks! This is a group for like minded people interested in understanding, leveraging, using, creating for, profiting from, trading too i suppose, NFT's.. everything around them, complexity, fear and exploits, best practices and more. **PLUS** This group wi",
+    "url": "https://www.meetup.com/techlifecolumbus/events/mmzstsykcdbxb/",
+    "host": "TechLife Columbus",
+    "_source": "scrape",
+    "_added": "2026-11-16"
   }
 ]
